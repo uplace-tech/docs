@@ -1,0 +1,87 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Guide Uplace",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "pages": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "quickstart"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "group": "Prise en main",
+        "icon": "compass",
+        "pages": [
+          "index",
+          "cartographie"
+        ]
+      },
+      {
+        "group": "Le parcours locatif",
+        "icon": "route",
+        "pages": [
+          "dashboard",
+          "lots-en-attente",
+          "creation-lot",
+          "boite-reception",
+          "invitation-candidat",
+          "analyse-candidatures",
+          "validation-candidature",
+          "planification-visite",
+          "visite-instantanee",
+          "gerer-visites",
+          "validation-refus",
+          "marquer-loue",
+          "archivage-lot"
+        ]
+      },
+      {
+        "group": "Pilotage & administration",
+        "icon": "sliders",
+        "pages": [
+          "prospects",
+          "statistiques",
+          "mon-agence",
+          "annexe",
+          "recapitulatif"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Obtenir de l'aide",
+      "href": "mailto:support@uplace.fr"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "description": "Guide d'utilisation d'Uplace, le logiciel de gestion du parcours locatif pour agences immobilières."
+}
