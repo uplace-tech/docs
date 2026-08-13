@@ -24,7 +24,8 @@
         "icon": "compass",
         "pages": [
           "index",
-          "cartographie"
+          "cartographie",
+          "guide-relocation"
         ]
       },
       {
