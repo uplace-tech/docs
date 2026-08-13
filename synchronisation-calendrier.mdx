@@ -1,0 +1,121 @@
+---
+title: "Synchroniser le calendrier Uplace avec Google, Outlook ou Apple"
+sidebarTitle: "Synchro calendrier"
+description: "Retrouver automatiquement vos visites Uplace dans Google Calendar, Outlook ou Apple Calendrier."
+icon: "calendar-plus"
+---
+
+## Objectif
+
+Afficher automatiquement vos visites Uplace dans votre agenda habituel (Google, Outlook ou Apple), sans double saisie. La synchronisation repose sur un **lien de synchronisation** (flux iCal) propre à chaque utilisateur.
+
+<Note>
+  **Où trouver le lien de synchronisation ?** [Calendrier](/calendrier) \> bouton **Synchroniser** (en bas à droite) \> copier le lien.
+</Note>
+
+## Activer la synchronisation
+
+<Tabs>
+  <Tab title="Google Calendar">
+    <Steps>
+      <Step title="Copier le lien de synchronisation Uplace">
+        Depuis le [Calendrier](/calendrier) Uplace, copiez le lien de synchronisation via le bouton **Synchroniser**.
+      </Step>
+      <Step title="Ouvrir Google Calendar">
+        Rendez-vous sur [calendar.google.com/calendar](https://calendar.google.com/calendar) et connectez-vous à votre compte Google si nécessaire.
+      </Step>
+      <Step title="Ajouter l'agenda depuis l'URL">
+        Dans le menu à gauche, cliquez sur le bouton **\+** à côté de « Autres agendas », puis choisissez **À partir de l'URL**.
+      </Step>
+      <Step title="Coller le lien">
+        Collez le lien de synchronisation Uplace, puis cliquez sur **Ajouter un agenda**.
+      </Step>
+      <Step title="Renommer l'agenda">
+        L'agenda apparaît dans « Autres agendas » (sous la forme `webcal://api.uplace.fr/ical-fe…`). Cliquez dessus pour modifier son nom à votre convenance (ex. « Visites Uplace »).
+      </Step>
+    </Steps>
+
+    Et voilà, votre compte Google Calendar est synchronisé avec Uplace.
+  </Tab>
+  <Tab title="Outlook">
+    <Steps>
+      <Step title="Copier le lien de synchronisation Uplace">
+        Depuis le [Calendrier](/calendrier) Uplace, copiez le lien de synchronisation via le bouton **Synchroniser**.
+      </Step>
+      <Step title="Ouvrir Outlook">
+        Rendez-vous sur [outlook.live.com/calendar](https://outlook.live.com/calendar/0/view/workweek) et connectez-vous à votre compte Outlook si nécessaire.
+      </Step>
+      <Step title="Ajouter un calendrier">
+        Dans le menu à gauche, cliquez sur **Ajouter un calendrier**, puis sur **S'abonner à partir du web** dans le menu à gauche de la fenêtre.
+      </Step>
+      <Step title="Coller le lien et personnaliser">
+        Collez le lien de synchronisation Uplace, puis nommez et personnalisez l'agenda.
+
+        _(Facultatif)_ Dans Couleur \> **Personnalisation**, collez le code `1ac385` dans la case _Hex_ pour utiliser la couleur officielle Uplace !
+      </Step>
+      <Step title="Importer">
+        Dans « Ajouter à », choisissez **Mes calendriers** (ou autre, selon votre convenance), puis cliquez sur **Importer**.
+      </Step>
+    </Steps>
+
+    Et voilà, votre compte Outlook est synchronisé avec Uplace.
+
+    ### Problème de décalage horaire
+
+    Si les horaires des visites sont décalés dans Outlook :
+
+    1. En haut à droite de la fenêtre, cliquez sur **Paramètres**.
+    2. Dans **Calendrier \> Affichage**, vérifiez le fuseau horaire configuré pour votre compte. Choisissez le fuseau correspondant à votre localisation (France métropolitaine = **UTC\+01:00 Paris**), puis cliquez sur **Oui, mettre à jour**.
+  </Tab>
+  <Tab title="Apple Calendrier">
+    <Steps>
+      <Step title="Copier le lien de synchronisation Uplace">
+        Depuis le [Calendrier](/calendrier) Uplace, copiez le lien de synchronisation via le bouton **Synchroniser**.
+      </Step>
+      <Step title="Ouvrir l'application Calendrier">
+        Sur votre Mac, ouvrez l'application **Calendrier**.
+      </Step>
+      <Step title="S'abonner au calendrier">
+        Menu **Fichier** (en haut à gauche) \> **Abonnement à un calendrier…**
+      </Step>
+      <Step title="Coller le lien">
+        Collez le lien de synchronisation Uplace, puis cliquez sur **S'abonner**.
+      </Step>
+      <Step title="Régler la fréquence d'actualisation">
+        Dans le menu déroulant **Actualisation automatique**, nous conseillons **Toutes les 15 minutes**. Cliquez sur **OK**.
+      </Step>
+    </Steps>
+
+    Et voilà, votre compte Apple Calendar est synchronisé avec Uplace.
+  </Tab>
+</Tabs>
+
+## À propos de la synchronisation
+
+Lorsque vous ajoutez votre calendrier Uplace dans votre agenda externe, vos visites s'affichent automatiquement. Il peut cependant y avoir un **délai** entre une modification dans Uplace et son apparition dans votre agenda : Google, Outlook et Apple actualisent les calendriers externes à leur propre rythme.
+
+<Info>
+  Un délai de plusieurs heures est tout à fait normal et ne signifie pas qu'il y a un problème. La fréquence de mise à jour dépend entièrement du fournisseur de l'agenda : elle ne peut pas être accélérée depuis Uplace. Sur Apple Calendrier, vous pouvez toutefois régler l'actualisation à « Toutes les 15 minutes ».
+</Info>
+
+## Actions unidirectionnelles
+
+<Warning>
+  La synchronisation fonctionne dans **un seul sens** : Uplace vers votre agenda. Les événements Uplace y sont visibles **en lecture uniquement** : modifier ou supprimer un événement depuis Google, Outlook ou Apple n'est **pas** pris en compte dans Uplace. Gérez toujours vos visites depuis Uplace — voir [Gérer les visites](/gerer-visites).
+</Warning>
+
+## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Mes visites n'apparaissent pas immédiatement, est-ce normal ?">
+    Oui. Les agendas externes actualisent les flux à leur propre rythme ; un délai de plusieurs heures est normal, en particulier sur Google et Outlook.
+  </Accordion>
+
+  <Accordion title="Puis-je modifier une visite depuis mon agenda externe ?">
+    Non : la synchronisation est unidirectionnelle. Toute modification doit être faite dans Uplace, elle sera ensuite répercutée dans votre agenda.
+  </Accordion>
+
+  <Accordion title="Le lien de synchronisation est-il personnel ?">
+    Oui, chaque utilisateur dispose de son propre lien. Ne le partagez pas en dehors de votre organisation.
+  </Accordion>
+</AccordionGroup>
