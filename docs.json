@@ -24,8 +24,7 @@
         "icon": "compass",
         "pages": [
           "index",
-          "cartographie",
-          "guide-relocation"
+          "cartographie"
         ]
       },
       {
@@ -50,6 +49,13 @@
           "validation-refus",
           "marquer-loue",
           "archivage-lot"
+        ]
+      },
+      {
+        "group": "Côté candidat",
+        "icon": "user",
+        "pages": [
+          "guide-relocation"
         ]
       },
       {
