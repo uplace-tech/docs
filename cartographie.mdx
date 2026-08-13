@@ -10,24 +10,88 @@ Avant d'entrer dans le détail des fiches, voici l'ensemble des onglets et secti
 ## Navigation principale (sidebar)
 
 <CardGroup cols={2}>
-         
+  <Card title="Dashboard" icon="gauge" href="/dashboard">
+    La page d'accueil : visites à venir, lots en attente et liste des lots.
+  </Card>
+
+  <Card title="Contacts" icon="address-book" href="/contacts">
+    Toutes les candidatures et prospects sur vos lots actifs, à traiter au fil de l'eau.
+  </Card>
+
+  <Card title="Messagerie" icon="comments" href="/messagerie">
+    Les discussions démarrées depuis un lot ou une candidature.
+  </Card>
+
+  <Card title="Calendrier" icon="calendar-days" href="/calendrier">
+    Le planning hebdomadaire des visites de toute l'agence.
+  </Card>
+
+  <Card title="Tous les lots" icon="building" href="/creation-lot">
+    Le patrimoine complet : lots en ligne, loués, en attente et archivés.
+  </Card>
+
+  <Card title="Mes candidats" icon="users" href="/prospects">
+    La base de tous les candidats qui ont interagi avec l'agence.
+  </Card>
+
+  <Card title="Statistiques" icon="chart-line" href="/statistiques">
+    Les indicateurs de performance du parcours locatif.
+  </Card>
+
+  <Card title="Mon agence" icon="building-user" href="/mon-agence">
+    Organisation, abonnement, membres et paramètres de l'agence.
+  </Card>
 </CardGroup>
+
+<Note>
+  L'onglet **Tous les lots** contient un sous-menu : _Tous les lots_, _Lots en location_, _Lots archivés_, _Lots en ligne_ et _Lots en attente_.
+</Note>
+
+## Outils transverses
+
+Présents en permanence en haut de l'écran ou en bas de la sidebar :
+
+| Outil | Description |
+| --- | --- |
+| **Recherche globale** (`Cmd+K` / `Ctrl+K`) | Recherchez n'importe quelle ressource : lot, candidat, page de l'application. |
+| **Discuter avec Uppy** | L'assistant Uplace qui répond à vos questions sur la plateforme. Voir [Uppy – l'assistant Uplace](/uppy). |
+| **Assistance** | Contacter le support Uplace. Voir [Annexe](/annexe). |
+| **Mes notifications** | L'historique des notifications (dossiers, visites, abonnement). |
+| **Nouveautés** | Le journal des dernières évolutions de la plateforme. |
+| **Mon compte** | Vos informations personnelles et préférences (avatar en bas de la sidebar). |
 
 ## Sous-sections de « Mon agence »
 
 | Section | Contenu |
 | --- | --- |
-| **Identité de l'agence** | Fiche agence (nom, SIRET, e-mails, marque blanche). |
+| **Identité de l'agence** | Fiche agence (nom, SIRET, e-mails, logo, marque blanche, affichage public des lots). |
 | **Modèles de mise en location** | Critères pré-définis, GLI pré-remplies. |
-| **Parcours candidat** | Formulaire modulable. |
-| **Flux et intégrations** | Boîte de réception, multi-diffuseurs (Septeo, Apimo, Immofacile AC3 / Orisha, La Boîte Immo / Hektor, Oskar, SweepBright, Naxos…). |
-| **Membres de l'organisation** | Gestion des utilisateurs et des rôles. |
-| **Facturation** | Acheter des lots, modifier mon abonnement, espace facturation. |
+| **Parcours candidat** | Formulaire modulable (questions et pièces supplémentaires). |
+| **Sous-traitance de visites** | Gérer les sous-traitants en charge des visites. |
+| **Flux et intégrations** | Boîte de réception (demandes entrantes) et multi-diffuseurs : Modulo by Septeo, Apimo, Ubiflow. |
+| **Membres de l'organisation** | Gestion des utilisateurs et des rôles (Propriétaire, Administrateur, Responsable). |
+| **Facturation** | Acheter des lots, modifier mon abonnement, espace facturation (portail Stripe). |
 
 ## Cycle de vie d'un lot (parcours locatif)
 
 <Steps>
+  <Step title="En attente">
+    Le lot est remonté automatiquement par un canal externe (portail, CRM) mais n'est pas encore configuré. Voir [Lots en attente](/lots-en-attente).
+  </Step>
+  <Step title="En ligne">
+    Le lot est configuré et reçoit prises de contact, candidatures et visites. Voir [Création d'un lot](/creation-lot).
+  </Step>
+  <Step title="Loué">
+    Un candidat a été retenu, le lot sort du marché. Voir [Marquer comme loué](/marquer-loue).
+  </Step>
+  <Step title="Archivé">
+    Le lot est retiré définitivement, son historique est conservé. Voir [Archivage d'un lot](/archivage-lot).
+  </Step>
 </Steps>
+
+<Note>
+  Un même bien peut vivre **plusieurs cycles** de mise en location : la colonne « Cycle de vie » de la liste des lots indique le nombre de cycles effectués (ex. _2 cycles_).
+</Note>
 
 <Info>
   Les fiches qui suivent reprennent ces fonctionnalités dans l'ordre logique du parcours locatif.

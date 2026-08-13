@@ -7,34 +7,61 @@ icon: "inbox"
 
 ## Objectif
 
-Centraliser toutes les demandes entrantes (Leboncoin, SeLoger, Bien'ici, etc.) dans une seule interface et permettre à l'agent de les traiter une à une avec un statut clair, évitant ainsi qu'un prospect ne tombe entre les mailles du filet.
+Centraliser toutes les demandes entrantes (Leboncoin, SeLoger, Bien'ici, etc.) et permettre à l'agent de les traiter une à une avec un statut clair, évitant ainsi qu'un prospect ne tombe entre les mailles du filet.
 
 <Note>
-  **Où trouver cette fonctionnalité ?** Fiche du lot \> section **Prises de contact** — ou Mon agence \> Paramètres \> **Boîte de réception**.
+  **Où trouver cette fonctionnalité ?** Fiche du lot \> section **Prises de contact** — configuration dans Mon agence \> Paramètres \> **Boîte de réception**.
 </Note>
 
 ## Fonctionnement étape par étape
 
 <Steps>
+  <Step title="Configurer la réception (une fois pour toutes)">
+    Dans [Mon agence](/mon-agence) \> Paramètres \> **Boîte de réception**, récupérez votre **adresse e-mail dédiée** (`votre-agence@inbox.uplace.fr`) et redirigez-y les e-mails de contact de vos portails. Activez si besoin le **renvoi automatique de tous les e-mails** pour continuer à recevoir une copie de chaque demande.
+  </Step>
+  <Step title="Laisser Uplace rattacher les demandes">
+    Chaque demande entrante est analysée : identité, coordonnées, origine (Leboncoin, SeLoger, Bien'ici…) et message sont extraits, puis la demande est rattachée au bon lot. Si le bien n'existe pas encore dans Uplace, il apparaît en [lot en attente](/lots-en-attente).
+  </Step>
+  <Step title="Consulter les prises de contact d'un lot">
+    Fiche du lot \> section **Prises de contact** : identité, contact, origine, date et message de chaque prospect. Le statut **Automatique** indique que Uplace gère la réponse et l'invitation à candidater sans intervention manuelle.
+  </Step>
+  <Step title="Traiter chaque contact">
+    Depuis la ligne du contact : répondre (e-mail, téléphone, WhatsApp préformaté), inviter à déposer un dossier — voir [Inviter un candidat](/invitation-candidat) — ou écarter la demande.
+  </Step>
 </Steps>
 
 ## Bonnes pratiques recommandées
 
+- Configurez la redirection e-mail dès l'onboarding : c'est elle qui alimente tout le pipeline entrant.
+- Laissez le statut **Automatique** faire le premier tri sur les lots à fort volume, et concentrez-vous sur les dossiers déposés.
+- Consultez la vue [Contacts](/contacts) chaque matin pour traiter les demandes de toute l'agence d'un seul endroit.
+
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - Laisser le statut « Non traité » sans action : le prospect est perdu.
+  - Laisser une demande sans action : le prospect est perdu.
   - Répondre par e-mail externe et oublier de tracer la réponse dans Uplace.
-  - Marquer un contact « Abandon candidat » sans relance préalable.
+  - Écarter un contact sans relance préalable.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Récupère les contacts depuis les portails via la Boîte de réception.
-  - Identifie l'origine du contact (Leboncoin, Bien'ici…).
+  - Récupère les contacts depuis les portails via l'adresse dédiée et le multi-diffuseur.
+  - Identifie l'origine du contact (Leboncoin, SeLoger, Bien'ici…).
   - Compte les demandes multiples d'un même prospect.
+  - Répond et invite à candidater lorsque le statut est « Automatique ».
   - Centralise la conversation avec un lien WhatsApp préformaté.
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Que signifie le statut « Automatique » sur une prise de contact ?">
+    Uplace a pris en charge la demande : réponse au prospect et invitation à déposer un dossier sont gérées automatiquement. Vous pouvez reprendre la main à tout moment.
+  </Accordion>
+
+  <Accordion title="Une demande arrive sur un bien absent d'Uplace, que se passe-t-il ?">
+    Le bien remonte en **lot en attente** sur le Dashboard. Configurez-le ou rapprochez-le d'un lot existant — voir [Lots en attente](/lots-en-attente).
+  </Accordion>
+</AccordionGroup>

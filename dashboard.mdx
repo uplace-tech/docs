@@ -16,9 +16,31 @@ Le Dashboard offre une vision synthétique et quotidienne de l'activité du parc
 ## Fonctionnement étape par étape
 
 <Steps>
+  <Step title="Consulter les visites à venir">
+    Le bloc **Visites à venir** affiche vos prochaines visites (date, heure, lot, responsable). Le lien **Voir l'agenda** ouvre le [Calendrier](/calendrier) complet de l'agence.
+  </Step>
+  <Step title="Traiter les lots en attente">
+    Le bloc **Lots en attente** liste les biens remontés automatiquement lorsqu'une candidature est reçue sur un bien non répertorié. Configurez-les pour les rendre disponibles aux candidats — voir [Lots en attente](/lots-en-attente). Le bouton **Configurer un nouveau lot** lance l'assistant de [création de lot](/creation-lot).
+  </Step>
+  <Step title="Piloter la liste des lots">
+    Le tableau **Liste des lots** affiche pour chaque bien : localisation et loyer, **dossiers validés**, **dossiers déposés**, **prospects**, responsable et date de création. Cliquez sur une ligne pour ouvrir la fiche du lot.
+  </Step>
+  <Step title="Filtrer et personnaliser">
+    Utilisez la recherche (nom, référence, adresse, loyer), le filtre **par responsable**, le tri (_Plus récent_…) et le bouton **Colonnes** pour adapter le tableau à votre usage.
+  </Step>
+  <Step title="Agir directement depuis le tableau">
+    Chaque ligne propose deux actions rapides : **Copier le lien de candidature** (à envoyer à un prospect) et **Désactiver les notifications** du lot.
+  </Step>
+  <Step title="Partager vos lots disponibles">
+    Le bouton **Partager mes lots** génère un lien public affichant tous les lots disponibles de l'agence — voir [Partager mes lots](/partage-lots).
+  </Step>
 </Steps>
 
 ## Bonnes pratiques recommandées
+
+- Commencez chaque journée par le Dashboard : visites du jour, puis lots en attente, puis nouvelles candidatures.
+- Attribuez systématiquement un **responsable** à chaque lot pour que les filtres par responsable restent exploitables.
+- Utilisez la colonne **Prospects** pour repérer les lots à forte demande et prioriser leurs visites.
 
 ## Erreurs fréquentes à éviter
 
@@ -31,9 +53,23 @@ Le Dashboard offre une vision synthétique et quotidienne de l'activité du parc
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Récupère et affiche les nouveaux lots issus du multi-diffuseur (Septeo, etc.).
+  - Récupère et affiche les nouveaux lots issus du multi-diffuseur et des portails.
   - Calcule en temps réel les compteurs (dossiers déposés, prospects, dossiers validés).
   - Met à jour l'agenda du jour dès qu'une visite est créée ou annulée.
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Pourquoi un lot n'apparaît-il pas dans la liste ?">
+    Vérifiez les filtres actifs (responsable, recherche). Les lots archivés n'apparaissent pas dans le Dashboard : consultez **Tous les lots \> Lots archivés**.
+  </Accordion>
+
+  <Accordion title="À quoi sert « Copier le lien de candidature » ?">
+    Ce lien ouvre le formulaire de candidature public du lot. Envoyez-le à un prospect (e-mail, SMS, WhatsApp) pour qu'il dépose son dossier directement — voir aussi [Inviter un candidat](/invitation-candidat).
+  </Accordion>
+
+  <Accordion title="Puis-je couper les notifications d'un lot très demandé ?">
+    Oui, via l'icône **Désactiver les notifications** en bout de ligne. Le lot continue de recevoir des candidatures, mais vous n'êtes plus notifié à chaque nouveau contact.
+  </Accordion>
+</AccordionGroup>

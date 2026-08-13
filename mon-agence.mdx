@@ -16,9 +16,44 @@ Configurer l'identité de votre agence, gérer les utilisateurs et leurs droits,
 ## Fonctionnement étape par étape
 
 <Steps>
+  <Step title="Suivre l'abonnement et les quotas">
+    Le bloc principal affiche votre formule (ex. MAX), sa date de renouvellement et trois jauges d'utilisation : **lots** (ex. 48/100), **sièges de l'équipe** (ex. 7/10) et **packs de lots achetés**.
+  </Step>
+  <Step title="Gérer la facturation">
+    Le bloc **Facturation et paramètres** donne accès à : **Acheter des lots** (packs complémentaires), **Modifier mon abonnement** (formule, facturation, engagement) et **Espace facturation** (factures et moyens de paiement via le portail Stripe).
+  </Step>
+  <Step title="Configurer la fiche agence">
+    **Paramètres de l'agence \> Fiche agence** : logo (PNG/JPG, 5 Mo max), nom, e-mail, SIRET, et deux options importantes :
+
+    - **Autoriser les discussions par candidature** : active la [Messagerie](/messagerie) avec les candidats.
+    - **Activer l'affichage public des lots disponibles** : publie la page publique de vos lots — voir [Partager mes lots](/partage-lots).
+
+    L'onglet **Personnaliser mes échanges** (marque blanche) dépend de votre formule d'abonnement.
+  </Step>
+  <Step title="Préparer les modèles de mise en location">
+    - **Critères pré-définis** : des plages de critères réutilisables à la [création de lots](/creation-lot).
+    - **GLI pré-remplies** : vos garanties loyers impayés pré-configurées (assureur, n° de contrat, e-mail).
+  </Step>
+  <Step title="Personnaliser le parcours candidat">
+    **Formulaire modulable** : créez des modèles de formulaires pour demander des questions et pièces supplémentaires aux candidats. Ils sont ensuite proposés comme « étape supplémentaire candidat » à la création d'un lot.
+  </Step>
+  <Step title="Gérer la sous-traitance de visites">
+    **Gérer les sous-traitants** : les personnes en charge des visites de vos lots (lots confiés, accès, retrait de l'agence). L'invitation d'un sous-traitant se fait depuis la fiche d'un lot — voir [Gérer les visites](/gerer-visites).
+  </Step>
+  <Step title="Brancher les flux entrants">
+    - **Boîte de réception** (« Mes demandes entrantes ») : Uplace centralise les demandes locatives entrantes (Leboncoin, SeLoger, site web…) et les traite automatiquement. Une **adresse e-mail dédiée** (`votre-agence@inbox.uplace.fr`) est fournie, avec option de renvoi automatique de tous les e-mails de contact — voir [Boîte de réception](/boite-reception).
+    - **Multi-diffuseurs (CRM)** : connectez **Modulo by Septeo**, **Apimo** ou **Ubiflow** pour importer automatiquement annonces et leads depuis votre outil de diffusion.
+  </Step>
+  <Step title="Gérer les membres de l'organisation">
+    Invitez de nouveaux membres et attribuez les rôles : **Propriétaire**, **Administrateur** ou **Responsable**. Chaque membre peut être modifié ou désactivé ; le nombre de sièges dépend de votre abonnement.
+  </Step>
 </Steps>
 
 ## Bonnes pratiques recommandées
+
+- Renseignez complètement la fiche agence (logo, SIRET) : ces éléments apparaissent aux candidats.
+- Créez vos critères pré-définis et GLI pré-remplies dès l'onboarding : chaque création de lot devient plus rapide et plus homogène.
+- Surveillez les jauges lots/sièges avant les pics d'activité pour anticiper un pack complémentaire.
 
 ## Erreurs fréquentes à éviter
 
@@ -26,6 +61,7 @@ Configurer l'identité de votre agence, gérer les utilisateurs et leurs droits,
   - Donner le rôle « Propriétaire » à plusieurs personnes inutilement.
   - Dépasser le quota de lots sans souscrire un pack complémentaire.
   - Négliger la fiche agence (logo, SIRET) qui apparaît aux candidats.
+  - Désactiver l'affichage public des lots alors que des liens ont déjà été partagés.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
@@ -38,3 +74,17 @@ Configurer l'identité de votre agence, gérer les utilisateurs et leurs droits,
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Quelle est la différence entre les rôles ?">
+    Le **Propriétaire** dispose de tous les droits, y compris la facturation. L'**Administrateur** gère l'organisation et les paramètres. Le **Responsable** gère les lots et candidatures qui lui sont confiés.
+  </Accordion>
+
+  <Accordion title="Comment fonctionne l'adresse e-mail dédiée de la boîte de réception ?">
+    Chaque agence dispose d'une adresse `@inbox.uplace.fr`. Configurez vos portails ou votre redirection e-mail vers cette adresse : Uplace analyse chaque demande entrante et la rattache automatiquement au bon lot.
+  </Accordion>
+
+  <Accordion title="La marque blanche est-elle incluse dans ma formule ?">
+    L'onglet « Personnaliser mes échanges » dépend de votre abonnement. Si l'option est grisée, contactez le support ou modifiez votre formule.
+  </Accordion>
+</AccordionGroup>
