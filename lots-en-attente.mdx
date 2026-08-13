@@ -54,4 +54,36 @@ Cette fonctionnalité permet de relier un lot remonté automatiquement par un ca
   - Bascule automatiquement les contacts entrants vers le lot rapproché une fois la confirmation effectuée.
 </Info>
 
+## Qui peut débloquer un lot en attente
+
+Le déblocage d'un lot n'est pas ouvert à tous les membres de l'agence.
+
+| Rôle | Peut débloquer un lot ? |
+| --- | --- |
+| Propriétaire, Administrateur, Responsable | Oui, tous les lots |
+| Utilisateur | Uniquement les lots dont il est **gestionnaire** |
+| Opérateur | Jamais |
+
+<Warning>
+  La notion de **gestionnaire** n'est pas saisie dans Uplace : elle est récupérée depuis votre **outil de multidiffusion**, et suppose donc une interconnexion active — aujourd'hui avec **Apimo** et **Modulo by Septeo**.
+
+  Si cette information ne remonte pas, vos Utilisateurs ne pourront débloquer aucun lot. Deux solutions : leur attribuer le rôle **Responsable**, ou faire débloquer le lot par un Responsable, ce qui le leur affecte manuellement.
+</Warning>
+
+Voir [Rôles et permissions](/roles-permissions) pour le détail.
+
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Pourquoi mon collaborateur ne peut-il débloquer aucun lot ?">
+    S'il a le rôle **Utilisateur**, il ne peut débloquer que les lots dont il est gestionnaire — une information qui provient de votre multi-diffuseur. Si elle ne remonte pas, passez-le en **Responsable** ou débloquez le lot à sa place. S'il a le rôle **Opérateur**, il ne pourra jamais débloquer un lot : c'est le principe même de ce rôle.
+  </Accordion>
+
+  <Accordion title="Pourquoi un lot apparaît-il en attente alors que je ne l'ai pas créé ?">
+    Parce qu'une candidature a été reçue sur un bien qui n'était pas encore répertorié dans votre agence. Uplace crée alors un lot en attente à partir des informations remontées par le canal externe, pour ne perdre aucun contact.
+  </Accordion>
+
+  <Accordion title="Que deviennent les contacts déjà reçus une fois le rapprochement confirmé ?">
+    Ils sont automatiquement rattachés au lot Uplace auquel vous avez relié le lot en attente.
+  </Accordion>
+</AccordionGroup>

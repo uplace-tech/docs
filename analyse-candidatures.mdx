@@ -13,28 +13,199 @@ Visualiser et trier les dossiers reçus pour un lot, avec un scoring automatique
   **Où trouver cette fonctionnalité ?** Fiche du lot \> section **Liste des candidatures**.
 </Note>
 
+## Ce qu'Uplace analyse
+
+Uplace attend **six catégories d'informations par personne**. La première est déclarative, les cinq autres donnent lieu au dépôt de pièces justificatives.
+
+| Catégorie | Nature |
+| --- | --- |
+| **Mode d'occupation** | Déclaratif : le candidat indique s'il est seul, en couple ou en colocation. Aucune pièce à déposer. |
+| **Identité** | Pièce justificative |
+| **Logement** | Pièce justificative |
+| **Situation professionnelle** | Pièce justificative |
+| **Revenus** | Pièce justificative |
+| **Avis d'imposition** | Pièce justificative |
+
+Chaque personne rattachée au dossier — le candidat, son conjoint, ses colocataires — fournit son propre jeu de pièces.
+
+### Le cas du garant
+
+Le garant ne renseigne pas de mode d'occupation. À la place, le dossier précise **le type de garant**, ce qui détermine les pièces demandées.
+
+| Type de garant | Pièces demandées |
+| --- | --- |
+| **Garant physique** | Exactement les mêmes que pour un candidat : identité, logement, situation professionnelle, revenus, avis d'imposition. |
+| **Garant moral** (personne morale) | Un formulaire court : prénom et nom du représentant, son adresse e-mail, et sa pièce d'identité. |
+| **Garantie Visale** | Un seul document dans la majorité des cas. |
+
+Les pièces du garant sont analysées et notées **exactement comme celles du candidat**, et entrent dans le score global du dossier.
+
+## Comment lire le score de cohérence
+
+Uplace analyse **chaque pièce, pour chaque personne**, et lui attribue une note.
+
+### La note d'une pièce
+
+Chaque pièce reçoit une note de **0 à 3** :
+
+| Note | Signification |
+| --- | --- |
+| **0** | Mauvais |
+| **1** | Moyen |
+| **2** | Bon |
+| **3** | Excellent |
+
+Cette note est établie à partir de plusieurs contrôles :
+
+- présence ou non d'**indices de fraude** sur le document ;
+- présence de **tous les éléments attendus** pour ce type de pièce ;
+- **date** du document conforme à ce qui est attendu ;
+- présence de la **signature** ;
+- **complétude** : tous les documents attendus pour la catégorie ont bien été fournis.
+
+### Le score global
+
+Le score de cohérence du dossier est la **moyenne des notes de toutes les pièces analysées**, toutes personnes confondues. Cette moyenne est ensuite **arrondie à l'entier le plus proche**, et l'entier obtenu donne le libellé affiché.
+
+| Moyenne obtenue | Arrondi | Libellé affiché |
+| --- | --- | --- |
+| moins de 0,5 | 0 | **Mauvais** |
+| 0,5 à 1,49 | 1 | **Moyen** |
+| 1,5 à 2,49 | 2 | **Bon** |
+| 2,5 et plus | 3 | **Excellent** |
+
+<Note>
+  Deux exemples : une moyenne de **2,4** est arrondie à 2 et s'affiche **Bon**. Une moyenne de **2,6** est arrondie à 3 et s'affiche **Excellent**.
+</Note>
+
+Le nombre de pièces analysées varie selon la composition du foyer et le type de garant. Un couple accompagné d'un garant physique représente par exemple 15 pièces analysées (2 × 5 pour le couple, 5 pour le garant).
+
+<Warning>
+  **Le score de cohérence ne dit pas qu'un dossier est bon.** C'est une moyenne : une pièce frauduleuse notée 0, noyée dans un ensemble de pièces excellentes, remonte quand même un score global « Bon ».
+
+  La note globale sert à **prioriser** votre travail, jamais à décider à votre place. Sur un dossier que vous vous apprêtez à retenir, ouvrez systématiquement les pièces une à une.
+</Warning>
+
+### Deux libellés hors échelle
+
+En plus des quatre niveaux, deux mentions particulières peuvent apparaître.
+
+<AccordionGroup>
+  <Accordion title="Inconnu">
+    Le dossier n'a pas été analysé par Uplace, parce que l'agence a agi **avant sa soumission complète**.
+
+    Un candidat peut en effet commencer à constituer son dossier et déposer une partie de ses pièces sans le soumettre. L'agence voit ces pièces pré-déposées et peut décider de valider la candidature malgré tout — typiquement pour lui faire faire la visite sans attendre. Dans ce cas, aucune analyse n'a eu lieu et le score affiché est **Inconnu**.
+  </Accordion>
+
+  <Accordion title="Analyse manuelle">
+    Le système n'a pas été en capacité d'analyser l'une des pièces du dossier : document étranger, ou type de pièce jamais rencontré jusqu'ici.
+
+    Un **traitement manuel par le gestionnaire devient alors obligatoire**. C'est à lui d'ouvrir la pièce concernée et de juger si elle est recevable. Il ne peut pas saisir de note à la main, et le score global n'est pas recalculé : le dossier reste marqué « Analyse manuelle ».
+
+    La seule façon de relancer une analyse automatique est de **demander une modification du dossier** : dès que le candidat soumet une nouvelle pièce, l'intégralité du dossier est réanalysée.
+  </Accordion>
+</AccordionGroup>
+
+## Le taux de complétude
+
+Tant que le candidat n'a pas terminé son dossier, la **première pastille est jaune** : le dossier est en cours de constitution et incomplet à date.
+
+Un **taux de complétude** indique où il en est, par paliers de 20 % pour une personne seule : une pièce déposée = 20 %, deux pièces = 40 %, trois pièces = 60 %, et ainsi de suite jusqu'à 100 %. Pour un couple, le taux est divisé par deux, chaque personne comptant pour la moitié de la progression.
+
+<Note>
+  **Un dossier soumis est toujours complet.** Un candidat ne peut pas soumettre son dossier tant que toutes les pièces attendues ne sont pas déposées. Vous n'aurez donc jamais à réclamer une pièce absente sur un dossier soumis — seulement sur un dossier encore en cours de constitution.
+</Note>
+
+## La capacité financière
+
+En parallèle du score de cohérence, Uplace calcule la **capacité financière** du dossier et la compare aux critères que vous avez définis à la création du lot.
+
+- Le **multiplicateur** défini sur le lot (de x1 à x5) s'applique au **loyer charges comprises**.
+- Les revenus retenus sont les **revenus nets avant impôt**.
+- Pour un **couple ou une colocation**, les revenus de tous les occupants sont **cumulés** et la somme est comparée au seuil.
+- Le **garant est évalué séparément** : il doit atteindre le seuil de son côté, indépendamment du candidat.
+
+<Warning>
+  Saisissez toujours le **loyer charges comprises** dans la fiche du lot. Un loyer saisi hors charges abaisse mécaniquement le seuil de revenus exigé et laisse passer des dossiers qui ne devraient pas l'être. Sur un lot à 800 € CC dont 100 € de charges, un multiplicateur x3 exige 2 400 € de revenus — mais seulement 2 100 € si vous avez saisi 700 € par erreur.
+</Warning>
+
 ## Fonctionnement étape par étape
 
 <Steps>
+  <Step title="Ouvrir la liste des candidatures">
+    Depuis la fiche du lot, rendez-vous dans la section **Liste des candidatures**. Vous y retrouvez tous les dossiers reçus, avec pour chacun son état de complétude et son score de cohérence.
+  </Step>
+  <Step title="Repérer les dossiers à traiter en priorité">
+    Appuyez-vous sur le score de cohérence et sur la capacité financière pour identifier les dossiers les plus solides. Les dossiers dont la pastille est jaune sont encore en cours de constitution.
+  </Step>
+  <Step title="Ouvrir le dossier d'un candidat">
+    Ouvrez le dossier pour accéder au détail. Vous pouvez alors vous déplacer **pièce par pièce**.
+  </Step>
+  <Step title="Consulter l'analyse détaillée de chaque pièce">
+    Pour chaque pièce, Uplace affiche son **analyse détaillée** et la **note associée**. C'est ici que vous vérifiez ce qui a fait monter ou descendre le score global, et que vous repérez la pièce isolée qui pose problème.
+  </Step>
+  <Step title="Trancher">
+    Une fois les pièces contrôlées, validez ou refusez la candidature. Voir [Validation d'une candidature](/validation-candidature).
+  </Step>
 </Steps>
 
 ## Bonnes pratiques recommandées
+
+<Tip>
+  - Traitez la liste par score décroissant pour dégager rapidement une short-list, puis **contrôlez les pièces une à une** sur les seuls dossiers que vous envisagez de retenir.
+  - Ne vous arrêtez jamais au score global sur un dossier que vous vous apprêtez à valider : c'est une moyenne, elle lisse les anomalies isolées.
+  - Sur un dossier marqué **Analyse manuelle**, ouvrez immédiatement la pièce concernée : tant qu'elle n'est pas jugée, le dossier ne bougera plus.
+  - Vérifiez que le loyer du lot est bien saisi **charges comprises** avant de vous fier aux indicateurs de capacité financière.
+  - Si vous validez un dossier encore incomplet pour débloquer une visite, gardez en tête qu'il restera affiché **Inconnu** et n'aura jamais été analysé.
+</Tip>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
   - Valider un dossier marqué « Mauvais » sans relire les pièces.
+  - Se fier au seul score global sur un dossier retenu : une pièce frauduleuse peut être masquée par la moyenne.
+  - Laisser dormir un dossier en « Analyse manuelle » en attendant qu'il se débloque tout seul : il ne se débloquera pas.
   - Refuser un dossier « Inconnu » sans avoir demandé de pièces complémentaires.
   - Oublier d'analyser la partie garant lorsqu'elle est obligatoire.
+  - Saisir le loyer hors charges, ce qui fausse tous les seuils de capacité financière.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Analyse les pièces déposées et attribue un niveau de cohérence par catégorie.
-  - Calcule la capacité financière du candidat et du/des garants.
+  - Analyse les pièces déposées et attribue une note de 0 à 3 à chacune, pour chaque personne du dossier.
+  - Calcule le score de cohérence global en faisant la moyenne de toutes les pièces analysées, arrondie à l'entier le plus proche.
+  - Calcule la capacité financière du candidat et du ou des garants.
+  - Suit le taux de complétude des dossiers en cours de constitution.
   - Marque les dossiers comme « Dossier terminé » et indique la date d'analyse.
+  - Réanalyse l'intégralité du dossier dès qu'une nouvelle pièce est soumise.
   - Envoie les communications (invitations, accusés).
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Un dossier « Excellent » est-il forcément fiable ?">
+    Non. Le score est une **moyenne** des notes de toutes les pièces. Une pièce frauduleuse notée 0 au milieu de pièces excellentes peut laisser le dossier ressortir en « Bon », voire « Excellent ». Contrôlez toujours les pièces une à une avant de retenir un candidat.
+  </Accordion>
+
+  <Accordion title="Pourquoi mon dossier affiche-t-il « Inconnu » ?">
+    Parce qu'une action a été faite avant que le candidat ne soumette son dossier complet. Le dossier n'a donc pas été analysé. C'est le cas typique d'une candidature validée en cours de constitution pour permettre une visite rapide.
+  </Accordion>
+
+  <Accordion title="Comment sortir d'une « Analyse manuelle » ?">
+    En demandant une modification du dossier au candidat. Dès qu'il soumet une nouvelle pièce, tout le dossier est réanalysé. Sans nouvelle soumission, le dossier reste indéfiniment en analyse manuelle et c'est à vous de juger la pièce concernée.
+  </Accordion>
+
+  <Accordion title="Puis-je réclamer une pièce manquante sur un dossier soumis ?">
+    La situation ne se présente pas : un candidat ne peut pas soumettre son dossier tant que toutes les pièces ne sont pas déposées. Un dossier soumis est par construction complet.
+  </Accordion>
+
+  <Accordion title="Le garant est-il pris en compte dans le score de cohérence ?">
+    Oui. Ses pièces sont analysées et notées de 0 à 3 comme celles du candidat, et entrent dans la moyenne globale. En revanche, pour la **capacité financière**, le garant est évalué séparément : ses revenus ne s'additionnent pas à ceux du candidat.
+  </Accordion>
+
+  <Accordion title="Pourquoi le taux de complétude monte-t-il de 20 % en 20 % ?">
+    Parce que cinq catégories donnent lieu au dépôt d'une pièce. La sixième, le mode d'occupation, est purement déclarative et n'entre pas dans le calcul. Pour un couple, chaque personne compte pour la moitié de la progression.
+  </Accordion>
+</AccordionGroup>
