@@ -1,0 +1,148 @@
+---
+title: "Rôles et permissions"
+sidebarTitle: "Rôles et permissions"
+description: "Qui peut faire quoi dans Uplace : les cinq rôles et leur périmètre exact."
+icon: "user-shield"
+---
+
+## Objectif
+
+Comprendre ce que chaque membre de l'organisation peut faire, pour attribuer le bon rôle à la bonne personne au moment de l'inviter.
+
+<Note>
+  **Où gérer les rôles ?** Mon agence \> **Membres de l'organisation**.
+</Note>
+
+## Les cinq rôles
+
+Uplace distingue cinq rôles. Ils fonctionnent en poupées russes : chaque rôle reprend les droits du précédent, moins un périmètre bien identifié.
+
+<CardGroup cols={2}>
+  <Card title="Propriétaire" icon="crown">
+    Le créateur du compte. Accès à tout, sans exception.
+  </Card>
+
+  <Card title="Administrateur" icon="user-gear">
+    Droits strictement identiques à ceux du Propriétaire.
+  </Card>
+
+  <Card title="Responsable" icon="user-tie">
+    Accès à tout, sauf l'espace facturation.
+  </Card>
+
+  <Card title="Utilisateur" icon="user">
+    Accès limité à son propre périmètre. Tout pouvoir sur ses lots.
+  </Card>
+
+  <Card title="Opérateur" icon="user-clock">
+    Comme l'Utilisateur, mais ne peut jamais débloquer un lot.
+  </Card>
+</CardGroup>
+
+## Le détail de chaque rôle
+
+### Propriétaire
+
+C'est la personne qui a créé le compte de l'agence. Ses droits sont **exactement les mêmes que ceux d'un Administrateur** : la distinction tient au fait qu'il est à l'origine de l'organisation.
+
+<Note>
+  La propriété d'une organisation **peut être transférée**, par exemple lors du départ d'un dirigeant. Cette opération n'est pas disponible en autonomie : contactez le **support technique** pour la réaliser.
+</Note>
+
+### Administrateur
+
+Accès complet à la plateforme : tous les lots de l'agence, tous les contacts, toutes les candidatures, les statistiques globales, l'onglet **Mon agence** dans son intégralité, et l'espace facturation.
+
+### Responsable
+
+Le Responsable a accès à **absolument tout**, à une exception près : **l'espace facturation**. Concrètement, il ne peut pas :
+
+- acheter des lots supplémentaires ;
+- modifier ou annuler l'abonnement ;
+- consulter les factures.
+
+Tout le reste lui est ouvert, y compris la vision sur l'ensemble des lots de l'agence et le déblocage des lots en attente.
+
+### Utilisateur
+
+L'Utilisateur ne voit **que ce qui lui appartient**. Son périmètre se limite à :
+
+- ses lots — il n'a aucune visibilité sur ceux du reste de l'équipe ;
+- ses statistiques ;
+- son calendrier ;
+- sa messagerie ;
+- ses contacts.
+
+Il n'a **pas accès à l'onglet Mon agence**.
+
+En revanche, sur ses propres lots, il dispose de **tous les droits** : créer un lot, valider ou refuser une candidature, planifier une visite, la sous-traiter, marquer le lot comme loué, l'archiver.
+
+### Opérateur
+
+L'Opérateur fonctionne **exactement comme un Utilisateur**, avec une seule différence : il ne peut **en aucun cas débloquer un lot**. Il n'a pas accès à cette section.
+
+Il attend qu'un lot lui soit débloqué, puis travaille dessus normalement : consulter les dossiers, valider ou refuser une candidature, planifier une visite, marquer le lot comme loué. Il dispose également de ses statistiques et de sa messagerie.
+
+## Tableau récapitulatif
+
+|  | Propriétaire | Administrateur | Responsable | Utilisateur | Opérateur |
+| --- | :-: | :-: | :-: | :-: | :-: |
+| Espace facturation, achat de lots, abonnement | Oui | Oui | Non | Non | Non |
+| Onglet Mon agence | Oui | Oui | Oui | Non | Non |
+| Voir tous les lots de l'agence | Oui | Oui | Oui | Ses lots | Ses lots |
+| Débloquer un lot en attente | Oui | Oui | Oui | S'il en est gestionnaire | Jamais |
+| Créer un lot | Oui | Oui | Oui | Oui | Oui |
+| Valider ou refuser une candidature | Oui | Oui | Oui | Sur ses lots | Sur ses lots |
+| Planifier et sous-traiter une visite | Oui | Oui | Oui | Sur ses lots | Sur ses lots |
+| Marquer comme loué, archiver | Oui | Oui | Oui | Sur ses lots | Sur ses lots |
+| Statistiques | Agence | Agence | Agence | Les siennes | Les siennes |
+| Messagerie et contacts | Agence | Agence | Agence | Les siens | Les siens |
+
+## Le cas particulier du déblocage de lot
+
+Un Utilisateur ne peut débloquer, parmi les [lots en attente](/lots-en-attente), que **ceux dont il est gestionnaire**.
+
+Cette notion de gestionnaire n'est pas saisie dans Uplace : elle est **récupérée depuis votre outil de multidiffusion**. Elle suppose donc une interconnexion active, aujourd'hui avec **Apimo** et **Modulo by Septeo**.
+
+<Warning>
+  Si cette information ne remonte pas — parce que l'intégration n'est pas en place, ou parce que votre outil ne la transmet pas — vos Utilisateurs ne pourront débloquer aucun lot.
+
+  Deux solutions dans ce cas :
+
+  - attribuer le rôle **Responsable** aux personnes qui doivent pouvoir débloquer un lot ;
+  - ou faire **débloquer le lot par un Responsable**, ce qui l'affecte manuellement à la personne concernée.
+</Warning>
+
+## Bonnes pratiques recommandées
+
+<Tip>
+  - Réservez **Administrateur** aux personnes qui doivent réellement toucher à l'abonnement et à la configuration de l'agence.
+  - **Responsable** est le rôle par défaut adapté à un négociateur expérimenté qui pilote plusieurs lots et doit voir l'activité de l'équipe.
+  - **Utilisateur** convient à un collaborateur autonome sur son propre portefeuille, sans besoin de visibilité sur celui des autres.
+  - **Opérateur** convient à un profil qui exécute sur des lots qu'on lui confie, sans jamais choisir sur quoi il travaille.
+  - Avant de déployer le rôle Utilisateur à grande échelle, vérifiez que votre multi-diffuseur remonte bien l'information gestionnaire, sans quoi vos utilisateurs seront bloqués.
+</Tip>
+
+## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Quelle est la différence entre Propriétaire et Administrateur ?">
+    Aucune en termes de droits : ils ont exactement les mêmes accès. Le Propriétaire est simplement la personne qui a créé le compte de l'agence.
+  </Accordion>
+
+  <Accordion title="Peut-on transférer la propriété du compte ?">
+    Oui, mais pas en autonomie. Contactez le **support technique** pour effectuer le transfert, typiquement lors du départ d'un dirigeant.
+  </Accordion>
+
+  <Accordion title="Mon Utilisateur ne peut débloquer aucun lot, pourquoi ?">
+    Parce que l'information « gestionnaire » ne remonte pas depuis votre outil de multidiffusion. Passez la personne en **Responsable**, ou demandez à un Responsable de débloquer le lot pour elle.
+  </Accordion>
+
+  <Accordion title="Quelle différence exacte entre Utilisateur et Opérateur ?">
+    Une seule : l'Opérateur ne peut jamais débloquer un lot, quelles que soient les circonstances. Pour tout le reste, leurs droits sont identiques.
+  </Accordion>
+
+  <Accordion title="Un Responsable peut-il voir les lots de ses collègues ?">
+    Oui. Le Responsable a la visibilité sur l'ensemble de l'activité de l'agence. Seuls l'Utilisateur et l'Opérateur sont limités à leur propre périmètre.
+  </Accordion>
+</AccordionGroup>
