@@ -35,7 +35,7 @@ Uplace distingue cinq rôles. Ils fonctionnent en poupées russes : chaque rôle
   </Card>
 
   <Card title="Opérateur" icon="user-clock">
-    Comme l'Utilisateur, mais ne peut jamais débloquer un lot.
+    Comme l'Utilisateur, mais ne crée pas de lot et n'en débloque jamais.
   </Card>
 </CardGroup>
 
@@ -79,9 +79,12 @@ En revanche, sur ses propres lots, il dispose de **tous les droits** : créer un
 
 ### Opérateur
 
-L'Opérateur fonctionne **exactement comme un Utilisateur**, avec une seule différence : il ne peut **en aucun cas débloquer un lot**. Il n'a pas accès à cette section.
+L'Opérateur fonctionne comme un Utilisateur, avec deux différences :
 
-Il attend qu'un lot lui soit débloqué, puis travaille dessus normalement : consulter les dossiers, valider ou refuser une candidature, planifier une visite, marquer le lot comme loué. Il dispose également de ses statistiques et de sa messagerie.
+- il ne peut **en aucun cas débloquer un lot** — il n'a pas accès à cette section ;
+- il ne peut pas non plus **créer un lot**.
+
+C'est un rôle d'exécution pure : il attend qu'un lot lui soit confié, puis travaille dessus normalement — consulter les dossiers, valider ou refuser une candidature, planifier une visite, marquer le lot comme loué. Il dispose également de ses statistiques et de sa messagerie.
 
 ## Tableau récapitulatif
 
@@ -119,7 +122,7 @@ Cette notion de gestionnaire n'est pas saisie dans Uplace : elle est **récupér
   - Réservez **Administrateur** aux personnes qui doivent réellement toucher à l'abonnement et à la configuration de l'agence.
   - **Responsable** est le rôle par défaut adapté à un négociateur expérimenté qui pilote plusieurs lots et doit voir l'activité de l'équipe.
   - **Utilisateur** convient à un collaborateur autonome sur son propre portefeuille, sans besoin de visibilité sur celui des autres.
-  - **Opérateur** convient à un profil qui exécute sur des lots qu'on lui confie, sans jamais choisir sur quoi il travaille.
+  - **Opérateur** convient à un profil qui exécute sur des lots qu'on lui confie, sans jamais en créer ni choisir sur quoi il travaille.
   - Avant de déployer le rôle Utilisateur à grande échelle, vérifiez que votre multi-diffuseur remonte bien l'information gestionnaire, sans quoi vos utilisateurs seront bloqués.
 </Tip>
 
@@ -139,7 +142,7 @@ Cette notion de gestionnaire n'est pas saisie dans Uplace : elle est **récupér
   </Accordion>
 
   <Accordion title="Quelle différence exacte entre Utilisateur et Opérateur ?">
-    Une seule : l'Opérateur ne peut jamais débloquer un lot, quelles que soient les circonstances. Pour tout le reste, leurs droits sont identiques.
+    Deux différences. L'Opérateur ne peut **jamais débloquer un lot**, quelles que soient les circonstances, et il ne peut pas **créer de lot**. Pour tout le reste, leurs droits sont identiques : ils travaillent l'un comme l'autre uniquement sur leur propre périmètre.
   </Accordion>
 
   <Accordion title="Un Responsable peut-il voir les lots de ses collègues ?">
