@@ -44,6 +44,7 @@
           "planification-visite",
           "visite-instantanee",
           "calendrier",
+          "synchronisation-calendrier",
           "gerer-visites",
           "validation-refus",
           "marquer-loue",
