@@ -7,25 +7,66 @@ icon: "house-circle-check"
 
 ## Objectif
 
-Cette fonctionnalité permet de configurer un bien complet en cinq étapes guidées : identité, spécificités, adresse, critères de candidature et finalisation. Elle constitue la base de tout le parcours locatif puisque c'est elle qui filtre automatiquement les candidatures recevables.
+Cette fonctionnalité permet de configurer un bien complet en cinq étapes guidées : point de départ, spécificités techniques, adresse et photo, critères de candidature et finalisation. Elle constitue la base de tout le parcours locatif puisque c'est elle qui filtre automatiquement les candidatures recevables.
 
 <Note>
-  **Où trouver cette fonctionnalité ?** Dashboard \> **Configurer un nouveau lot** ou **Création de lot** — ou depuis une fiche lot \> **Modifier le lot**.
+  **Où trouver cette fonctionnalité ?** Dashboard \> **Configurer un nouveau lot** — ou depuis une fiche lot \> **Gestion du lot** \> **Modifier le lot**.
 </Note>
 
 ## Fonctionnement étape par étape
 
 <Steps>
+  <Step title="Par où commencer ?">
+    Deux entrées possibles, le parcours ensuite est le même :
+
+    - **Importer depuis une URL** : collez le lien d'une annonce prise en charge, Uplace préremplit les champs à l'étape suivante.
+    - **Saisie manuelle** : cliquez sur **Continuer sans importer** et remplissez tout vous-même.
+  </Step>
+  <Step title="Spécificités techniques">
+    La base de l'annonce et des critères de candidature :
+
+    - **Identité du lot** : nom du lot et référence interne (tous deux requis).
+    - **Surface, pièces et typologie** : nombre de pièces, surface (m²), logement meublé (oui/non), type de bien (appartement, maison, terrain, parking, autre).
+    - **Loyer et frais** : loyer **charges comprises**, dépôt de garantie, frais d'agence.
+  </Step>
+  <Step title="Adresse et photo du bien">
+    - **Photo du lot** : glissez une image ou parcourez vos fichiers (JPG, PNG ou WebP, 5 Mo max, recadrage 16:9).
+    - **Localisation du bien** : recherchez l'adresse (numéro, rue, ville) et sélectionnez-la dans les suggestions.
+    - **Adresse de visite** : activez l'option si l'adresse de visite diffère de celle du bien.
+  </Step>
+  <Step title="Critères">
+    Partez d'un **modèle de critères pré-défini** (configuré dans [Mon agence](/mon-agence)) ou créez des **critères personnalisés** :
+
+    - **Capacité financière minimum** : multiplicateur de x1 à x5 (ex. x3 = salaire minimum de 1 500 € pour un loyer de 500 €).
+    - **Garant** : requis, facultatif ou refusé.
+    - **Étudiants acceptés** : oui/non, avec capacité financière minimum du garant étudiant (x1 à x5).
+    - **Loi Pinel** : si le bien y est soumis, l'avis d'imposition N-2 est exigé des candidats.
+  </Step>
+  <Step title="Finalisation">
+    Les derniers ajustements avant la mise en ligne :
+
+    - **Responsable du lot** : le membre de l'équipe en charge du suivi.
+    - **Parties prenantes** : GLI (garantie loyers impayés) et implication du propriétaire.
+    - **Étape supplémentaire candidat** : demandez des documents additionnels via un [formulaire modulable](/mon-agence).
+    - **Validation automatique** : si activée, les candidatures répondant aux critères sont automatiquement acceptées.
+    - **Fast pass** : si activé, les candidats réservent d'abord une visite puis déposent leur dossier ; sinon, parcours classique (dépôt du dossier avant la visite).
+
+    Cliquez sur **C'est parti !** pour mettre le lot en ligne.
+  </Step>
 </Steps>
 
 ## Bonnes pratiques recommandées
+
+- Préparez vos **critères pré-définis** et vos **GLI pré-remplies** dans [Mon agence](/mon-agence) : la création d'un lot se résume alors à quelques clics.
+- Utilisez l'**import par URL** dès que l'annonce existe déjà sur un portail : gain de temps et zéro faute de frappe.
+- Réservez le **fast pass** aux lots à forte demande : il accélère le remplissage du planning de visites sans attendre les dossiers.
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
   - Saisir le loyer hors charges : Uplace calcule les seuils de revenus sur le loyer total CC.
   - Mettre « Garant : Refusé » par erreur, ce qui élimine de bons dossiers avec garant.
-  - Mettre « Garant : Obligatoire », ce qui élimine de bons dossiers sans garant.
+  - Mettre « Garant : Requis », ce qui élimine de bons dossiers sans garant.
   - Oublier d'attribuer un responsable, ce qui empêche un suivi clair des candidatures.
   - Activer la validation automatique sur un lot atypique aux critères mal calibrés.
 </Warning>
@@ -33,10 +74,24 @@ Cette fonctionnalité permet de configurer un bien complet en cinq étapes guid�
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Calcule le salaire minimum requis selon le multiplicateur choisi (ex. x3 pour 798 € → 2 394 €).
-  - Applique les critères à toutes les candidatures pour les classer (Excellent / Bon / Mauvais).
+  - Préremplit les champs du lot depuis l'URL d'annonce importée.
+  - Calcule le salaire minimum requis selon le multiplicateur choisi (ex. x3 pour 500 € → 1 500 €).
+  - Applique les critères à toutes les candidatures pour évaluer leur cohérence (Excellent / Bon / Mauvais).
   - Pré-remplit la GLI sélectionnée sur les futures candidatures du lot.
-  - Ferme automatiquement les nouvelles candidatures si la capacité maximum est atteinte.
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Quelle est la différence entre validation automatique et fast pass ?">
+    La **validation automatique** accepte d'office les dossiers conformes aux critères. Le **fast pass** inverse l'ordre du parcours : visite d'abord, dossier ensuite. Les deux options sont indépendantes et se règlent à l'étape Finalisation.
+  </Accordion>
+
+  <Accordion title="Puis-je modifier un lot après sa mise en ligne ?">
+    Oui : fiche du lot \> **Gestion du lot** \> **Modifier le lot** (adresse, critères, photos, description). Les nouveaux critères s'appliquent aux candidatures suivantes.
+  </Accordion>
+
+  <Accordion title="Que se passe-t-il si mon quota de lots est atteint ?">
+    L'ajout de nouveaux lots est bloqué. Achetez un pack complémentaire ou modifiez votre abonnement depuis [Mon agence](/mon-agence).
+  </Accordion>
+</AccordionGroup>

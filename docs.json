@@ -34,12 +34,16 @@
           "dashboard",
           "lots-en-attente",
           "creation-lot",
+          "partage-lots",
           "boite-reception",
+          "contacts",
+          "messagerie",
           "invitation-candidat",
           "analyse-candidatures",
           "validation-candidature",
           "planification-visite",
           "visite-instantanee",
+          "calendrier",
           "gerer-visites",
           "validation-refus",
           "marquer-loue",
@@ -54,7 +58,8 @@
           "statistiques",
           "mon-agence",
           "annexe",
-          "recapitulatif"
+          "recapitulatif",
+          "uppy"
         ]
       }
     ]
