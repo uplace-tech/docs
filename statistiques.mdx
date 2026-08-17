@@ -7,64 +7,132 @@ icon: "chart-line"
 
 ## Objectif
 
-Mesurer la performance du parcours locatif de l'agence : durée de mise en location, frais d'agence réalisés, volume de prospects, taux de conversion à chaque étape du funnel et efficacité de chaque canal de diffusion.
+Suivre la performance de la commercialisation : combien de temps vos biens mettent à se louer, ce qu'ils rapportent, d'où viennent vos candidats et où ils décrochent dans le parcours.
 
 <Note>
   **Où trouver cette fonctionnalité ?** Sidebar \> **Statistiques**.
+
+  Un accès direct aux statistiques d'un seul bien existe depuis la fiche du lot \> **Statistiques du lot**.
 </Note>
 
-## Fonctionnement étape par étape
+## Les trois filtres
+
+Un bandeau en haut de page permet d'ajuster le périmètre analysé. Tous les indicateurs et graphiques de la page s'y adaptent.
+
+| Filtre | Ce qu'il fait |
+| --- | --- |
+| **Tous les lots** | Restreint l'analyse à un ou plusieurs biens. |
+| **Tous les responsables** | Restreint l'analyse au portefeuille d'un membre de l'équipe. |
+| **Sélectionner une période** | Ouvre un **calendrier** dans lequel vous choisissez librement vos dates de début et de fin. |
+
+<Note>
+  La période n'est pas un choix parmi des durées prédéfinies : c'est un **calendrier de plage de dates**, ce qui vous permet de coller exactement à un trimestre, une campagne ou un mois précis. Les dates futures ne sont pas sélectionnables.
+</Note>
+
+## Les quatre indicateurs clés
+
+| Indicateur | Libellé affiché |
+| --- | --- |
+| **Durée moyenne de mise en location** | Durée de vie moyenne des lots |
+| **Frais d'agence réalisés** | Somme des frais d'agence réalisés |
+| **Prospects entrants** | Nombre de prospects entrants |
+| **Candidatures traitées** | Nombre de candidatures traitées |
+
+<Tip>
+  La **durée moyenne de mise en location** est l'indicateur à surveiller dans le temps plutôt qu'en valeur absolue : c'est son évolution d'un trimestre à l'autre qui vous dit si votre process s'améliore, pas le chiffre du jour.
+</Tip>
+
+## Le funnel du parcours locatif
+
+Le graphique central décompose le parcours en **cinq étapes** :
 
 <Steps>
-  <Step title="Ajuster le périmètre">
-    Trois filtres en haut de page : **lots** (tous ou une sélection), **responsables** et **période**. Toutes les statistiques de la page se recalculent selon ce périmètre.
+  <Step title="Prises de contact">
+    Les demandes entrantes reçues sur vos lots.
   </Step>
-  <Step title="Lire les indicateurs clés">
-    Quatre cartes synthétiques :
-
-    - **Durée moyenne de mise en location** (durée de vie moyenne des lots, en jours) ;
-    - **Frais d'agence réalisés** (somme en €) ;
-    - **Prospects entrants** ;
-    - **Candidatures traitées**.
+  <Step title="Candidatures">
+    Les dossiers ouverts par des candidats.
   </Step>
-  <Step title="Analyser le funnel de conversion">
-    Le graphique principal suit le parcours en cinq étapes : **prises de contact → candidatures → candidatures complètes → rendez-vous → locataires**. Passez la souris sur le graphique pour voir le détail et les taux de conversion de chaque étape.
+  <Step title="Candidatures complètes">
+    Les dossiers effectivement soumis, donc complets — voir [Analyse des candidatures](/analyse-candidatures).
   </Step>
-  <Step title="Comparer les origines">
-    Le graphique **Statistiques par origine** répartit chaque étape du funnel par canal : Leboncoin, SeLoger, Bien'ici, A Vendre À Louer, site de l'agence, site web, Uplace, bouche à oreille… Il révèle les canaux qui génèrent le plus de contacts _et_ ceux qui convertissent le mieux.
+  <Step title="Rendez-vous">
+    Les visites du parcours.
+  </Step>
+  <Step title="Locataires">
+    Les mises en location abouties.
   </Step>
 </Steps>
 
+<Warning>
+  **Ce funnel n'est pas un entonnoir au sens strict.** Une étape peut afficher un chiffre **supérieur** à celle qui la précède — par exemple plus de candidatures que de prises de contact.
+
+  C'est normal : toutes les candidatures ne naissent pas d'une prise de contact enregistrée. Un candidat peut arriver par un lien de candidature partagé directement, par une invitation manuelle, ou par la vitrine publique de l'agence, sans jamais passer par une demande entrante.
+
+  Ne lisez donc pas les écarts entre deux étapes comme un taux de déperdition mécanique.
+</Warning>
+
+À droite du funnel, un **graphique en anneau** donne la répartition, avec le détail au survol de la souris.
+
+## Statistiques par origine
+
+Le second graphique — _« Répartition des étapes du funnel par origine »_ — croise les deux dimensions : pour chaque canal d'acquisition, il empile les étapes du funnel.
+
+C'est le graphique le plus directement actionnable de la page : il ne dit pas seulement **combien** de contacts un portail vous apporte, mais **jusqu'où** ils vont dans le parcours. Un canal très volumique qui ne produit aucun locataire coûte un abonnement pour rien.
+
+Les origines proviennent du champ **Origine de la demande** renseigné à chaque entrée dans le parcours — voir [Inviter un candidat](/invitation-candidat). On y retrouve les portails (Leboncoin, SeLoger, Bien'ici, ParuVendu, Logic-Immo, A Vendre A Louer, Figaro Immo, OuestFrance-Immo), les autres canaux (Jinka, FNAIM, Instagram, Site de l'agence, Bouche à oreille), ainsi qu'**Uplace** pour les candidatures arrivées directement par la plateforme.
+
+<Warning>
+  La qualité de ce graphique dépend entièrement du soin apporté à renseigner l'origine. Une origine saisie au hasard, ou toujours la même par habitude, rend l'analyse par canal inexploitable.
+</Warning>
+
 ## Bonnes pratiques recommandées
 
-- Comparez la **durée moyenne de mise en location** par responsable pour équilibrer la charge de l'équipe.
-- Analysez le funnel une fois par mois : une chute forte entre « candidatures » et « candidatures complètes » signale un formulaire trop exigeant ou des relances insuffisantes.
-- Utilisez les statistiques par origine pour arbitrer vos budgets de diffusion entre portails.
+<Tip>
+  - Comparez des **périodes de même durée** : la plage de dates étant libre, rien ne vous empêche de comparer un mois à un trimestre, et de vous tromper.
+  - Croisez le filtre **responsable** avec le funnel pour repérer où chaque collaborateur perd ses candidats.
+  - Regardez le graphique par origine **jusqu'au bout du funnel**, pas seulement la hauteur totale des barres : un canal peut générer beaucoup de contacts et zéro locataire.
+  - Sur un petit volume, méfiez-vous des pourcentages : quelques dossiers suffisent à faire bouger les taux dans un sens ou dans l'autre.
+  - Renseignez systématiquement l'**origine de la demande** : c'est la seule source de ce graphique.
+</Tip>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - Comparer des périodes de tailles différentes sans le filtre de période.
-  - Tirer des conclusions sur un canal à partir d'un volume trop faible de contacts.
-  - Oublier que les statistiques portent sur le périmètre filtré, pas nécessairement sur toute l'agence.
+  - Lire le funnel comme un entonnoir strict et conclure à une anomalie quand une étape dépasse la précédente.
+  - Comparer deux périodes de tailles différentes.
+  - Tirer des conclusions d'un volume trop faible.
+  - Négliger la saisie de l'origine, puis s'étonner que le graphique par canal ne veuille rien dire.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Trace l'origine de chaque prise de contact (portail, site, bouche à oreille…).
-  - Calcule en continu les taux de conversion entre chaque étape du funnel.
-  - Agrège les frais d'agence réalisés sur les lots loués du périmètre.
+  - Trace l'**origine** de chaque contact et candidature à partir du canal d'entrée.
+  - Recalcule l'ensemble des indicateurs et graphiques à chaque changement de filtre.
+  - Alimente les statistiques au fil du parcours : prises de contact, dépôts de dossiers, visites et mises en location.
 </Info>
 
 ## Questions fréquentes
 
 <AccordionGroup>
   <Accordion title="Puis-je voir les statistiques d'un seul lot ?">
-    Oui, deux options : filtrer cette page sur le lot concerné, ou ouvrir la fiche du lot \> **Statistiques du lot** (performances et taux de remplissage).
+    Oui, de deux façons : par le filtre **Tous les lots** de cette page, ou directement depuis la fiche du bien avec **Statistiques du lot**.
   </Accordion>
 
-  <Accordion title="Que compte exactement « Candidatures traitées » ?">
-    Les candidatures ayant reçu une décision (validée ou refusée) sur la période et le périmètre filtrés.
+  <Accordion title="Pourquoi ai-je plus de candidatures que de prises de contact ?">
+    Parce que toutes les candidatures ne passent pas par une demande entrante. Un lien de candidature partagé, une invitation manuelle ou la vitrine publique amènent des dossiers sans prise de contact préalable.
+  </Accordion>
+
+  <Accordion title="Quelles périodes puis-je analyser ?">
+    Celles que vous voulez : le filtre ouvre un calendrier où vous choisissez librement les dates de début et de fin. Il n'y a pas de durées prédéfinies.
+  </Accordion>
+
+  <Accordion title="Que représente l'origine « Uplace » ?">
+    Les candidatures arrivées directement par la plateforme, par opposition à celles issues d'un portail externe ou d'un canal renseigné manuellement.
+  </Accordion>
+
+  <Accordion title="Comment savoir si un portail vaut son abonnement ?">
+    Regardez sa barre dans **Statistiques par origine** et suivez-la jusqu'aux étapes hautes du funnel. Un canal qui remplit la première étape sans jamais atteindre « Locataires » vous coûte plus qu'il ne rapporte.
   </Accordion>
 </AccordionGroup>
