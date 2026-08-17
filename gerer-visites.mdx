@@ -7,34 +7,159 @@ icon: "calendar-check"
 
 ## Objectif
 
-Centraliser les visites à venir et les visites passées d'un lot, modifier leurs paramètres ou déléguer à un prestataire de visite. Cette fonctionnalité optimise le temps des agents qui ne peuvent pas se déplacer.
+Retrouver toutes les visites d'un lot — à venir et passées —, en modifier le responsable, les annuler, et confier tout ou partie des visites à un prestataire extérieur sans lui donner accès au reste de votre activité.
 
 <Note>
-  **Où trouver cette fonctionnalité ?** Fiche du lot \> bouton **Gérer les visites**.
+  **Où trouver cette fonctionnalité ?** Fiche du lot \> **Actions du lot** \> **Gérer les visites**.
 </Note>
 
-## Fonctionnement étape par étape
+Le menu regroupe quatre entrées :
+
+| Entrée | Rôle |
+| --- | --- |
+| **Créer une visite instantanée** | Recevoir un candidat dès maintenant — voir [Visite instantanée](/visite-instantanee). |
+| **Planifier un créneau de visite** | Ouvrir une plage dans laquelle les candidats réservent — voir [Planifier une visite](/planification-visite). |
+| **Gérer les sous-traitants** | Confier les visites à un tiers. |
+| **Voir les visites** | Voir et modifier les visites planifiées. |
+
+## Suivre les visites d'un lot
+
+**Voir les visites** ouvre un panneau latéral listant les créneaux planifiés pour ce lot, répartis en deux onglets — **À venir** et **Passées** — chacun avec son compteur.
+
+Chaque visite s'affiche sous forme de carte, regroupée par jour, avec ses horaires, le responsable assigné et le remplissage sous la forme **inscrits / places** (par exemple `0 / 4`). Cliquez sur une carte pour ouvrir la fiche de la visite.
+
+Deux boutons restent accessibles en bas du panneau : **Sous-traiter les visites** et **Planifier une visite**.
+
+## La fiche d'une visite
+
+Elle rassemble tout ce qui concerne un créneau.
+
+### Ce qu'elle affiche
+
+| Bloc | Contenu |
+| --- | --- |
+| **Le rendez-vous** | Le lot concerné, le jour, les horaires et le lieu de rendez-vous. |
+| **Les indicateurs** | Nombre de **créneaux**, **durée** de chaque créneau en minutes, **places libres** et nombre d'**inscrits**. |
+| **Le responsable** | La personne en charge de la visite. |
+| **Candidats inscrits** | Le tableau des réservations : candidature, contact, créneau réservé et **annotation**. Un bouton **Inviter un candidat** permet d'ajouter quelqu'un directement. |
+
+### Les trois actions disponibles
+
+<AccordionGroup>
+  <Accordion title="Changer de responsable">
+    Confier cette visite à un **membre de l'équipe** ou à un **sous-traitant**. C'est par cette action que l'on délègue une visite déjà planifiée.
+  </Accordion>
+
+  <Accordion title="Supprimer cette visite">
+    Supprime le créneau, **notifie les candidats** et libère les places réservées.
+
+    <Note>
+      La notification des candidats est **automatique** : vous n'avez pas à les prévenir un par un. Ils reçoivent le message « Visite annulée » — voir [Messages envoyés aux candidats](/messages-candidats).
+    </Note>
+  </Accordion>
+
+  <Accordion title="Mode visite">
+    Un écran dédié au jour J, qui affiche les candidats inscrits sur le créneau — en vue cartes ou en vue liste. C'est l'écran à garder ouvert sur le terrain pendant que vous enchaînez les visiteurs.
+  </Accordion>
+</AccordionGroup>
+
+## Sous-traiter les visites
+
+La sous-traitance permet de confier les visites d'un lot à une personne extérieure à l'agence — un prestataire, un confrère, un gardien.
+
+<Note>
+  **Où ?** Fiche du lot \> **Gérer les visites** \> **Gérer les sous-traitants**, ou le bouton **Sous-traiter les visites** depuis le panneau Visites.
+</Note>
+
+La fenêtre liste les personnes en charge des visites de ce lot, et permet d'en ajouter.
+
+### Les deux modes de sous-traitance
+
+C'est le choix structurant, à faire au moment de l'invitation :
+
+| Mode | Ce que ça implique |
+| --- | --- |
+| **Il organise ses visites lui-même** | Le sous-traitant **crée et gère ses créneaux** de visite en autonomie. Vous lui confiez le lot, il s'occupe du reste. |
+| **Vous lui confiez des visites** | **Vous créez les visites** et les lui assignez ; il les assure sur le terrain. Vous gardez la main sur le planning. |
+
+<Tip>
+  Choisissez **« Il organise ses visites lui-même »** pour un prestataire régulier à qui vous déléguez un bien entier, et **« Vous lui confiez des visites »** pour un renfort ponctuel sur un créneau que vous avez déjà calé.
+</Tip>
+
+### Inviter un sous-traitant
 
 <Steps>
+  <Step title="Étape 1 sur 3 — Sous-traitant">
+    Deux possibilités :
+
+    - **Sous-traitant existant** — réutiliser une personne déjà invitée sur un autre lot. L'option est grisée tant qu'aucun sous-traitant n'est réutilisable.
+    - **Nouveau sous-traitant** — inviter une nouvelle personne en saisissant ses coordonnées.
+  </Step>
+  <Step title="Étape 2 sur 3 — Coordonnées">
+    Renseignez le **prénom**, le **nom**, l'**e-mail** et le **téléphone**.
+
+    <Warning>
+      Le **téléphone est obligatoire** : sans lui, impossible de passer à l'étape suivante.
+    </Warning>
+  </Step>
+  <Step title="Étape 3 sur 3 — Visites & message">
+    Choisissez l'**organisation des visites** parmi les deux modes décrits ci-dessus, puis, si vous le souhaitez, ajoutez un **message personnalisé** — il sera inclus dans l'e-mail d'invitation.
+
+    Cliquez sur **Envoyer l'invitation**.
+  </Step>
 </Steps>
 
+Une fois invité, le sous-traitant apparaît dans la liste des sous-traitants du lot et devient assignable comme responsable d'une visite.
+
 ## Bonnes pratiques recommandées
+
+<Tip>
+  - Réutilisez un **sous-traitant existant** plutôt que de le réinviter lot par lot : ses coordonnées sont conservées et l'invitation est plus rapide.
+  - Servez-vous du **message personnalisé** pour transmettre le contexte utile dès l'invitation — étage, particularité du bien, personne à prévenir sur place.
+  - Avant une visite déléguée, vérifiez le **lieu de rendez-vous** de la fiche : c'est l'information que le sous-traitant utilisera.
+  - Utilisez le **Mode visite** le jour J plutôt qu'une liste imprimée : il reste à jour si un candidat réserve à la dernière minute.
+  - Passez par **Supprimer cette visite** plutôt que d'annuler à la main : les candidats sont prévenus et les créneaux libérés dans la foulée.
+</Tip>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - Sous-traiter une visite sans avoir transmis les codes d'accès.
-  - Oublier de vérifier la présence des candidats inscrits avant le rendez-vous.
-  - Annuler une visite sans prévenir manuellement les candidats inscrits.
+  - Prévenir les candidats manuellement **en plus** de la suppression du créneau : ils recevront deux annonces contradictoires.
+  - Confondre les deux modes de sous-traitance et se retrouver avec un prestataire qui attend des créneaux que personne ne crée.
+  - Oublier de renseigner le téléphone du sous-traitant : l'invitation ne peut pas être envoyée sans.
+  - Assigner une visite à un sous-traitant qui n'a pas encore accepté son invitation.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Liste les visites à venir et les visites passées du lot.
-  - Met à jour le taux de remplissage de chaque créneau.
-  - Notifie le prestataire en cas de sous-traitance.
-  - Synchronise les modifications avec l'agenda du Dashboard.
+  - Répartit les visites entre **À venir** et **Passées**, et tient à jour le remplissage de chaque créneau.
+  - **Notifie les candidats** lors de la suppression d'une visite et libère les créneaux réservés.
+  - Envoie l'**e-mail d'invitation** au sous-traitant, avec votre message personnalisé s'il y en a un.
+  - Notifie l'agence lorsqu'un sous-traitant annule une visite — voir [Notifications](/notifications).
+  - Alimente le [Calendrier](/calendrier) de l'agence.
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Les candidats sont-ils prévenus si j'annule une visite ?">
+    Oui, automatiquement. L'action **Supprimer cette visite** notifie les candidats inscrits et libère leurs créneaux. Ne les prévenez pas en plus de votre côté.
+  </Accordion>
+
+  <Accordion title="Comment déléguer une visite déjà planifiée ?">
+    Ouvrez la fiche de la visite et utilisez **Changer de responsable** : vous pouvez la confier à un membre de l'équipe ou à un sous-traitant.
+  </Accordion>
+
+  <Accordion title="Quelle différence entre les deux modes de sous-traitance ?">
+    Avec **« Il organise ses visites lui-même »**, le sous-traitant crée ses propres créneaux. Avec **« Vous lui confiez des visites »**, c'est vous qui créez les visites et les lui assignez.
+  </Accordion>
+
+  <Accordion title="Puis-je réutiliser un sous-traitant sur un autre lot ?">
+    Oui. À l'étape 1 de l'invitation, l'option **Sous-traitant existant** propose les personnes déjà invitées.
+  </Accordion>
+
+  <Accordion title="À quoi sert le Mode visite ?">
+    C'est l'écran de terrain : il affiche les candidats inscrits sur le créneau, en cartes ou en liste, pour vous accompagner pendant la visite.
+  </Accordion>
+</AccordionGroup>
