@@ -7,101 +7,144 @@ icon: "building"
 
 ## Objectif
 
-Configurer l'identité de votre agence, gérer les utilisateurs et leurs droits, suivre la consommation de votre abonnement et personnaliser le parcours candidat. C'est le centre de contrôle de votre organisation Uplace.
+Piloter votre organisation Uplace : suivre la consommation de vos ressources, gérer votre abonnement et votre facturation, configurer l'agence, et administrer les membres de l'équipe.
 
 <Note>
   **Où trouver cette fonctionnalité ?** Sidebar \> **Mon agence**.
 </Note>
 
-## Fonctionnement étape par étape
+La page s'ouvre sur le nom de votre agence et s'organise en trois zones : les **jauges d'utilisation** à gauche, le bloc **Facturation et paramètres** à droite, et la liste des **membres de l'organisation** en bas.
 
-<Steps>
-  <Step title="Suivre l'abonnement et les quotas">
-    Le bloc principal affiche votre formule (ex. MAX), sa date de renouvellement et trois jauges d'utilisation : **lots** (ex. 48/100), **sièges de l'équipe** (ex. 7/10) et **packs de lots achetés**.
-  </Step>
-  <Step title="Gérer la facturation">
-    Le bloc **Facturation et paramètres** donne accès à : **Acheter des lots** (packs complémentaires), **Modifier mon abonnement** (formule, facturation, engagement) et **Espace facturation** (factures et moyens de paiement via le portail Stripe).
-  </Step>
-  <Step title="Configurer la fiche agence">
-    **Paramètres de l'agence \> Fiche agence** : logo (PNG/JPG, 5 Mo max), nom, e-mail, SIRET, et deux options importantes :
+## Suivre ses ressources
 
-    - **Autoriser les discussions par candidature** : active la [Messagerie](/messagerie) avec les candidats.
-    - **Activer l'affichage public des lots disponibles** : publie la page publique de vos lots — voir [Partager mes lots](/partage-lots).
+Le bloc de gauche affiche votre **formule** — par exemple _EASY_ —, son état (période d'essai, actif) et sa **date de fin**, puis trois jauges.
 
-    L'onglet **Personnaliser mes échanges** est inclus dans l'offre **marque grise**. Il ne permet pas de réécrire le texte des messages — celui-ci est géré par Uplace — mais d'habiller l'ensemble de vos échanges aux couleurs de votre agence. Trois réglages :
+| Jauge | Ce qu'elle mesure |
+| --- | --- |
+| **Lots (abonnement)** | Les lots consommés sur le quota inclus dans votre formule, en pourcentage et en valeur absolue (`3 / 12 lots`). |
+| **Mon équipe** | La **capacité** en sièges utilisateurs (`4 / 10 sièges`). |
+| **Packs de lots achetés** | Les lots consommés sur les packs achetés **en complément** de l'abonnement (`0 / 15 lots`). |
 
-    | Réglage | Effet | Contraintes |
-    | --- | --- | --- |
-    | **Logo pour les emails** | Affiché dans tous les e-mails envoyés à vos candidats | Format **bannière** recommandé. PNG ou JPEG, **2 Mo maximum** |
-    | **SMS** | Nom utilisé comme **expéditeur** des SMS envoyés à vos candidats, à la place de « Uplace » | Non modifiable en autonomie : **contactez le support Uplace** |
-    | **Couleur principale** | Couleur d'accent de vos e-mails et communications | Saisie en **code hexadécimal** (ex. `#233329`) |
+<Note>
+  Les lots de l'abonnement et les **packs complémentaires** sont deux compteurs **distincts**. Un pack ne vient pas gonfler le quota de la formule : il constitue une réserve à part, avec sa propre jauge.
+</Note>
 
-    Ces réglages se répercutent au-delà des e-mails : le **PDF fusionné** d'une candidature et le **parcours de dépôt de dossier** reprennent eux aussi votre logo et votre couleur — voir [Analyse des candidatures](/analyse-candidatures) et [Messages envoyés aux candidats](/messages-candidats).
-  </Step>
-  <Step title="Préparer les modèles de mise en location">
-    - **Critères pré-définis** : des plages de critères réutilisables à la [création de lots](/creation-lot).
-    - **GLI pré-remplies** : vos garanties loyers impayés pré-configurées (assureur, n° de contrat, e-mail).
-  </Step>
-  <Step title="Personnaliser le parcours candidat">
-    **Formulaire modulable** : créez des modèles de formulaires pour demander des questions et pièces supplémentaires aux candidats. Ils sont ensuite proposés comme « étape supplémentaire candidat » à la création d'un lot.
-  </Step>
-  <Step title="Gérer la sous-traitance de visites">
-    **Gérer les sous-traitants** : les personnes en charge des visites de vos lots (lots confiés, accès, retrait de l'agence). L'invitation d'un sous-traitant se fait depuis la fiche d'un lot — voir [Gérer les visites](/gerer-visites).
-  </Step>
-  <Step title="Brancher les flux entrants">
-    - **Boîte de réception** (« Mes demandes entrantes ») : Uplace centralise les demandes locatives entrantes (Leboncoin, SeLoger, site web…) et les traite automatiquement. Une **adresse e-mail dédiée** (`votre-agence@inbox.uplace.fr`) est fournie, avec option de renvoi automatique de tous les e-mails de contact — voir [Boîte de réception](/boite-reception).
-    - **Multi-diffuseurs (CRM)** : connectez **Modulo by Septeo**, **Apimo** ou **Ubiflow** pour importer automatiquement annonces et leads depuis votre outil de diffusion.
-  </Step>
-  <Step title="Gérer les membres de l'organisation">
-    Invitez de nouveaux membres et attribuez l'un des cinq rôles : **Propriétaire**, **Administrateur**, **Responsable**, **Utilisateur** ou **Opérateur**. Chaque membre peut être modifié ou désactivé ; le nombre de sièges dépend de votre abonnement.
+<Tip>
+  Surveillez la jauge **Lots** avant vos pics d'activité — rentrée de septembre, sorties de baux de fin d'année. Acheter un pack au moment où le quota est déjà plein, c'est se retrouver bloqué au pire moment.
+</Tip>
 
-    Le détail des droits de chaque rôle est décrit dans [Rôles et permissions](/roles-permissions).
-  </Step>
-</Steps>
+## Facturation et paramètres
+
+Le bloc de droite — _« Lots ponctuels, abonnement, portail Stripe et réglages de l'agence »_ — regroupe quatre entrées.
+
+| Entrée | Ce qu'elle permet |
+| --- | --- |
+| **Paramètres de l'agence** | Identité, modèles de mise en location, parcours candidat et intégrations. Détail ci-dessous. |
+| **Acheter des lots** | Souscrire des **packs en complément** de votre abonnement. |
+| **Modifier mon abonnement** | Changer de **formule**, de modalité de facturation et d'engagement. |
+| **Espace facturation** | Vos **factures** et vos **moyens de paiement**, via le portail Stripe. |
+
+## Les paramètres de l'agence
+
+L'entrée **Paramètres de l'agence** déplie un menu organisé en cinq rubriques. C'est le sommaire de toute la configuration d'une organisation.
+
+<AccordionGroup>
+  <Accordion title="Identité de l'agence">
+    **Fiche agence** — nom, SIRET, e-mails et personnalisation des échanges.
+
+    C'est ici que se trouvent aussi les deux interrupteurs structurants : **Autoriser les discussions par candidature** (voir [Messagerie](/messagerie)) et **Activer l'affichage public des lots disponibles** (voir [Partager mes lots](/partage-lots)).
+  </Accordion>
+
+  <Accordion title="Modèles de mise en location">
+    - **Critères pré-définis** — des plages de critères réutilisables à la [création d'un lot](/creation-lot).
+    - **GLI pré-remplies** — vos garanties loyers impayés pré-configurées. La fenêtre liste les GLI existantes et propose **Créer une nouvelle GLI**.
+
+    Ces deux modèles sont ce qui transforme la création d'un lot en affaire de quelques clics : préparez-les à l'installation, vous ne les reconfigurerez plus.
+  </Accordion>
+
+  <Accordion title="Parcours candidat">
+    **Formulaire modulable** — les questions et pièces supplémentaires demandées aux candidats, proposées ensuite comme « étape supplémentaire candidat » à la création d'un lot.
+  </Accordion>
+
+  <Accordion title="Sous-traitance de visites">
+    **Gérer les sous-traitants** — les personnes en charge des visites : lots confiés, accès, retrait. Voir [Gérer les visites & sous-traitance](/gerer-visites) et le [guide destiné aux sous-traitants](/guide-sous-traitant).
+  </Accordion>
+
+  <Accordion title="Flux et intégrations">
+    - **Boîte de réception** — demandes entrantes et redirection e-mail. Voir [Boîte de réception](/boite-reception).
+    - **Multi-diffuseurs (CRM)** — connexion CRM et synchronisation des lots, avec **Modulo by Septeo**, **Apimo** ou **Ubiflow**.
+
+    <Note>
+      L'intégration multi-diffuseur ne sert pas qu'à importer des annonces : c'est elle qui remonte l'information **gestionnaire**, sans laquelle vos Utilisateurs ne peuvent débloquer aucun lot — voir [Rôles et permissions](/roles-permissions).
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+## Gérer les membres de l'organisation
+
+Le tableau du bas liste tous les utilisateurs avec leur **téléphone**, leur **e-mail**, leur **rôle** et leur **statut**. Le bouton **Inviter un nouveau membre** ajoute une personne, dans la limite des sièges de votre formule.
+
+Chaque ligne propose deux actions : **Modifier** et **Désactiver**. Le **rôle** se change directement depuis le menu déroulant de la colonne correspondante.
+
+<Warning>
+  **Le Propriétaire fait exception.** Son rôle n'est pas modifiable depuis le tableau, et les actions Modifier et Désactiver lui sont inaccessibles. C'est cohérent avec son statut de créateur du compte — le transfert de propriété passe par le **support technique**, voir [Rôles et permissions](/roles-permissions).
+</Warning>
+
+Les cinq rôles disponibles sont **Propriétaire**, **Administrateur**, **Responsable**, **Utilisateur** et **Opérateur**. Leur périmètre exact est détaillé dans [Rôles et permissions](/roles-permissions).
 
 ## Bonnes pratiques recommandées
 
-- Renseignez complètement la fiche agence (logo, SIRET) : ces éléments apparaissent aux candidats.
-- Créez vos critères pré-définis et GLI pré-remplies dès l'onboarding : chaque création de lot devient plus rapide et plus homogène.
-- Surveillez les jauges lots/sièges avant les pics d'activité pour anticiper un pack complémentaire.
+<Tip>
+  - Configurez **critères pré-définis** et **GLI pré-remplies** dès l'installation : chaque création de lot devient plus rapide et surtout plus homogène d'un collaborateur à l'autre.
+  - Renseignez complètement la **fiche agence** : logo, SIRET et identité apparaissent aux candidats.
+  - Surveillez les jauges **Lots** et **Sièges** avant les pics d'activité.
+  - Avant de déployer le rôle **Utilisateur**, vérifiez que votre multi-diffuseur remonte bien l'information gestionnaire.
+  - Réservez **Administrateur** aux personnes qui doivent réellement toucher à l'abonnement et à la facturation.
+</Tip>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - Attribuer le rôle « Administrateur » à des collaborateurs qui n'ont pas à toucher à l'abonnement ni à la facturation.
-  - Déployer le rôle « Utilisateur » sans avoir vérifié que votre multi-diffuseur remonte bien l'information gestionnaire : ces membres ne pourront alors débloquer aucun lot.
-  - Dépasser le quota de lots sans souscrire un pack complémentaire.
-  - Négliger la fiche agence (logo, SIRET) qui apparaît aux candidats.
+  - Confondre le quota de **lots de l'abonnement** et celui des **packs achetés** : ce sont deux compteurs séparés.
+  - Attribuer le rôle « Administrateur » à des collaborateurs qui n'ont pas à toucher à l'abonnement.
+  - Déployer le rôle « Utilisateur » sans intégration multi-diffuseur : ces membres ne pourront débloquer aucun lot.
+  - Négliger la fiche agence, qui est ce que voient vos candidats.
   - Désactiver l'affichage public des lots alors que des liens ont déjà été partagés.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Met à jour les jauges d'utilisation en temps réel.
-  - Synchronise les éléments d'identité sur le formulaire candidat.
-  - Envoie un e-mail d'invitation aux nouveaux membres et un e-mail de notification aux membres désactivés.
-  - Bloque l'ajout de nouveaux lots si le quota est atteint.
+  - Met à jour les trois jauges d'utilisation en temps réel.
+  - Synchronise les éléments d'identité de l'agence sur le formulaire candidat et les communications.
+  - Envoie un e-mail d'invitation aux nouveaux membres et une notification aux membres désactivés.
+  - Bloque l'ajout de nouveaux lots lorsque le quota est atteint.
 </Info>
 
 ## Questions fréquentes
 
 <AccordionGroup>
-  <Accordion title="Quelle est la différence entre les rôles ?">
-    Le **Propriétaire** est le créateur du compte et dispose exactement des mêmes droits que l'**Administrateur** : accès à tout, y compris la facturation. Le **Responsable** a lui aussi accès à tout, sauf l'espace facturation. L'**Utilisateur** est limité à son propre périmètre (ses lots, ses statistiques, son calendrier, sa messagerie, ses contacts) mais dispose de tous les droits sur ses lots. L'**Opérateur** fonctionne comme l'Utilisateur, à ceci près qu'il ne peut ni créer un lot, ni en débloquer un.
-
-    Le détail complet figure dans [Rôles et permissions](/roles-permissions).
+  <Accordion title="Quelle est la différence entre les lots de l'abonnement et les packs achetés ?">
+    Ce sont **deux compteurs distincts**, avec chacun sa jauge. Les packs constituent une réserve complémentaire, ils ne viennent pas augmenter le quota de votre formule.
   </Accordion>
 
-  <Accordion title="Comment fonctionne l'adresse e-mail dédiée de la boîte de réception ?">
-    Chaque agence dispose d'une adresse `@inbox.uplace.fr`. Configurez vos portails ou votre redirection e-mail vers cette adresse : Uplace analyse chaque demande entrante et la rattache automatiquement au bon lot.
+  <Accordion title="Pourquoi ne puis-je pas modifier ou désactiver le Propriétaire ?">
+    Parce qu'il est le créateur du compte. Ses actions sont volontairement inaccessibles depuis le tableau. Pour transférer la propriété de l'organisation, contactez le **support technique**.
   </Accordion>
 
-  <Accordion title="« Personnaliser mes échanges » est-il inclus dans ma formule ?">
-    Cet onglet est inclus dans l'offre **marque grise**. Si l'option est grisée chez vous, contactez le support ou modifiez votre formule.
+  <Accordion title="Comment changer le rôle d'un membre ?">
+    Directement depuis le menu déroulant de la colonne **Rôle**, dans le tableau des membres.
   </Accordion>
 
-  <Accordion title="Puis-je réécrire le texte des e-mails envoyés aux candidats ?">
-    Non. Le contenu textuel des messages est géré par Uplace et identique pour toutes les agences. « Personnaliser mes échanges » agit sur l'**habillage** — bannière, logo, couleurs, nom d'expéditeur des SMS — pas sur le texte.
+  <Accordion title="Où consulter mes factures ?">
+    Dans **Espace facturation**, qui donne accès au portail Stripe avec vos factures et vos moyens de paiement.
+  </Accordion>
+
+  <Accordion title="Que se passe-t-il si mon quota de lots est atteint ?">
+    L'ajout de nouveaux lots est bloqué. Vous pouvez souscrire un **pack complémentaire** via _Acheter des lots_, ou changer de formule via _Modifier mon abonnement_.
+  </Accordion>
+
+  <Accordion title="Quelles formules existe-t-il ?">
+    Votre formule en cours et sa date de fin sont affichées en haut de la page. Le détail des offres disponibles et de leurs conditions se consulte via **Modifier mon abonnement**.
   </Accordion>
 </AccordionGroup>
