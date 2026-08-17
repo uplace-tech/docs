@@ -149,6 +149,79 @@ En parallèle du score de cohérence, Uplace calcule la **capacité financière*
   </Step>
 </Steps>
 
+## La fiche d'une candidature
+
+Ouvrir une candidature donne accès, sur une seule page, à tout ce dont vous avez besoin pour décider.
+
+### Ce que vous y trouvez
+
+| Bloc | Contenu |
+| --- | --- |
+| **En-tête** | Référence et adresse du lot, date de la candidature, nom du candidat, situation de couple, composition du foyer, situation actuelle et loyer actuel (CC). |
+| **Résumé de la candidature** | Une synthèse rédigée automatiquement par l'IA à partir des documents du dossier. |
+| **Historique des communications** | La liste horodatée de tous les messages partis vers le candidat, avec leur statut d'envoi. C'est ici que vous vérifiez ce qu'il a réellement reçu. |
+| **Documents** | Les pièces classées par catégorie : identité, justificatif de logement, situation professionnelle, revenus, documents fiscaux. |
+| **Date d'analyse** | Un badge indique le jour où le dossier a été analysé. |
+
+### Les actions disponibles
+
+<AccordionGroup>
+  <Accordion title="Partager la candidature">
+    Envoyer le dossier à un contact. Le partage est soumis à l'accord du candidat, qui reçoit une demande avant transmission — voir [Messages envoyés aux candidats](/messages-candidats).
+  </Accordion>
+
+  <Accordion title="Demander une modification">
+    Demander des pièces aux candidats. C'est également l'action qui **relance une analyse complète** du dossier dès que la nouvelle pièce est soumise — le seul moyen de sortir d'un dossier bloqué en « Analyse manuelle ».
+  </Accordion>
+
+  <Accordion title="Modifier le rapport IA">
+    Corriger la synthèse ou les champs extraits automatiquement. Utile lorsque l'IA a mal lu une information. Attention : cela ne modifie pas les **notes** attribuées aux pièces, qui restent calculées automatiquement.
+  </Accordion>
+
+  <Accordion title="Télécharger la candidature">
+    Deux formats au choix : le **dossier ZIP**, qui contient toutes les pièces dans une archive, ou le **PDF fusionné**, qui rassemble tout le dossier en un seul fichier présentable.
+  </Accordion>
+</AccordionGroup>
+
+## Le PDF fusionné
+
+C'est le document à transmettre à un propriétaire bailleur : un dossier complet, mis en page, en un seul fichier.
+
+### Trois options avant téléchargement
+
+| Option | Effet |
+| --- | --- |
+| **Inclure le rapport d'analyse** | Ajoute les pages d'observations de l'IA au PDF. |
+| **Afficher les contacts des candidats** | Rend visibles l'e-mail et le téléphone des candidats dans le PDF. |
+| **Style de l'agence** | Applique votre logo et votre couleur. Désactivé, le PDF sort au style Uplace. |
+
+<Tip>
+  Avant d'envoyer un dossier à un propriétaire, désactivez **Afficher les contacts des candidats** : le bailleur n'a pas besoin des coordonnées personnelles pour se prononcer, et vous limitez la diffusion de données personnelles.
+</Tip>
+
+### Ce que contient le document
+
+<Steps>
+  <Step title="Page de garde et sommaire">
+    Votre logo, le titre « Dossier de location », le nom du candidat, puis un sommaire paginé : résumé du dossier, dossier du candidat pièce par pièce, et un bloc par garant.
+  </Step>
+  <Step title="Résumé du dossier">
+    Quatre indicateurs en tête de page — **type de candidature**, **revenus**, **ratio revenus/loyer**, **nombre de garants** — suivis de la synthèse rédigée par l'IA.
+
+    Puis le détail : fiche du candidat (âge, coordonnées), détails de la candidature (contrat, employeur, poste, ancienneté, revenu net mensuel, brut annuel), autres revenus déclarés, situation du foyer et du logement, et enfin les garants avec leurs revenus cumulés et leur taux individuel.
+  </Step>
+  <Step title="Rapport d'analyse">
+    Si l'option est activée, une page d'observations classées par gravité : points bloquants, alertes, et contrôles conformes. Chaque observation est rédigée en clair — par exemple « la carte nationale d'identité est complète, valide, cohérente avec les informations déclarées et la bande MRZ est conforme », ou « l'absence de bulletins de paie rend le dossier incomplet pour justifier des revenus ».
+  </Step>
+  <Step title="Les pièces, une par page">
+    Chaque justificatif est reproduit en pleine page, avec un en-tête indiquant la catégorie et la pagination interne (« Situation actuelle 1/5 »), et votre logo en pied de page.
+  </Step>
+</Steps>
+
+<Note>
+  Le **taux** affiché pour chaque garant est calculé individuellement : c'est la traduction visuelle du fait que les garants sont évalués séparément, et non cumulés avec le candidat.
+</Note>
+
 ## Bonnes pratiques recommandées
 
 <Tip>
@@ -157,6 +230,8 @@ En parallèle du score de cohérence, Uplace calcule la **capacité financière*
   - Sur un dossier marqué **Analyse manuelle**, ouvrez immédiatement la pièce concernée : tant qu'elle n'est pas jugée, le dossier ne bougera plus.
   - Vérifiez que le loyer du lot est bien saisi **charges comprises** avant de vous fier aux indicateurs de capacité financière.
   - Si vous validez un dossier encore incomplet pour débloquer une visite, gardez en tête qu'il restera affiché **Inconnu** et n'aura jamais été analysé.
+  - Avant de répondre à un candidat qui affirme n'avoir rien reçu, ouvrez l'**historique des communications** de sa fiche : vous y verrez exactement ce qui est parti et quand.
+  - Pour transmettre un dossier à un propriétaire, préférez le **PDF fusionné** au ZIP : il est mis en page, il porte vos couleurs, et vous choisissez ce qu'il expose.
 </Tip>
 
 ## Erreurs fréquentes à éviter
@@ -203,6 +278,14 @@ En parallèle du score de cohérence, Uplace calcule la **capacité financière*
 
   <Accordion title="Le garant est-il pris en compte dans le score de cohérence ?">
     Oui. Ses pièces sont analysées et notées de 0 à 3 comme celles du candidat, et entrent dans la moyenne globale. En revanche, pour la **capacité financière**, le garant est évalué séparément : ses revenus ne s'additionnent pas à ceux du candidat.
+  </Accordion>
+
+  <Accordion title="Comment transmettre un dossier à un propriétaire bailleur ?">
+    Utilisez **Télécharger la candidature \> Télécharger le PDF**. Le PDF fusionné rassemble le résumé, le rapport d'analyse et toutes les pièces en un seul fichier, aux couleurs de votre agence. Pensez à désactiver l'affichage des contacts du candidat si le bailleur n'en a pas besoin.
+  </Accordion>
+
+  <Accordion title="Puis-je corriger une information mal lue par l'IA ?">
+    Oui, via **Modifier le rapport IA** : vous pouvez corriger la synthèse et les champs extraits. Les notes attribuées aux pièces, elles, restent calculées automatiquement.
   </Accordion>
 
   <Accordion title="Pourquoi le taux de complétude monte-t-il de 20 % en 20 % ?">
