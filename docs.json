@@ -47,7 +47,6 @@
           "synchronisation-calendrier",
           "gerer-visites",
           "informer-proprietaire",
-          "validation-refus",
           "marquer-loue",
           "archivage-lot"
         ]
@@ -107,5 +106,12 @@
       "vscode"
     ]
   },
-  "description": "Guide d'utilisation d'Uplace, le logiciel de gestion du parcours locatif pour agences immobilières."
+  "description": "Guide d'utilisation d'Uplace, le logiciel de gestion du parcours locatif pour agences immobilières.",
+  "redirects": [
+    {
+      "source": "/validation-refus",
+      "destination": "/marquer-loue",
+      "permanent": true
+    }
+  ]
 }

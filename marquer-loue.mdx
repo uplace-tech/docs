@@ -1,40 +1,123 @@
 ---
 title: "Marquer un lot comme loué"
-sidebarTitle: "Marquer comme loué"
-description: "Acter la mise en location effective et stopper la réception de candidatures."
+sidebarTitle: "Décision finale & mise en location"
+description: "La décision finale : choisir le candidat retenu, clore le lot et déclencher les communications."
 icon: "key"
 ---
 
 ## Objectif
 
-Acter la mise en location effective d'un bien et stopper la réception de nouvelles candidatures. Cette action conclut le parcours locatif et bascule le lot dans la liste des « Lots loués ».
+Acter la mise en location : **choisir le candidat retenu**, fermer le lot et laisser Uplace prévenir tout le monde.
+
+C'est la **décision finale** du parcours locatif, à ne pas confondre avec le tri des dossiers.
 
 <Note>
-  **Où trouver cette fonctionnalité ?** Fiche du lot \> bouton vert **Marquer comme loué** en haut à droite.
+  **Où trouver cette fonctionnalité ?** Fiche du lot \> **Actions du lot** \> **Marquer comme loué** — _« Clore le lot suite à une location »_.
+</Note>
+
+## Les deux niveaux de décision
+
+Uplace distingue deux moments, et il est essentiel de ne pas les confondre.
+
+|  | **Niveau 1 — Pré-validation** | **Niveau 2 — Décision finale** |
+| --- | --- | --- |
+| **Quand** | À réception des dossiers | À la fin du parcours |
+| **Ce que vous faites** | Vous **triez** les candidatures : pré-validation ou refus | Vous **choisissez le candidat retenu** et passez le lot en loué |
+| **Effet** | Ouvre la partie visite pour les dossiers retenus | **Ferme le lot** et déclenche les communications finales |
+| **Où** | [Validation d'une candidature](/validation-candidature) | Cette page |
+
+<Warning>
+  Un candidat pré-validé n'est **pas** un candidat retenu. La pré-validation sert à lui ouvrir l'accès aux visites, rien de plus. Tant que vous n'avez pas marqué le lot comme loué, aucune décision définitive n'a été communiquée.
+</Warning>
+
+## Ce qu'Uplace envoie automatiquement
+
+C'est le moment du parcours où le plus de communications partent d'un coup — et cette fois, **automatiquement**.
+
+<CardGroup cols={2}>
+  <Card title="Au candidat retenu" icon="party-horn">
+    Un e-mail de félicitations, avec des confettis, adressé à **toutes les personnes de la candidature retenue** — candidat, conjoint, colocataires.
+  </Card>
+
+  <Card title="À tous les autres" icon="envelope">
+    Un e-mail de remerciement, accompagné d'une **suggestion automatique d'autres lots de votre portefeuille**.
+  </Card>
+</CardGroup>
+
+### La suggestion automatique de lots
+
+C'est la partie la plus intéressante pour votre agence : un candidat non retenu ne repart pas les mains vides, il repart avec d'autres biens à visiter chez vous.
+
+Les lots suggérés sont sélectionnés selon **deux paramètres** :
+
+- **géographique** — la zone qui correspond à sa recherche ;
+- **financier** — les biens compatibles avec sa capacité financière.
+
+<Note>
+  Les candidatures identifiées comme **frauduleuses** sont exclues de cet envoi : elles ne reçoivent aucune suggestion de lots.
 </Note>
 
 ## Fonctionnement étape par étape
 
 <Steps>
+  <Step title="Ouvrir l'action">
+    Depuis la fiche du lot, section **Actions du lot**, cliquez sur **Marquer comme loué**.
+  </Step>
+  <Step title="Choisir le candidat retenu">
+    Désignez la candidature qui emporte le bien. C'est elle qui recevra l'e-mail de félicitations.
+  </Step>
+  <Step title="Confirmer">
+    Le lot bascule en **loué**, sort du marché, et les communications partent.
+  </Step>
 </Steps>
 
 ## Bonnes pratiques recommandées
 
+<Tip>
+  - Ne marquez le lot comme loué qu'une fois le **choix réellement arrêté** : les e-mails partent immédiatement et annoncent une décision définitive aux candidats non retenus.
+  - Vérifiez que vous désignez la bonne candidature avant de confirmer — c'est elle qui reçoit les félicitations.
+  - Marquez le lot le jour de la signature plutôt que le jour de l'accord verbal : vous éviterez d'avoir à revenir en arrière.
+  - Pensez à ce que la suggestion automatique fait pour vous : chaque candidat non retenu redevient un prospect sur vos autres biens. Un portefeuille bien renseigné rend ces suggestions pertinentes.
+</Tip>
+
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - Oublier de marquer le lot loué : il continue de recevoir des candidatures inutiles.
-  - Saisir une date d'effet incorrecte : cela fausse la durée moyenne de mise en location.
-  - Sélectionner « Autre » alors que le candidat est bien dans Uplace.
+  - Confondre la **pré-validation** et la décision finale : pré-valider un dossier ne promet rien au candidat, marquer le lot comme loué engage l'agence.
+  - Marquer le lot comme loué « pour voir » : les e-mails de remerciement partent aux autres candidats et ne peuvent pas être rattrapés.
+  - Oublier de désigner le candidat retenu, ou en désigner un par erreur.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Bascule le lot dans la liste des **Lots loués**.
-  - Notifie les candidats non retenus.
-  - Stoppe la diffusion sur les portails connectés.
-  - Comptabilise les frais d'agence réalisés dans les statistiques.
+  - Bascule le lot en statut **loué** et le retire du marché : plus aucune candidature ni réservation de visite n'est possible.
+  - Envoie l'e-mail de **félicitations** à toutes les personnes de la candidature retenue.
+  - Envoie l'e-mail de **remerciement** à tous les autres candidats, hors candidatures frauduleuses.
+  - Y joint une **sélection d'autres lots de votre portefeuille**, filtrée sur des critères géographiques et financiers.
+  - Alimente les [statistiques](/statistiques) du lot et de l'agence.
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Quelle différence entre pré-valider un dossier et marquer le lot comme loué ?">
+    La **pré-validation** est un tri : elle ouvre la partie visite au candidat. **Marquer le lot comme loué** est la décision finale : elle désigne le locataire, ferme le lot et déclenche les communications définitives.
+  </Accordion>
+
+  <Accordion title="Que reçoivent les candidats non retenus ?">
+    Un e-mail de remerciement contenant une **suggestion automatique d'autres lots de votre portefeuille**, choisis selon leur zone de recherche et leur capacité financière.
+  </Accordion>
+
+  <Accordion title="Les candidatures frauduleuses reçoivent-elles aussi des suggestions ?">
+    Non. Elles sont exclues de l'envoi de suggestions.
+  </Accordion>
+
+  <Accordion title="Qui reçoit l'e-mail de félicitations ?">
+    Toutes les personnes rattachées à la candidature retenue, pas uniquement le candidat principal.
+  </Accordion>
+
+  <Accordion title="Le propriétaire est-il prévenu automatiquement ?">
+    Non. Aucun envoi au propriétaire n'est automatique — voir [Informer le propriétaire](/informer-proprietaire).
+  </Accordion>
+</AccordionGroup>
