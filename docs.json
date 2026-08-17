@@ -55,7 +55,8 @@
         "group": "Côté candidat",
         "icon": "user",
         "pages": [
-          "guide-relocation"
+          "guide-relocation",
+          "messages-candidats"
         ]
       },
       {
@@ -66,6 +67,7 @@
           "statistiques",
           "mon-agence",
           "roles-permissions",
+          "notifications",
           "annexe",
           "recapitulatif",
           "uppy"
