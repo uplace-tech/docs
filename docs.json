@@ -56,8 +56,15 @@
         "group": "Côté candidat",
         "icon": "user",
         "pages": [
-          "guide-relocation",
           "messages-candidats"
+        ]
+      },
+      {
+        "group": "Côté partenaires",
+        "icon": "handshake",
+        "pages": [
+          "guide-relocation",
+          "guide-sous-traitant"
         ]
       },
       {
