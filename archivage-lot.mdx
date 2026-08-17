@@ -7,41 +7,118 @@ icon: "box-archive"
 
 ## Objectif
 
-Retirer définitivement un lot du marché (mandat terminé, propriétaire ne souhaite plus louer, retrait de la diffusion). Le lot reste consultable mais n'est plus actif dans le parcours locatif.
+Sortir un lot du pipeline actif quand il n'a plus vocation à être commercialisé : mandat terminé, bien retiré par le propriétaire, projet abandonné.
+
+<Warning>
+  **L'archivage est irréversible.** Il n'existe aucun moyen de désarchiver un lot. Avant de confirmer, assurez-vous que c'est bien ce que vous voulez faire.
+</Warning>
 
 <Note>
-  **Où trouver cette fonctionnalité ?** Fiche du lot \> bouton **Archiver** (sous « Marquer comme loué ») — ou Tous les lots \> **Lots archivés**.
+  **Où trouver cette fonctionnalité ?** Fiche du lot \> **Actions du lot** \> **Gestion du lot** \> **Archiver le lot** — _« Retirer le lot du pipeline actif »_.
 </Note>
 
-## Où se trouve l'action
+## Archiver ou marquer comme loué ?
 
-Depuis la fiche du lot, ouvrez **Actions du lot** \> **Gestion du lot**. Le panneau affiche le **responsable du lot**, puis deux entrées :
+Les deux actions sortent le lot du marché, mais elles ne racontent pas la même chose et n'ont pas les mêmes effets.
 
-| Entrée | Description |
-| --- | --- |
-| **Modifier le lot** | Adresse, critères, photos et description. |
-| **Archiver le lot** | Retirer le lot du pipeline actif. |
+|  | **Marquer comme loué** | **Archiver** |
+| --- | --- | --- |
+| **Situation** | Le bien a trouvé son locataire | Le bien ne sera pas loué par vous |
+| **Candidat retenu** | Vous en désignez un | Aucun |
+| **Communications** | E-mails de félicitations et de remerciement envoyés | Aucun envoi |
+| **Réversible** | — | **Non, jamais** |
+
+<Tip>
+  Si vous avez trouvé un locataire, passez par [Décision finale & mise en location](/marquer-loue), pas par l'archivage : c'est le seul chemin qui prévient les candidats et alimente correctement vos statistiques.
+</Tip>
 
 ## Fonctionnement étape par étape
 
 <Steps>
+  <Step title="Ouvrir l'action">
+    Depuis la fiche du lot, ouvrez **Gestion du lot** puis **Archiver le lot**.
+  </Step>
+  <Step title="Lire l'avertissement">
+    Une fenêtre de confirmation détaille les conséquences :
+
+    - la **suppression de toutes les visites à venir** sur ce lot ;
+    - le passage en **archivé** des candidatures encore en cours ;
+    - le rappel que **l'action est irréversible**.
+  </Step>
+  <Step title="Confirmer explicitement">
+    Cochez la case **« Je souhaite archiver le lot »**. Tant qu'elle n'est pas cochée, le bouton reste inactif.
+  </Step>
+  <Step title="Archiver">
+    Cliquez sur **Archiver**. Le lot quitte le pipeline actif et rejoint **Tous les lots \> Lots archivés**.
+  </Step>
 </Steps>
 
+<Note>
+  La case à cocher n'est pas une formalité : c'est le garde-fou qui vous évite d'archiver un lot d'un clic malheureux sur une action sans retour.
+</Note>
+
+## Ce qui se passe pour les visites et les candidatures
+
+<AccordionGroup>
+  <Accordion title="Les visites à venir">
+    Elles sont **supprimées**. Prévenez les candidats inscrits **avant** d'archiver : contrairement à la suppression d'une visite depuis [Gérer les visites](/gerer-visites), l'archivage ne leur adresse pas de message d'annulation individuel.
+  </Accordion>
+
+  <Accordion title="Les candidatures en cours">
+    Elles passent en **archivées**. Les dossiers restent consultables, mais le lot ne reçoit plus rien.
+  </Accordion>
+
+  <Accordion title="L'historique">
+    Le lot reste accessible dans **Lots archivés**, avec son historique.
+  </Accordion>
+</AccordionGroup>
+
 ## Bonnes pratiques recommandées
+
+<Tip>
+  - **Traitez les candidats avant d'archiver** : refusez proprement les dossiers en cours et prévenez les personnes inscrites à une visite. L'archivage, lui, ne communique rien.
+  - Vérifiez que vous n'êtes pas en train de confondre avec **Marquer comme loué** : c'est l'erreur la plus coûteuse, parce qu'elle est définitive.
+  - Si le bien est simplement suspendu ou en attente d'une décision du propriétaire, **n'archivez pas** : vous ne pourrez pas revenir en arrière.
+  - Relisez la fenêtre de confirmation plutôt que de cocher la case machinalement.
+</Tip>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - Archiver un lot encore actif : les candidatures en cours sont stoppées.
-  - Confondre archivage et suppression : Uplace ne supprime pas les données archivées.
+  - **Archiver un lot loué** au lieu de le marquer comme loué : les candidats ne sont pas prévenus, aucune suggestion d'autres biens ne part, et vos statistiques ne comptabilisent pas la mise en location.
+  - Archiver un lot « en attendant » : il n'y a pas de retour en arrière.
+  - Archiver sans avoir prévenu les candidats inscrits à une visite à venir.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Retire le lot des biens visibles par les candidats.
-  - Déconnecte la diffusion automatique sur les portails.
-  - Conserve l'historique complet (candidatures, visites, contacts).
+  - Supprime **toutes les visites à venir** sur le lot.
+  - Marque les **candidatures en cours** comme archivées.
+  - Retire le lot du pipeline actif et le classe dans **Lots archivés**.
+  - Conserve l'historique du lot et des dossiers.
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Puis-je désarchiver un lot ?">
+    Non. L'archivage est **irréversible**, et la fenêtre de confirmation le rappelle explicitement.
+  </Accordion>
+
+  <Accordion title="Quelle différence avec « Marquer comme loué » ?">
+    **Marquer comme loué** acte une location : vous désignez le candidat retenu et Uplace envoie les communications aux candidats. **Archiver** retire simplement le lot du pipeline, sans désigner personne et sans rien envoyer.
+  </Accordion>
+
+  <Accordion title="Que deviennent les candidats inscrits à une visite ?">
+    Leur visite est supprimée. Prévenez-les vous-même **avant** d'archiver : aucun message d'annulation n'est envoyé de la part d'Uplace lors de l'archivage.
+  </Accordion>
+
+  <Accordion title="Le lot disparaît-il complètement ?">
+    Non. Il reste consultable dans **Tous les lots \> Lots archivés**, avec son historique.
+  </Accordion>
+
+  <Accordion title="Pourquoi dois-je cocher une case avant d'archiver ?">
+    Parce que l'action est sans retour. La case **« Je souhaite archiver le lot »** est là pour vous obliger à confirmer une intention, pas seulement à cliquer.
+  </Accordion>
+</AccordionGroup>
