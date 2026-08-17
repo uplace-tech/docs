@@ -105,7 +105,7 @@ L'onglet **Mon agence** contient :
 Les modifications ne sont prises en compte qu'après **Enregistrer les modifications**.
 
 <Warning>
-  **L'onglet « Personnaliser mes échanges » est grisé sur les formules qui n'incluent pas l'offre de personnalisation.** Il ne s'agit pas d'un bug : la personnalisation des e-mails, du PDF condensé et de l'expéditeur SMS est une option de formule. Voir [Personnaliser mes échanges](/personnalisation).
+  **L'onglet « Personnaliser mes échanges » est grisé sur les formules qui n'incluent pas l'offre « marque grise ».** Il ne s'agit pas d'un bug : la personnalisation des e-mails, du PDF fusionné et de l'expéditeur SMS est une option de formule. Voir [Personnaliser mes échanges](/personnalisation).
 </Warning>
 
 <Note>
@@ -164,9 +164,27 @@ Un formulaire se compose d'un **nom** (ex. _Documents complémentaires colocatio
 
 ### Sous-traitance de visites
 
-**Gérer les sous-traitants** ouvre un panneau latéral listant _« toutes les personnes en charge des visites de vos lots »_. Chaque sous-traitant se déplie pour gérer les lots qui lui sont confiés, ou se retire de l'agence.
+**Gérer les sous-traitants** ouvre un panneau latéral listant _« toutes les personnes en charge des visites de vos lots »_. C'est la vue **globale** de la sous-traitance, à l'échelle de l'organisation — l'attribution lot par lot, elle, se fait depuis la fiche du lot.
 
-C'est la vue **globale** de la sous-traitance, à l'échelle de l'organisation. L'attribution lot par lot se fait depuis la fiche du lot — voir [Gérer les visites & sous-traitance](/gerer-visites) et le [guide destiné aux sous-traitants](/guide-sous-traitant).
+Chaque sous-traitant apparaît sous forme de carte avec ses **nom**, **e-mail** et **téléphone**, un compteur du nombre de lots qui lui sont confiés (`1 lot`) et une **corbeille** qui le retire de l'agence.
+
+Le compteur se déplie et affiche, ligne par ligne, les lots confiés — intitulé et **référence** — avec trois actions :
+
+| Action | Effet |
+| --- | --- |
+| **Interrupteur** | Active ou suspend l'accès du sous-traitant **à ce lot précis**, sans le retirer de l'agence. |
+| **Renvoyer l'e-mail d'accès** | Réexpédie le lien d'accès au sous-traitant. |
+| **Retirer de ce lot** | Le détache de ce lot uniquement ; il reste sous-traitant de l'agence pour ses autres biens. |
+
+<Warning>
+  **Le lien d'accès envoyé au sous-traitant est valable 7 jours.** Passé ce délai, il ne fonctionne plus : utilisez _Renvoyer l'e-mail d'accès_ pour en générer un nouveau. C'est la cause n°1 des « je n'arrive pas à me connecter » remontés par les sous-traitants.
+</Warning>
+
+<Tip>
+  Distinguez bien les trois niveaux de retrait : **l'interrupteur** suspend temporairement, **Retirer de ce lot** détache d'un bien, **la corbeille de la carte** supprime le sous-traitant de l'agence entière. En cas d'absence ponctuelle, l'interrupteur suffit.
+</Tip>
+
+Voir [Gérer les visites & sous-traitance](/gerer-visites) et le [guide destiné aux sous-traitants](/guide-sous-traitant).
 
 ### Flux et intégrations
 
