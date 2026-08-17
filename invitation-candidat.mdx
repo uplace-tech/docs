@@ -7,33 +7,119 @@ icon: "user-plus"
 
 ## Objectif
 
-Permettre à l'agent d'inviter manuellement un prospect à constituer son dossier locatif sur Uplace, sans attendre qu'il le fasse spontanément depuis une annonce. Cela accélère le remplissage des dossiers et qualifie les candidats sérieux.
+Faire entrer dans le parcours un prospect qui n'est pas passé par un portail : quelqu'un qui vous a appelé, croisé en agence, ou qu'on vous a recommandé. Il reçoit une invitation à déposer son dossier sur le lot concerné.
 
 <Note>
   **Où trouver cette fonctionnalité ?** Fiche du lot \> section **Liste des candidatures** \> bouton **Inviter un candidat**.
 </Note>
 
-## Fonctionnement étape par étape
+## Deux façons d'inviter
+
+<CardGroup cols={2}>
+  <Card title="Inviter par email" icon="envelope">
+    Le candidat reçoit une invitation à déposer son dossier sur ce lot. Vous renseignez ses coordonnées, Uplace se charge de l'envoi.
+  </Card>
+
+  <Card title="Copier le lien de candidature" icon="link">
+    Vous récupérez le lien et le partagez vous-même, par le moyen de votre choix — SMS, WhatsApp, votre propre e-mail.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Le **lien de candidature** est le plus souple : il fonctionne pour une personne comme pour dix, et vous pouvez le coller dans une conversation déjà en cours. L'**invitation par e-mail** a l'avantage de créer la fiche du candidat dans Uplace immédiatement, avec son origine renseignée.
+</Tip>
+
+## Inviter par e-mail
 
 <Steps>
+  <Step title="Ouvrir le formulaire">
+    Depuis la fiche du lot, cliquez sur **Inviter un candidat**, puis choisissez **Inviter par email**.
+  </Step>
+  <Step title="Renseigner le candidat">
+    Quatre champs d'identité :
+
+    - **Prénom du candidat**
+    - **Nom du candidat**
+    - **Email du candidat**
+    - **Téléphone du candidat**, avec l'indicatif pays
+  </Step>
+  <Step title="Choisir l'origine de la demande">
+    Un menu déroulant, avec un champ de recherche, vous demande **d'où vient ce prospect**. Voir la liste complète ci-dessous.
+  </Step>
+  <Step title="Envoyer">
+    Cliquez sur **Inviter**. Le candidat reçoit son invitation et peut commencer à constituer son dossier.
+  </Step>
 </Steps>
 
+## L'origine de la demande
+
+C'est le champ que l'on remplit machinalement, et pourtant c'est lui qui alimente le graphique **Statistiques par origine** — celui qui vous dit quel canal vous rapporte réellement des locataires, et lequel vous coûte un abonnement pour rien.
+
+Les origines disponibles :
+
+| Portails et diffuseurs | Autres canaux |
+| --- | --- |
+| Leboncoin | Jinka |
+| SeLoger | FNAIM |
+| Bien'ici | Instagram |
+| ParuVendu | Site de l'agence |
+| Logic-Immo | Bouche à oreille |
+| A Vendre A Louer |  |
+| Figaro Immo |  |
+| OuestFrance-Immo |  |
+
+<Warning>
+  Renseigner l'origine au hasard, ou toujours la même par habitude, fausse durablement vos [statistiques par origine](/statistiques). Sur une invitation manuelle, l'origine est presque toujours **Site de l'agence** ou **Bouche à oreille** — prenez la seconde qu'il faut pour choisir la bonne.
+</Warning>
+
 ## Bonnes pratiques recommandées
+
+<Tip>
+  - Invitez **pendant** l'appel plutôt qu'après : le prospect reçoit son lien avant d'avoir raccroché, et le taux de dépôt s'en ressent.
+  - Vérifiez le **téléphone** : c'est par lui que passent les SMS de rappel de visite.
+  - Utilisez **Copier le lien de candidature** quand vous êtes déjà en conversation avec la personne sur WhatsApp ou par SMS.
+  - Choisissez l'origine avec soin : c'est la seule source du graphique par canal.
+  - Après invitation, suivez l'avancement du dossier depuis [Contacts](/contacts) ou la liste des candidatures du lot.
+</Tip>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - Laisser l'origine vide, ce qui fausse les rapports d'attribution.
-  - Inviter plusieurs fois le même candidat (créer des doublons).
-  - Saisir un téléphone sans indicatif international.
+  - Laisser l'origine sur une valeur par défaut ou choisie au hasard : vos statistiques par canal deviennent inexploitables.
+  - Se tromper d'adresse e-mail : le candidat ne recevra jamais son invitation et vous croirez qu'il ne donne pas suite.
+  - Inviter sur le mauvais lot — l'invitation porte sur **le lot depuis lequel vous l'envoyez**.
+  - Renvoyer plusieurs invitations à la même personne sur le même lot au lieu de la relancer.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Envoie un e-mail d'invitation personnalisé avec un lien sécurisé.
-  - Crée la fiche candidature en statut « En attente de dépôt ».
-  - Trace l'historique des communications (envoi, ouverture).
+  - Envoie l'invitation au candidat et crée sa fiche dans l'agence.
+  - Enregistre l'**origine de la demande** et l'utilise dans les [statistiques par origine](/statistiques).
+  - Envoie le message **Dossier à compléter** et les relances associées — voir [Messages envoyés aux candidats](/messages-candidats).
+  - Analyse le dossier dès qu'il est soumis — voir [Analyse des candidatures](/analyse-candidatures).
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Quelle différence entre l'invitation par e-mail et le lien de candidature ?">
+    Avec l'**invitation par e-mail**, vous saisissez les coordonnées et Uplace envoie le message. Avec le **lien de candidature**, vous récupérez l'adresse et la diffusez vous-même, par le canal que vous voulez.
+  </Accordion>
+
+  <Accordion title="Le candidat doit-il créer un compte ?">
+    Il constitue son dossier depuis le lien reçu. Une fois déposé, ce dossier suit le parcours normal : analyse automatique, puis pré-validation par vos soins.
+  </Accordion>
+
+  <Accordion title="À quoi sert vraiment le champ Origine ?">
+    À savoir quel canal vous rapporte des candidats. C'est la donnée qui alimente le graphique **Statistiques par origine**, et donc les arbitrages sur vos abonnements aux portails.
+  </Accordion>
+
+  <Accordion title="Puis-je inviter la même personne sur plusieurs lots ?">
+    Oui, l'invitation porte sur le lot depuis lequel vous l'envoyez. Une même personne peut donc être invitée sur plusieurs biens.
+  </Accordion>
+
+  <Accordion title="Où suivre le dossier après l'invitation ?">
+    Dans la liste des candidatures du lot, ou dans la vue [Contacts](/contacts), qui regroupe les candidatures de tous vos lots actifs.
+  </Accordion>
+</AccordionGroup>
