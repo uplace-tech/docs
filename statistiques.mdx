@@ -31,12 +31,45 @@ Un bandeau en haut de page permet d'ajuster le périmètre analysé. Tous les in
 
 ## Les quatre indicateurs clés
 
-| Indicateur | Libellé affiché |
-| --- | --- |
-| **Durée moyenne de mise en location** | Durée de vie moyenne des lots |
-| **Frais d'agence réalisés** | Somme des frais d'agence réalisés |
-| **Prospects entrants** | Nombre de prospects entrants |
-| **Candidatures traitées** | Nombre de candidatures traitées |
+<AccordionGroup>
+  <Accordion title="Durée moyenne de mise en location">
+    Exprimée en **jours**.
+
+    Elle mesure le temps écoulé entre le **déblocage du lot sur Uplace** et le moment où il est **marqué comme loué**. C'est donc la durée réelle de commercialisation, du moment où le bien entre dans votre pipeline actif à celui où il en sort avec un locataire.
+  </Accordion>
+
+  <Accordion title="Frais d'agence réalisés">
+    La somme des frais d'agence encaissés, **hors taxes**, et **limitée à la part locataire**.
+
+    La part propriétaire n'entre pas dans cet indicateur : il mesure ce que le parcours locatif vous rapporte côté candidat, pas l'intégralité de vos honoraires.
+  </Accordion>
+
+  <Accordion title="Prospects entrants">
+    Le nombre de **demandes reçues depuis les portails reliés à Uplace**.
+
+    Il s'agit de **personnes uniques**, pas de demandes brutes : voir la règle de rapprochement ci-dessous.
+  </Accordion>
+
+  <Accordion title="Candidatures traitées">
+    Le nombre de candidatures traitées sur la période.
+  </Accordion>
+</AccordionGroup>
+
+### Le rapprochement des demandes multiples
+
+Un même prospect contacte souvent votre bien depuis plusieurs portails à la fois. Uplace **rapproche ces demandes** et n'en retient qu'une.
+
+<Note>
+  **L'identifiant de rapprochement est l'adresse e-mail** — ni le nom, ni le prénom, ni le téléphone.
+</Note>
+
+Concrètement, pour une même adresse e-mail :
+
+- le prospect n'est **compté qu'une fois** dans _Prospects entrants_ ;
+- il n'apparaît **qu'une fois** dans votre interface ;
+- il ne reçoit **qu'une seule fois** la séquence d'e-mails et de SMS.
+
+C'est ce qui vous évite d'écrire trois fois à la même personne parce qu'elle a cliqué sur trois annonces.
 
 <Tip>
   La **durée moyenne de mise en location** est l'indicateur à surveiller dans le temps plutôt qu'en valeur absolue : c'est son évolution d'un trimestre à l'autre qui vous dit si votre process s'améliore, pas le chiffre du jour.
@@ -130,6 +163,18 @@ Les origines proviennent du champ **Origine de la demande** renseigné à chaque
 
   <Accordion title="Que représente l'origine « Uplace » ?">
     Les candidats venus par vos propres liens : le lien de candidature d'un lot que vous avez partagé, ou le lien global de l'agence — souvent affiché en QR code sur la vitrine. C'est l'indicateur de ce que votre diffusion en propre vous rapporte.
+  </Accordion>
+
+  <Accordion title="Un prospect qui me contacte depuis trois portails compte-t-il trois fois ?">
+    Non. Uplace rapproche les demandes sur l'**adresse e-mail** : le prospect est compté une fois, affiché une fois, et ne reçoit la séquence d'e-mails et de SMS qu'une seule fois.
+  </Accordion>
+
+  <Accordion title="La durée moyenne de mise en location se compte à partir de quand ?">
+    Du **déblocage du lot sur Uplace** jusqu'au moment où il est **marqué comme loué**, en jours.
+  </Accordion>
+
+  <Accordion title="Les frais d'agence affichés sont-ils HT ou TTC ?">
+    **Hors taxes**, et uniquement la **part locataire**. La part propriétaire n'est pas comptabilisée dans cet indicateur.
   </Accordion>
 
   <Accordion title="Comment savoir si un portail vaut son abonnement ?">
