@@ -7,34 +7,97 @@ icon: "calendar-days"
 
 ## Objectif
 
-Programmer une visite à une date et un horaire précis, en notifiant ou non les candidats. Cette fonctionnalité fluidifie la prise de rendez-vous et évite la double-réservation.
+Ouvrir une plage horaire de visite sur un lot, qu'Uplace découpe automatiquement en créneaux. **Les candidats réservent ensuite leur horaire eux-mêmes**, sans que vous ayez à jongler entre les disponibilités de chacun.
 
 <Note>
-  **Où trouver cette fonctionnalité ?** Fiche du lot \> bouton **Planifier une visite**.
+  **Où trouver cette fonctionnalité ?** Fiche du lot \> **Actions du lot** \> **Gérer les visites** \> **Planifier un créneau de visite**.
 </Note>
+
+<Info>
+  **Quelle méthode choisir ?**
+
+  - **Planifier un créneau de visite** — vous ouvrez une plage, les candidats se positionnent dessus. C'est la méthode à privilégier dès que plusieurs candidats sont en lice.
+  - [**Visite instantanée**](/visite-instantanee) — pour recevoir un candidat dès maintenant, sans passer par la réservation.
+</Info>
 
 ## Fonctionnement étape par étape
 
+L'assistant se déroule en **trois étapes**.
+
 <Steps>
+  <Step title="Étape 1 sur 3 — Date & lieu">
+    Choisissez la **date de la visite** dans le calendrier. Les dates passées ne sont pas sélectionnables.
+
+    Le **lieu de rendez-vous** est pré-rempli avec l'adresse du lot. Modifiez-le si le rendez-vous se donne ailleurs — devant l'immeuble, à l'agence pour récupérer les clés, etc.
+  </Step>
+  <Step title="Étape 2 sur 3 — Horaires">
+    Saisissez l'**heure de début** et l'**heure de fin** de votre plage de visite. Les horaires se choisissent dans un sélecteur à deux colonnes : les heures, puis les minutes **par pas de 5**.
+
+    Dès que vous choisissez une heure de début, l'heure de fin se pré-remplit **une heure plus tard**. Ajustez-la selon le temps que vous voulez consacrer aux visites.
+  </Step>
+  <Step title="Étape 3 sur 3 — Créneaux">
+    C'est ici que la plage se transforme en créneaux réservables.
+
+    - **Durée par créneau (en minutes)** — le temps accordé à chaque visite. Uplace divise votre plage par cette durée et affiche immédiatement le résultat : « soit **12** places ». Une plage de 14 h à 15 h avec des créneaux de 5 minutes donne bien 12 places.
+    - **Visite groupée** — un interrupteur. Activé, il vous permet de recevoir plusieurs candidats en même temps sur le même créneau.
+    - **Nombre de candidats par groupe** — le nombre de personnes acceptées sur chaque créneau. Ce champ n'est utilisable que si la visite groupée est activée.
+
+    Cliquez sur **Confirmer** pour créer les créneaux.
+  </Step>
 </Steps>
 
+<Tip>
+  Le nombre de places s'affiche en temps réel pendant que vous ajustez la durée. Servez-vous-en comme d'un curseur : si vous avez huit candidats à faire visiter en une heure, une durée de 7 minutes vous donne 8 places pile.
+</Tip>
+
 ## Bonnes pratiques recommandées
+
+<Tip>
+  - Calez la **durée par créneau** sur le temps réel d'une visite, pas sur le nombre de candidats : un créneau trop court fait déborder tout le planning de l'après-midi.
+  - Utilisez la **visite groupée** quand le bien attire beaucoup de monde et que vous n'avez qu'une demi-journée : vous divisez le temps passé sur place par le nombre de candidats par groupe.
+  - Vérifiez le **lieu de rendez-vous** si les clés ne sont pas sur place : l'adresse pré-remplie est celle du lot, pas celle de l'agence.
+  - Ouvrez la plage suffisamment tôt pour que les candidats aient le temps de réserver — et retrouvez les réservations dans le [Calendrier](/calendrier).
+</Tip>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - Saisir l'heure de fin avant l'heure de début.
-  - Désactiver la notification puis oublier d'envoyer le rappel manuellement.
-  - Multiplier les créneaux sans coordination avec l'équipe.
+  - Ouvrir une plage trop courte pour le nombre de candidats en lice : les derniers ne trouveront plus de place.
+  - Laisser la durée par créneau à sa valeur par défaut sans regarder le nombre de places que cela produit.
+  - Activer la visite groupée sans renseigner le **nombre de candidats par groupe**.
+  - Oublier de modifier le lieu de rendez-vous quand il diffère de l'adresse du bien.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Découpe le créneau en sous-créneaux selon la durée définie.
-  - Envoie un e-mail/SMS aux candidats notifiés.
-  - Met à jour l'agenda du Dashboard.
-  - Calcule le taux de remplissage moyen des visites.
+  - Découpe la plage horaire en créneaux selon la durée définie, et calcule le nombre de places disponibles.
+  - Rend les créneaux réservables par les candidats, qui choisissent leur horaire eux-mêmes.
+  - Envoie aux candidats les messages liés à la visite : nouvelle visite disponible, confirmation de réservation, puis rappels à J-1 et H-2 — voir [Messages envoyés aux candidats](/messages-candidats).
+  - Alimente le [Calendrier](/calendrier) de l'agence au fil des réservations.
+  - Notifie le gestionnaire du lot à chaque réservation, selon ses préférences — voir [Notifications](/notifications).
 </Info>
 
 ## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Quelle différence avec la visite instantanée ?">
+    La planification ouvre une plage dans laquelle **les candidats réservent eux-mêmes** leur horaire. La [visite instantanée](/visite-instantanee) sert à recevoir un candidat **tout de suite**, sans passer par la réservation.
+  </Accordion>
+
+  <Accordion title="Puis-je planifier une visite dans le passé ?">
+    Non. Les dates antérieures à aujourd'hui ne sont pas sélectionnables dans le calendrier.
+  </Accordion>
+
+  <Accordion title="Comment recevoir plusieurs candidats en même temps ?">
+    Activez **Visite groupée** à l'étape 3, puis indiquez le **nombre de candidats par groupe**. Chaque créneau accueillera alors ce nombre de personnes.
+  </Accordion>
+
+  <Accordion title="Combien de places vais-je obtenir ?">
+    Uplace le calcule pour vous : la durée de votre plage divisée par la durée par créneau. Le résultat s'affiche en direct à côté du champ, sous la forme « soit X places ».
+  </Accordion>
+
+  <Accordion title="Les horaires se saisissent-ils à la minute près ?">
+    Non, les minutes se choisissent par pas de 5.
+  </Accordion>
+</AccordionGroup>
