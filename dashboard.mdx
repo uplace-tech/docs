@@ -13,20 +13,45 @@ Le Dashboard offre une vision synthétique et quotidienne de l'activité du parc
   **Où trouver cette fonctionnalité ?** Sidebar \> **Dashboard** (page d'accueil par défaut après connexion).
 </Note>
 
+<Tip>
+  **La recherche globale est le raccourci le plus rentable d'Uplace**, et elle est disponible depuis n'importe quel écran : le champ _Rechercher une ressource_ en haut de page, ou le raccourci clavier **Cmd \+ K** (Ctrl \+ K sous Windows).
+
+  Elle cherche parmi les **lots**, les **candidats** et les **prospects**, sur le nom, le prénom et l'adresse e-mail, à partir de **2 caractères**. Les résultats sont regroupés par catégorie.
+
+  C'est presque toujours plus rapide que de retrouver un lot dans le tableau puis un candidat dans sa liste.
+</Tip>
+
 ## Fonctionnement étape par étape
 
 <Steps>
   <Step title="Consulter les visites à venir">
-    Le bloc **Visites à venir** affiche vos prochaines visites (date, heure, lot, responsable). Le lien **Voir l'agenda** ouvre le [Calendrier](/calendrier) complet de l'agence.
+    Le bloc **Visites à venir** affiche vos **quatre prochaines visites** (date, heure, lot, responsable). Le lien **Voir l'agenda** ouvre le [Calendrier](/calendrier) complet de l'agence.
+
+    <Note>
+      Le bloc est volontairement limité à quatre entrées : ce n'est pas votre planning, c'est un rappel de ce qui arrive. Pour la vue complète, passez par le calendrier.
+    </Note>
   </Step>
   <Step title="Traiter les lots en attente">
-    Le bloc **Lots en attente** liste les biens remontés automatiquement lorsqu'une candidature est reçue sur un bien non répertorié. Configurez-les pour les rendre disponibles aux candidats — voir [Lots en attente](/lots-en-attente). Le bouton **Configurer un nouveau lot** lance l'assistant de [création de lot](/creation-lot).
+    Le bloc **Lots en attente** liste les biens remontés automatiquement lorsqu'une candidature est reçue sur un bien non répertorié dans votre agence. Configurez-les pour les rendre disponibles aux candidats — voir [Lots en attente](/lots-en-attente).
+
+    Le lien **Voir tout** ouvre la liste complète, et la tuile **Configurer un nouveau lot** lance l'assistant de [création de lot](/creation-lot).
   </Step>
   <Step title="Piloter la liste des lots">
     Le tableau **Liste des lots** affiche pour chaque bien : localisation et loyer, **dossiers validés**, **dossiers déposés**, **prospects**, responsable et date de création. Cliquez sur une ligne pour ouvrir la fiche du lot.
   </Step>
-  <Step title="Filtrer et personnaliser">
-    Utilisez la recherche (nom, référence, adresse, loyer), le filtre **par responsable**, le tri (_Plus récent_…) et le bouton **Colonnes** pour adapter le tableau à votre usage.
+  <Step title="Filtrer, trier et personnaliser">
+    Quatre outils au-dessus du tableau :
+
+    - **la recherche** — par nom, référence, adresse ou loyer ;
+    - **le filtre par responsable** ;
+    - **le tri** — trois options seulement : _Plus récent_ (par défaut), _Plus de dossiers validés_, _Plus de prospects_ ;
+    - **le bouton Colonnes** — pour afficher ou masquer les colonnes.
+
+    Un sélecteur de pagination et le nombre total de lots figurent en bas du tableau.
+
+    <Tip>
+      **Une colonne est masquée par défaut : « Dossiers Complets ».** Activez-la depuis **Colonnes** — c'est le nombre de dossiers réellement soumis et analysés par lot, à distinguer des _Dossiers déposés_ (encore en cours de constitution) et des _Dossiers validés_ (que vous avez pré-validés). Sur un lot très demandé, c'est le chiffre qui dit combien de dossiers sont vraiment exploitables.
+    </Tip>
   </Step>
   <Step title="Agir directement depuis le tableau">
     Chaque ligne propose deux actions rapides : **Copier le lien de candidature** (à envoyer à un prospect) et **Désactiver les notifications** du lot.
@@ -41,6 +66,8 @@ Le Dashboard offre une vision synthétique et quotidienne de l'activité du parc
 - Commencez chaque journée par le Dashboard : visites du jour, puis lots en attente, puis nouvelles candidatures.
 - Attribuez systématiquement un **responsable** à chaque lot pour que les filtres par responsable restent exploitables.
 - Utilisez la colonne **Prospects** pour repérer les lots à forte demande et prioriser leurs visites.
+- Activez la colonne **Dossiers Complets** : elle distingue l'agitation apparente d'un lot du nombre de dossiers réellement exploitables.
+- Prenez le réflexe **Cmd \+ K** plutôt que de naviguer dans les listes.
 
 ## Erreurs fréquentes à éviter
 
@@ -61,6 +88,16 @@ Le Dashboard offre une vision synthétique et quotidienne de l'activité du parc
 ## Questions fréquentes
 
 <AccordionGroup>
+  <Accordion title="Comment retrouver rapidement un candidat ou un lot ?">
+    Par la **recherche globale** : le champ _Rechercher une ressource_ en haut de page, ou **Cmd \+ K** (Ctrl \+ K sous Windows). Elle couvre les lots, les candidats et les prospects, sur le nom, le prénom et l'e-mail, dès 2 caractères.
+  </Accordion>
+
+  <Accordion title="Quelle différence entre « Dossiers déposés », « Dossiers complets » et « Dossiers validés » ?">
+    - **Dossiers déposés** : les candidatures ouvertes, y compris celles encore en cours de constitution.
+    - **Dossiers complets** : ceux effectivement soumis, donc analysés. Colonne **masquée par défaut**, à activer via **Colonnes**.
+    - **Dossiers validés** : ceux que vous avez pré-validés — voir [Validation d'une candidature](/validation-candidature).
+  </Accordion>
+
   <Accordion title="Pourquoi un lot n'apparaît-il pas dans la liste ?">
     Vérifiez les filtres actifs (responsable, recherche). Les lots archivés n'apparaissent pas dans le Dashboard : consultez **Tous les lots \> Lots archivés**.
   </Accordion>
