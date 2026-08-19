@@ -1,0 +1,274 @@
+---
+title: "Checklist de mise en route"
+sidebarTitle: "Checklist de mise en route"
+description: "L'ordre dans lequel configurer Uplace pour une nouvelle agence, de la fiche agence au premier lot en ligne."
+icon: "list-check"
+---
+
+## À qui s'adresse cette page
+
+Vous venez d'ouvrir votre compte Uplace et vous voulez savoir **dans quel ordre tout configurer**. Cette page suit l'ordre le plus efficace : chaque étape s'appuie sur la précédente, et les deux démarches à délai externe sont lancées dès le premier jour.
+
+<Note>
+  **Qui peut faire quoi ?** La quasi-totalité de cette configuration se fait dans **Mon agence**, accessible aux rôles **Propriétaire**, **Administrateur** et **Responsable** uniquement. Prévoyez qu'une de ces trois personnes pilote la mise en route. Voir [Rôles et permissions](/roles-permissions).
+</Note>
+
+## Le principe : commencer par ce qui ne dépend pas de vous
+
+Deux démarches de la mise en route ne se règlent pas en interne — elles attendent une validation externe, qui peut prendre plusieurs jours.
+
+<Warning>
+  **Lancez ces deux-là en premier, avant même de configurer quoi que ce soit :**
+
+  1. **La connexion multi-diffuseur** — elle suppose une validation par l'éditeur (Modulo by Septeo, Apimo ou Ubiflow).
+  2. **Le nom d'expéditeur des SMS** — il doit être déclaré auprès des opérateurs télécoms, via le support Uplace.
+
+  Tout le reste se configure en une demi-journée. Ces deux points sont les seuls capables de retarder votre mise en service.
+</Warning>
+
+## Étape 1 — Lancer les démarches à délai
+
+<Steps>
+  <Step title="Demander la connexion à votre multi-diffuseur">
+    **Mon agence** \> _Paramètres de l'agence_ \> **Multi-diffuseurs (CRM)**.
+
+    Sélectionnez votre logiciel — **Modulo by Septeo**, **Apimo** ou **Ubiflow** — puis cliquez sur **Demander l'activation de la connexion**. Une alternative manuelle existe : écrire à `contact@uplace.fr`.
+
+    N'activez **pas** l'interrupteur _La connexion est établie_ : il ne doit l'être qu'une fois la liaison confirmée par l'éditeur.
+
+    <Tip>
+      Cette connexion ne sert pas qu'à importer vos annonces. Elle remonte aussi l'information **gestionnaire**, sans laquelle vos futurs collaborateurs au rôle _Utilisateur_ ne pourront débloquer aucun lot. Et elle raccourcit fortement la création d'un lot — voir l'étape 6.
+    </Tip>
+  </Step>
+  <Step title="Demander votre nom d'expéditeur SMS">
+    Uniquement si votre formule inclut la **marque grise**.
+
+    Le champ n'est pas modifiable en autonomie : la demande passe par le support Uplace. Faites-la maintenant, vous configurerez le reste de l'habillage à l'étape 3.
+  </Step>
+</Steps>
+
+## Étape 2 — Poser l'identité de l'agence
+
+<Steps>
+  <Step title="Remplir la fiche agence">
+    **Mon agence** \> _Paramètres de l'agence_ \> **Fiche agence**, onglet **Mon agence**.
+
+    - **Logo de l'agence** — PNG ou JPG, **5 Mo maximum**.
+    - **Nom**, **E-mail**, **Siret**.
+
+    Ces éléments apparaissent à vos candidats : ne les laissez pas au réglage par défaut.
+
+    Terminez par **Enregistrer les modifications** — rien n'est pris en compte sans ce clic.
+  </Step>
+  <Step title="Décider des deux interrupteurs structurants">
+    Toujours dans la fiche agence, deux réglages engagent votre façon de travailler :
+
+    | Interrupteur | Ce que ça change |
+    | --- | --- |
+    | **Autoriser les discussions par candidature** | Ouvre la [messagerie](/messagerie) avec les candidats directement dans Uplace. |
+    | **Activer l'affichage public des lots disponibles** | Publie votre [vitrine publique](/partage-lots) : une page listant tous vos lots disponibles. |
+
+    <Warning>
+      Une fois la vitrine publique activée et son lien diffusé — en signature d'e-mail, sur votre site, en QR code sur la devanture — **ne la désactivez pas** sans avoir retiré ces liens : ils deviendraient inertes.
+    </Warning>
+  </Step>
+</Steps>
+
+## Étape 3 — Habiller vos échanges (si marque grise)
+
+**Fiche agence** \> onglet **Personnaliser mes échanges**.
+
+<Note>
+  Si cet onglet est **grisé**, votre formule n'inclut pas l'offre marque grise. Passez directement à l'étape 4 — ce n'est pas un dysfonctionnement.
+</Note>
+
+Trois réglages :
+
+- **Logo pour les e-mails** — au format **bannière** (large, peu haute), PNG ou JPEG, **2 Mo maximum**. Ce n'est **pas** le même fichier que le logo de l'agence, ni la même limite de poids.
+- **Couleur principale** — en code hexadécimal. Prenez la valeur exacte de votre charte.
+- **Nom d'expéditeur SMS** — demandé à l'étape 1, il apparaîtra une fois la déclaration aboutie.
+
+<Tip>
+  Envoyez-vous un e-mail de test après configuration, et regardez-le **sur mobile autant que sur ordinateur** : c'est là que se voient les logos mal dimensionnés.
+</Tip>
+
+## Étape 4 — Préparer vos modèles de mise en location
+
+C'est l'étape la plus rentable de toute la mise en route : bien faite, elle réduit chaque création de lot à quelques clics, et surtout elle **rend vos lots homogènes d'un collaborateur à l'autre**.
+
+<AccordionGroup>
+  <Accordion title="Créer vos plages de critères pré-définis">
+    _Paramètres de l'agence_ \> **Critères pré-définis** \> **Créer une nouvelle plage de critères**.
+
+    Une plage regroupe : **capacité financière minimum** (curseur x1 à x5, réglable au dixième), **garant** (requis / facultatif / refusé), **étudiants acceptés**, **GLI**, **loi Pinel**.
+
+    Créez-en une par politique commerciale réelle — par exemple _Standard x3_, _Étudiant avec garant_, _Haut de gamme x3.5_. Inutile d'en faire quinze.
+  </Accordion>
+
+  <Accordion title="Enregistrer vos GLI">
+    _Paramètres de l'agence_ \> **GLI pré-remplies** \> **Créer une nouvelle GLI**.
+
+    Trois champs par GLI : **Nom**, **E-mail** de l'assureur, **Référence contrat**. Elles pourront ensuite être rattachées à un lot en un clic.
+  </Accordion>
+
+  <Accordion title="Créer vos formulaires modulables (optionnel)">
+    _Paramètres de l'agence_ \> **Formulaire modulable**.
+
+    Utile si vous demandez régulièrement des pièces en plus du dossier standard. Chaque formulaire est limité à **2 documents**, avec pour chacun un nom et une description de 100 caractères.
+
+    Soignez la description : c'est ce qui évite l'aller-retour avec le candidat.
+  </Accordion>
+</AccordionGroup>
+
+## Étape 5 — Constituer l'équipe
+
+<Steps>
+  <Step title="Inviter les membres">
+    **Mon agence** \> **Inviter un nouveau membre**. Il suffit d'un **e-mail** et d'un **rôle**.
+
+    Chaque invitation consomme un **siège** de votre formule — surveillez la jauge _Mon équipe_.
+  </Step>
+  <Step title="Attribuer les bons rôles">
+    Quatre rôles sont attribuables à l'invitation. Le **Propriétaire** est le créateur du compte et n'est pas attribuable.
+
+    | Rôle | À qui l'attribuer |
+    | --- | --- |
+    | **Administrateur** | Aux personnes qui doivent réellement toucher à l'abonnement et à la facturation. |
+    | **Responsable** | Accès à tout **sauf l'espace facturation**. Le rôle par défaut d'un directeur d'agence. |
+    | **Utilisateur** | Négociateur autonome sur **son propre portefeuille** : il peut débloquer ses lots, à condition que le multi-diffuseur remonte l'information gestionnaire. |
+    | **Opérateur** | Profil d'exécution : il travaille sur les lots qu'on lui débloque, mais **ne peut jamais en débloquer ni en créer**. |
+
+    <Warning>
+      Ne déployez le rôle **Utilisateur** qu'une fois la connexion multi-diffuseur effective. Sans elle, ces membres ne pourront débloquer aucun lot et vous croirez à un bug.
+    </Warning>
+  </Step>
+  <Step title="Faire régler les notifications à chacun">
+    Chaque membre choisit ce qu'il reçoit et par quel canal depuis **Mes notifications**. C'est un réglage **individuel** : vous ne pouvez pas le faire à leur place.
+
+    Demandez-leur de le faire dès leur première connexion — voir [Notifications](/notifications).
+  </Step>
+</Steps>
+
+## Étape 6 — Brancher vos flux entrants
+
+<Steps>
+  <Step title="Récupérer votre adresse de collecte">
+    _Paramètres de l'agence_ \> **Boîte de réception**.
+
+    Vous y trouvez votre adresse dédiée, de la forme `nom-de-votre-agence@inbox.uplace.fr`, avec un bouton **Copier**.
+  </Step>
+  <Step title="La diffuser partout">
+    Renseignez-la comme adresse de contact **chez chacun de vos portails** et **sur le formulaire de votre site**. Tout ce qui y arrive entre automatiquement dans le parcours Uplace.
+
+    C'est cette adresse qui alimente vos statistiques de prospects entrants.
+  </Step>
+  <Step title="Choisir le renvoi automatique">
+    L'option **Renvoi automatique de tous les e-mails** (Oui / Non) détermine si vous recevez aussi les e-mails de contact dans votre boîte habituelle, en plus de leur traitement dans Uplace.
+
+    En début de mise en route, laissez-la sur **Oui** : vous vérifiez ainsi que rien ne se perd. Vous pourrez la couper une fois en confiance.
+  </Step>
+</Steps>
+
+## Étape 7 — Mettre en ligne votre premier lot
+
+<Steps>
+  <Step title="Créer le lot">
+    Dashboard \> **Configurer un nouveau lot**.
+
+    Si votre connexion multi-diffuseur est active, le parcours est raccourci : l'étape 1 disparaît, les étapes 2 et 3 arrivent **pré-remplies**, et il ne vous reste que les critères et la finalisation.
+  </Step>
+  <Step title="Vérifier le loyer">
+    <Warning>
+      Uplace attend le **loyer charges comprises**. Tous les seuils de capacité financière s'y appuient.
+
+      Sur un lot pré-rempli depuis votre logiciel, **relisez ce champ** : la convention de saisie n'y est pas forcément la même. Un loyer saisi hors charges abaisse mécaniquement le seuil de revenus exigé.
+    </Warning>
+  </Step>
+  <Step title="Appliquer une plage de critères">
+    Sélectionnez l'une des plages créées à l'étape 4 plutôt que de tout ressaisir.
+  </Step>
+  <Step title="Finaliser">
+    Désignez le **responsable du lot**, rattachez une **GLI** si besoin, renseignez le **propriétaire bailleur** si vous voulez pouvoir l'informer facilement plus tard, et décidez des deux options du parcours :
+
+    - **Validation automatique** — accepte d'office les dossiers conformes aux critères.
+    - **Fast pass** — inverse le parcours : visite d'abord, dossier ensuite.
+
+    Sur votre premier lot, laissez les deux désactivées : vous verrez le parcours complet se dérouler et vous comprendrez mieux ce que chaque option change.
+  </Step>
+</Steps>
+
+## Étape 8 — Les finitions qui font gagner du temps
+
+<AccordionGroup>
+  <Accordion title="Synchroniser les calendriers">
+    Chaque membre relie son agenda Google, Outlook ou Apple pour retrouver ses visites Uplace dans son planning habituel. Voir [Synchro calendrier](/synchronisation-calendrier).
+  </Accordion>
+
+  <Accordion title="Diffuser le lien de la vitrine publique">
+    Récupérez le lien de votre page publique et mettez-le partout où vos prospects passent : signature d'e-mail, site, réseaux, et **QR code en vitrine** — un usage très répandu. Voir [Partager mes lots](/partage-lots).
+  </Accordion>
+
+  <Accordion title="Rattacher vos sous-traitants de visites">
+    Si vous déléguez des visites, ajoutez vos prestataires et confiez-leur leurs premiers lots.
+
+    <Warning>
+      Prévenez-les que le lien d'accès qu'ils recevront est valable **7 jours**. Passé ce délai, vous devrez le leur renvoyer depuis _Gérer les sous-traitants_.
+    </Warning>
+
+    Transmettez-leur le [guide sous-traitants](/guide-sous-traitant) : il est écrit pour eux.
+  </Accordion>
+
+  <Accordion title="Prendre l'habitude de renseigner l'origine">
+    Le champ **Origine de la demande** est la seule source du graphique le plus utile des statistiques : celui qui vous dit quel portail vous rapporte des locataires, et pas seulement des contacts.
+
+    Une origine saisie au hasard rend cette analyse inexploitable — et cela ne se rattrape pas rétroactivement. Prenez le pli dès le premier jour.
+  </Accordion>
+</AccordionGroup>
+
+## Récapitulatif
+
+| # | Étape | Où | Dépend de |
+| --- | --- | --- | --- |
+| 1 | Demander la connexion multi-diffuseur | Multi-diffuseurs (CRM) | **Validation externe** |
+| 1 | Demander le nom d'expéditeur SMS | Support Uplace | **Déclaration opérateurs** |
+| 2 | Fiche agence : logo, nom, SIRET, e-mail | Fiche agence | — |
+| 2 | Discussions et affichage public | Fiche agence | — |
+| 3 | Logo e-mail et couleur | Personnaliser mes échanges | Formule marque grise |
+| 4 | Plages de critères pré-définis | Critères pré-définis | — |
+| 4 | GLI pré-remplies | GLI pré-remplies | — |
+| 4 | Formulaires modulables | Formulaire modulable | — |
+| 5 | Inviter les membres et attribuer les rôles | Mon agence | Sièges disponibles |
+| 5 | Réglage individuel des notifications | Mes notifications | Chaque membre |
+| 6 | Diffuser l'adresse `@inbox.uplace.fr` | Boîte de réception | — |
+| 7 | Créer le premier lot | Dashboard | Étape 4 recommandée |
+| 8 | Synchro calendriers, vitrine, sous-traitants | Divers | — |
+
+## Les cinq erreurs de mise en route les plus coûteuses
+
+<Warning>
+  1. **Attendre le dernier moment pour demander la connexion multi-diffuseur.** C'est la seule étape qui peut retarder votre mise en service de plusieurs jours.
+  2. **Déployer le rôle Utilisateur avant que la connexion soit effective.** Ces collaborateurs ne pourront débloquer aucun lot, et vous chercherez un bug qui n'existe pas.
+  3. **Créer des lots avant d'avoir préparé les plages de critères.** Vous ressaisirez tout à chaque fois, et vos lots seront incohérents entre eux.
+  4. **Saisir les loyers hors charges.** Tous vos seuils de revenus seront faux, sur tous les dossiers, sans que rien ne le signale.
+  5. **Négliger le champ « origine de la demande » les premières semaines.** Vos statistiques par canal seront inexploitables, et c'est irrattrapable rétroactivement.
+</Warning>
+
+## Pour aller plus loin
+
+<CardGroup cols={2}>
+  <Card title="Cartographie" icon="map" href="/cartographie">
+    Le panorama complet des onglets et du cycle de vie d'un lot.
+  </Card>
+
+  <Card title="Glossaire" icon="book-a" href="/glossaire">
+    Le vocabulaire d'Uplace, et les termes qui prêtent à confusion.
+  </Card>
+
+  <Card title="Récapitulatif du parcours" icon="route" href="/recapitulatif">
+    Le parcours locatif de bout en bout, une fois la configuration faite.
+  </Card>
+
+  <Card title="Dépannage" icon="wrench" href="/depannage">
+    Les symptômes les plus fréquents, et ce qui n'est pas un bug.
+  </Card>
+</CardGroup>
