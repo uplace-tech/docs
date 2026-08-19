@@ -1,0 +1,176 @@
+---
+title: "RGPD et conservation des données"
+sidebarTitle: "RGPD & conservation"
+description: "Ce qu'Uplace conserve, pendant combien de temps, et ce que voit l'agence après purge."
+icon: "shield-halved"
+---
+
+## Objectif
+
+Le RGPD impose de ne pas conserver des données personnelles au-delà de la durée nécessaire au traitement. Uplace applique donc une politique de conservation automatique : au bout d'un certain temps, certaines données disparaissent — sans intervention de votre part et sans possibilité de les récupérer.
+
+Cette page décrit **ce qui est conservé, combien de temps, et ce qu'il vous reste ensuite**. Elle vous sert aussi à renseigner votre registre des traitements.
+
+<Note>
+  Les durées décrites ici sont issues du **registre de conservation validé juridiquement le 8 juillet 2026**. Elles sont **identiques pour toutes les agences** et ne sont pas paramétrables.
+</Note>
+
+## Quatre objets, quatre durées
+
+C'est le point le plus important, et celui qui prête le plus à confusion : **le « dossier » et la « candidature » sont deux objets distincts, qui se purgent séparément et selon des règles différentes.**
+
+| Objet | Ce que c'est | Durée | Point de départ |
+| --- | --- | --- | --- |
+| **La candidature** | Le rattachement d'un candidat à **un lot précis** | **3 mois** | Sa **création** |
+| **Le dossier** | Les **pièces justificatives**, garants et capacités financières du candidat | **3 mois d'inactivité** | La **dernière modification** du dossier |
+| **Le compte candidat** | L'identité et l'historique de la personne | **3 ans d'inactivité** | La **dernière connexion** |
+| **Les prospects** | Les personnes ayant pris contact sans candidater | **3 ans** | Le **dernier contact** |
+
+<Warning>
+  **Une même durée de 3 mois, mais deux mécanismes opposés.**
+
+  Le **dossier** se purge sur l'**inactivité** : chaque modification du candidat relance le compteur, et il peut donc survivre bien plus de trois mois.
+
+  La **candidature**, elle, est archivée **3 mois après sa création, quoi qu'il arrive**. Aucune action du candidat ni de l'agence ne la prolonge.
+</Warning>
+
+## Le dossier : avertissement puis purge
+
+<Steps>
+  <Step title="Avertissement — à 3 mois moins 1 jour d'inactivité">
+    Si le dossier n'a pas bougé depuis presque trois mois, le candidat reçoit un e-mail l'invitant à **conserver son dossier**. Cet e-mail indique explicitement la **date de suppression prévue**.
+  </Step>
+  <Step title="Purge — 1 jour plus tard">
+    La purge n'intervient que si l'avertissement a été envoyé depuis **au moins 24 heures** et que le dossier n'a toujours pas bougé. Un second e-mail confirme au candidat que son dossier a été purgé.
+  </Step>
+</Steps>
+
+### Ce que la purge supprime exactement
+
+- Les **fichiers** de toutes les sections du dossier : pièces du candidat, du garant personne physique, du garant entreprise et du garant organisme.
+- Les **capacités financières**, remises à zéro.
+- Le **message** rédigé par le candidat.
+- Le statut **« dossier complet »**.
+
+<Note>
+  **Le compte du candidat survit intégralement** à la purge de son dossier : son identité, ses candidatures et son historique restent en place. Seul le contenu du dossier est vidé.
+</Note>
+
+### Le candidat peut repousser la purge
+
+Oui — et c'est le sens de l'e-mail d'avertissement. **Toute modification du dossier relance un cycle complet** : le compteur repart, et un nouveau préavis sera nécessaire avant toute purge future.
+
+Un avertissement envoyé _avant_ la dernière activité du candidat est automatiquement invalidé.
+
+## La candidature : archivage à 3 mois, sans recours
+
+Trois mois après sa création, la candidature bascule en **candidature archivée**. Vous la voyez toujours dans l'historique du lot, mais son contenu n'est plus consultable — voir [Analyse des candidatures](/analyse-candidatures).
+
+<Warning>
+  **Ce délai n'est pas prolongeable**, ni par le candidat ni par vous. C'est la contrainte à connaître : si un dossier doit être conservé, il faut l'**exporter en PDF fusionné avant l'échéance**.
+</Warning>
+
+<Note>
+  **Une exception : le locataire en place.** Si le candidat est devenu le locataire du lot, rien n'est détruit — la conservation suit alors la durée du bail augmentée de 5 ans, conformément aux obligations légales de l'agence.
+</Note>
+
+## Le compte candidat : 3 ans, puis pseudonymisation
+
+Un compte est considéré comme **inactif après 3 ans** sans connexion. Deux avertissements sont envoyés, à **J-15** puis à **J-1**, en indiquant la date d'archivage.
+
+Au terme du délai, le compte est **archivé** — c'est-à-dire **pseudonymisé**, et non supprimé :
+
+- fichiers et **avatar** supprimés ;
+- **dossier purgé** ;
+- **toutes les candidatures** archivées et anonymisées ;
+- **rapport d'analyse IA** effacé ;
+- **tickets de support** et traces « prospect » anonymisés ;
+- **connexions aux agendas** révoquées ;
+- comptes des **co-candidats** créés par cette personne archivés en cascade.
+
+<Note>
+  Les lignes ne sont pas effacées de la base : **c'est l'identité qui disparaît**. Cette distinction compte pour votre registre des traitements.
+</Note>
+
+Là encore, le candidat peut repousser l'échéance : **toute reconnexion remet le compteur de 3 ans à zéro** et invalide les avertissements en cours.
+
+## Ce que voit l'agence après purge ou archivage
+
+La candidature **reste dans l'historique du lot**, sous forme anonymisée. Concrètement :
+
+| Conservé | Effacé |
+| --- | --- |
+| La ligne de candidature et sa place dans l'historique | Nom, e-mail, téléphone et avatar des membres |
+| La **date du rendez-vous**, pour la trace « une visite a eu lieu » | Le **rapport d'analyse IA** |
+| Les **créneaux de visite** de l'agence | Les **invités** retirés de ces créneaux |
+| Les lignes de **tickets de support** | Les **retours de visite** et **notes internes** |
+| L'**origine** et la **date** des prospects | Les réponses au **formulaire personnalisé** |
+|  | Les **pièces jointes** des conversations |
+
+<Note>
+  L'anonymisation est appliquée à l'affichage : partout dans l'interface, l'identité des membres d'une candidature archivée revient vide.
+</Note>
+
+## Vos statistiques ne sont pas affectées
+
+C'est une question fréquente, et la réponse est rassurante : **les purges ne détruisent pas votre historique statistique.**
+
+Avant toute destruction, Uplace écrit une **capture socio-économique dé-identifiée** de la candidature — un mécanisme prévu par l'article 5(1)(e) du RGPD, qui autorise la conservation de données à des fins statistiques dès lors qu'elles ne permettent plus d'identifier personne.
+
+S'y ajoutent la conservation des journaux d'analyses, de la date des rendez-vous pour l'étape _Rendez-vous_ du funnel, des lignes de tickets support, et de l'origine et de la date des prospects.
+
+<Warning>
+  **Une réserve, en toute transparence.** Le funnel comporte quelques trous connus, liés à des purges RGPD **antérieures** à la mise en place de ces captures. Si vous constatez une incohérence sur des périodes anciennes, l'explication est probablement là — et non dans votre saisie.
+</Warning>
+
+## Ce que vous devez faire, concrètement
+
+<Tip>
+  - **Exportez le PDF fusionné** de tout dossier dont vous aurez besoin plus tard : bail signé, litige, justification d'une décision. C'est la seule copie qui survivra aux trois mois.
+  - Traitez vos candidatures **sans laisser dormir les dossiers** : passé trois mois, la décision se prend sans pouvoir rouvrir les pièces.
+  - N'annoncez jamais à un candidat que son dossier est conservé indéfiniment : il ne l'est pas.
+  - Si un candidat s'inquiète d'un e-mail « conserver mon dossier », rassurez-le : il lui suffit de se connecter et de toucher à son dossier pour relancer le compteur.
+  - Reportez ces durées dans votre **registre des traitements** : 3 mois pour la candidature et le dossier, 3 ans pour le compte et les prospects.
+</Tip>
+
+## Erreurs fréquentes à éviter
+
+<Warning>
+  - Confondre **purge du dossier** (sur inactivité, prolongeable) et **archivage de la candidature** (à 3 mois fermes).
+  - Croire qu'une candidature archivée est récupérable : elle ne l'est pas.
+  - Croire que la purge du dossier supprime le compte du candidat : elle ne le fait pas.
+  - Attendre d'un archivage de compte qu'il efface des lignes : il **pseudonymise**, il ne supprime pas.
+  - Interpréter un trou ancien dans le funnel comme une erreur de saisie.
+</Warning>
+
+## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Puis-je paramétrer ces durées pour mon agence ?">
+    Non. Elles sont identiques pour toutes les agences et proviennent d'un registre de conservation validé juridiquement.
+  </Accordion>
+
+  <Accordion title="Un candidat me demande de supprimer ses données, que faire ?">
+    Ses données seront purgées automatiquement selon les durées ci-dessus, et il peut supprimer son compte lui-même depuis son espace — ce qui déclenche immédiatement l'archivage de ses candidatures chez vous.
+  </Accordion>
+
+  <Accordion title="Pourquoi une candidature affiche-t-elle « Candidature archivée » ?">
+    Parce qu'elle a plus de 3 mois, ou parce que le candidat a supprimé son compte. Les pièces et informations ne sont plus affichées, la ligne reste pour votre historique — voir [Analyse des candidatures](/analyse-candidatures).
+  </Accordion>
+
+  <Accordion title="Le dossier d'un candidat peut-il durer plus de trois mois ?">
+    Oui, s'il y touche : la purge du dossier se déclenche sur l'**inactivité**, pas sur l'ancienneté. Chaque modification relance un cycle complet.
+  </Accordion>
+
+  <Accordion title="Que devient le dossier du candidat que j'ai retenu ?">
+    S'il est devenu le locataire du lot, rien n'est détruit : la conservation s'aligne sur la durée du bail plus 5 ans.
+  </Accordion>
+
+  <Accordion title="Vais-je perdre mes statistiques quand les dossiers sont purgés ?">
+    Non. Une capture dé-identifiée est écrite avant toute destruction, et les éléments nécessaires au funnel sont conservés. Seules des purges antérieures à ce mécanisme laissent quelques trous sur les périodes anciennes.
+  </Accordion>
+
+  <Accordion title="Comment garder la trace d'un dossier au-delà de trois mois ?">
+    En exportant le **PDF fusionné** depuis la fiche de candidature, avant l'échéance — voir [Analyse des candidatures](/analyse-candidatures). C'est le seul moyen.
+  </Accordion>
+</AccordionGroup>
