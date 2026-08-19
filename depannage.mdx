@@ -1,0 +1,316 @@
+---
+title: "Dépannage"
+sidebarTitle: "Dépannage"
+description: "Les symptômes les plus fréquents et ce qu'il faut vérifier avant d'appeler le support."
+icon: "wrench"
+---
+
+## Comment utiliser cette page
+
+Les entrées sont classées **par symptôme**, formulées comme vous les diriez. Cherchez la vôtre, dépliez-la.
+
+<Note>
+  Une grande partie de ce qui ressemble à un dysfonctionnement dans Uplace n'en est pas un : c'est un **réglage de formule**, une **permission de rôle**, ou une **règle métier volontaire**. Les entrées ci-dessous le disent quand c'est le cas.
+</Note>
+
+<Tip>
+  Le réflexe qui résout le plus de cas : **rechargez la page**. Une session expirée ne se signale pas toujours clairement — voir la première entrée.
+</Tip>
+
+## Connexion et affichage
+
+<AccordionGroup>
+  <Accordion title="Un écran tourne indéfiniment, ou une fenêtre « Vérifiez votre adresse e-mail » apparaît sans raison">
+    **Votre session a expiré.** C'est le symptôme le plus trompeur d'Uplace : au lieu de vous renvoyer vers l'écran de connexion, l'application peut afficher un chargement qui ne se termine jamais, ou une demande de vérification d'adresse e-mail alors que votre compte est parfaitement vérifié.
+
+    **Que faire :** rechargez la page, et reconnectez-vous si l'écran de connexion apparaît. Le panneau qui semblait cassé fonctionne alors normalement.
+
+    <Warning>
+      Ne concluez pas à un bug avant d'avoir rechargé et retenté **une fois**. C'est vrai en particulier pour les panneaux latéraux (Gérer les sous-traitants) et les pages à chargement lourd (Statistiques).
+    </Warning>
+  </Accordion>
+
+  <Accordion title="Je suis connecté sur plusieurs comptes Uplace et rien ne s'affiche correctement">
+    Plusieurs sessions Uplace ouvertes dans le même navigateur peuvent se marcher dessus. Fermez les autres onglets Uplace, ou utilisez une fenêtre de navigation privée pour le second compte.
+  </Accordion>
+</AccordionGroup>
+
+## Rôles et permissions
+
+<AccordionGroup>
+  <Accordion title="Un collaborateur ne peut débloquer aucun lot">
+    Deux causes possibles, selon son rôle.
+
+    **S'il est Utilisateur :** il ne peut débloquer que les lots **dont il est gestionnaire**. Cette information ne vient pas d'Uplace, elle remonte de votre **multi-diffuseur**. Sans connexion active à Modulo by Septeo, Apimo ou Ubiflow, l'information n'existe pas et aucun déblocage ne lui est possible.
+
+    **S'il est Opérateur :** c'est normal et définitif. L'Opérateur n'a **jamais** accès à la section « débloquer un lot », quel que soit votre paramétrage. Il attend qu'on lui débloque des lots, puis travaille dessus normalement.
+
+    Voir [Rôles et permissions](/roles-permissions) et [Multi-diffuseurs](/mon-agence).
+  </Accordion>
+
+  <Accordion title="Je ne trouve pas comment changer le rôle d'un membre dans la fenêtre « Modifier »">
+    C'est normal : la fenêtre **Modifier le membre** ne gère que l'identité et les coordonnées (prénom, nom, e-mail, téléphone).
+
+    Le rôle se change **directement dans le tableau**, via le menu déroulant de la colonne **Rôle**. Le rôle en cours y est signalé par la mention _Actuel_.
+  </Accordion>
+
+  <Accordion title="Je ne peux ni modifier ni désactiver un membre">
+    Il s'agit du **Propriétaire**, le créateur du compte. Ses actions sont volontairement inaccessibles depuis le tableau, et son rôle n'est pas modifiable.
+
+    Le transfert de propriété d'une organisation passe par le **support technique**.
+  </Accordion>
+
+  <Accordion title="Un collaborateur ne voit pas l'onglet Mon agence">
+    Normal s'il est **Utilisateur** ou **Opérateur** : ces deux rôles n'ont pas accès à Mon agence. Pour lui ouvrir l'accès, il faut le passer Responsable ou Administrateur — ce qui lui ouvre aussi beaucoup d'autres choses. Vérifiez que c'est bien ce que vous voulez.
+  </Accordion>
+
+  <Accordion title="Un Responsable ne peut pas acheter de lots ni voir les factures">
+    Normal. Le rôle **Responsable** donne accès à tout **sauf l'espace facturation** : achat de lots, modification ou annulation de l'abonnement, consultation des factures. Ces actions sont réservées au Propriétaire et aux Administrateurs.
+  </Accordion>
+</AccordionGroup>
+
+## Lots, quotas et abonnement
+
+<AccordionGroup>
+  <Accordion title="Je ne peux plus ajouter de lot">
+    Votre **quota est atteint**. Ouvrez [Mon agence](/mon-agence) et regardez les deux jauges : _Lots (abonnement)_ et _Packs de lots achetés_. Ce sont **deux compteurs distincts** — un pack ne gonfle pas le quota de la formule.
+
+    Deux issues : souscrire un **pack complémentaire** via _Acheter des lots_, ou faire évoluer votre formule via _Modifier mon abonnement_.
+  </Accordion>
+
+  <Accordion title="Les lots de mon pack ont disparu au 1er janvier">
+    Ce n'est pas une perte de données : **les lots achetés en pack sont valables jusqu'à la fin de l'année civile en cours**. Les lots non consommés au 31 décembre expirent.
+
+    Pour l'avenir : dimensionnez vos packs sur les mois qui restent, pas sur un volume annuel.
+  </Accordion>
+
+  <Accordion title="Je ne trouve pas comment changer de formule dans l'interface">
+    Il n'y a pas de changement de formule en libre-service. **Modifier mon abonnement** \> _Changer d'abonnement_ propose un bouton **Nous contacter** : un conseiller Uplace vous aide à choisir le plan et active la mise à jour sans coupure de service.
+  </Accordion>
+
+  <Accordion title="J'ai annulé mon abonnement par erreur">
+    Rien n'est perdu tant que la période en cours n'est pas terminée. Rouvrez **Modifier mon abonnement** \> _Annuler mon abonnement_ : le bouton **Réactiver mon abonnement** annule la résiliation, et l'abonnement retrouve son cycle de reconduction tacite de 12 mois.
+  </Accordion>
+
+  <Accordion title="Je ne peux plus inviter de membre">
+    Votre jauge **Mon équipe** est pleine : chaque membre consomme un **siège**. Désactivez un membre qui n'utilise plus Uplace, ou faites évoluer votre formule.
+  </Accordion>
+
+  <Accordion title="J'ai archivé un lot par erreur">
+    <Warning>
+      **L'archivage est irréversible.** Il n'existe pas de désarchivage dans Uplace. L'historique du lot est conservé, mais le lot ne peut pas être remis sur le marché : il faut en recréer un.
+    </Warning>
+
+    Voir [Archivage d'un lot](/archivage-lot).
+  </Accordion>
+
+  <Accordion title="Un lot remonté par mon logiciel n'apparaît pas dans mes lots actifs">
+    Il est probablement dans **Lots en attente**, où il doit être rapproché d'un lot Uplace puis débloqué. Voir [Lots en attente](/lots-en-attente).
+  </Accordion>
+</AccordionGroup>
+
+## Candidatures et dossiers
+
+<AccordionGroup>
+  <Accordion title="Un dossier reste bloqué en « Analyse manuelle » (ou « À vérifier »)">
+    Uplace n'a pas pu analyser l'une des pièces — document étranger, ou type de pièce jamais rencontré. Le dossier **ne se débloquera pas tout seul**.
+
+    Deux actions possibles :
+
+    1. **Ouvrir la pièce concernée et la juger vous-même.** Vous ne pouvez pas saisir de note à la main, et le score global ne sera pas recalculé : le dossier restera marqué « Analyse manuelle ».
+    2. **Demander une modification du dossier.** Dès que le candidat soumet une nouvelle pièce, l'**intégralité du dossier est réanalysée**. C'est le seul moyen de retrouver un score automatique.
+  </Accordion>
+
+  <Accordion title="Un dossier affiche « Inconnu » au lieu d'un score">
+    Le dossier **n'a jamais été analysé**, parce qu'une action a été faite avant sa soumission complète — typiquement une candidature validée en cours de constitution pour permettre une visite rapide.
+
+    Ce n'est pas la même chose qu'« Analyse manuelle » : ici, aucune analyse n'a eu lieu du tout. Pour obtenir un score, il faut que le candidat **soumette son dossier complet**.
+  </Accordion>
+
+  <Accordion title="Les seuils de revenus me paraissent trop bas, des dossiers passent alors qu'ils ne devraient pas">
+    Vérifiez le **loyer saisi sur le lot**. Uplace attend le loyer **charges comprises**, et tous les seuils de capacité financière s'y appuient.
+
+    Un lot à 800 € CC dont 100 € de charges, avec un multiplicateur x3, exige 2 400 € de revenus. Si vous avez saisi 700 € par erreur, le seuil tombe à 2 100 € et laisse passer des dossiers qui ne le devraient pas.
+
+    <Note>
+      Ce piège est particulièrement fréquent sur les lots **remontés d'un multi-diffuseur** : les étapes 2 et 3 arrivent pré-remplies, et la convention de saisie du loyer n'est pas forcément la même dans le logiciel d'origine. Relisez-les.
+    </Note>
+  </Accordion>
+
+  <Accordion title="Un dossier noté « Excellent » s'est révélé frauduleux">
+    Le score de cohérence est une **moyenne** des notes de toutes les pièces. Une pièce frauduleuse notée 0, noyée dans un ensemble excellent, ne fait pas basculer le score global.
+
+    Le score sert à **prioriser**, pas à décider. Sur tout dossier que vous vous apprêtez à retenir, ouvrez les pièces **une à une** — l'analyse détaillée et la note sont affichées pièce par pièce.
+  </Accordion>
+
+  <Accordion title="Il manque une pièce dans un dossier qui m'a été soumis">
+    La situation ne devrait pas se présenter : **un candidat ne peut pas soumettre son dossier tant que toutes les pièces attendues ne sont pas déposées**. Un dossier soumis est par construction complet.
+
+    Si vous voyez un dossier incomplet, c'est qu'il est **en cours de constitution** — sa première pastille est jaune, et un taux de complétude indique où en est le candidat.
+  </Accordion>
+
+  <Accordion title="Le taux de complétude d'un couple avance très lentement">
+    Normal. Le taux progresse par paliers de 20 % pour une personne seule (cinq catégories de pièces). Pour un couple, **chaque personne compte pour la moitié** de la progression : il faut donc dix dépôts pour atteindre 100 %.
+
+    Le _mode d'occupation_ est purement déclaratif et n'entre pas dans le calcul.
+  </Accordion>
+
+  <Accordion title="J'ai corrigé le rapport IA mais la note n'a pas bougé">
+    Normal. **Modifier le rapport IA** corrige la synthèse et les champs extraits, pas les **notes** attribuées aux pièces, qui restent calculées automatiquement.
+  </Accordion>
+
+  <Accordion title="Un Utilisateur ne voit pas une candidature dont je lui parle">
+    Les rôles **Utilisateur** et **Opérateur** ne voient et ne partagent que les dossiers des candidats ayant postulé **sur leurs propres lots**. Vérifiez qui est responsable du lot concerné.
+  </Accordion>
+</AccordionGroup>
+
+## Visites et sous-traitance
+
+<AccordionGroup>
+  <Accordion title="Un sous-traitant me dit qu'il n'arrive pas à accéder à son espace">
+    C'est la cause n°1 : **le lien d'accès envoyé par e-mail n'est valable que 7 jours**. Passé ce délai, il ne fonctionne plus.
+
+    **Que faire :** ouvrez [Mon agence](/mon-agence) \> _Paramètres de l'agence_ \> **Gérer les sous-traitants**, dépliez son compteur de lots, et cliquez sur **Renvoyer l'e-mail d'accès** sur le lot concerné.
+
+    Si le problème persiste, vérifiez qu'il utilise bien **l'adresse e-mail sur laquelle vous lui envoyez les invitations** : c'est la seule reconnue pour recevoir le code de connexion.
+  </Accordion>
+
+  <Accordion title="Un sous-traitant ne voit plus un bien que je lui avais confié">
+    Vérifiez l'**interrupteur** sur la ligne du lot dans _Gérer les sous-traitants_ : s'il est éteint, son accès à ce lot est suspendu.
+
+    Trois niveaux à ne pas confondre :
+
+    | Action | Portée |
+    | --- | --- |
+    | **Interrupteur** | Suspend l'accès à **un lot**, temporairement |
+    | **Retirer de ce lot** | Le détache d'**un lot** définitivement |
+    | **Corbeille de la carte** | Le retire de **l'agence entière** |
+  </Accordion>
+
+  <Accordion title="J'ai supprimé une visite, dois-je prévenir les candidats ?">
+    **Non — Uplace les a déjà prévenus.** L'annulation d'une visite déclenche automatiquement une communication aux candidats inscrits.
+
+    Les prévenir vous-même en plus revient à les notifier deux fois, ce qui donne l'impression d'un dysfonctionnement.
+  </Accordion>
+
+  <Accordion title="Un créneau reste bloqué sur « Création en cours… »">
+    Ne recliquez pas sur Confirmer : vous risqueriez de créer deux créneaux. Attendez, puis vérifiez dans **Voir les visites** si le créneau a bien été créé.
+
+    S'il n'apparaît pas, rechargez la page et recommencez — et vérifiez d'abord que votre session n'a pas expiré (voir plus haut).
+  </Accordion>
+</AccordionGroup>
+
+## Communications et personnalisation
+
+<AccordionGroup>
+  <Accordion title="Un candidat affirme n'avoir rien reçu">
+    Ouvrez sa fiche de candidature et consultez l'**Historique des communications** : c'est la liste horodatée de tout ce qui lui a été envoyé, avec le statut d'envoi.
+
+    Vous saurez en quelques secondes si le message est bien parti, et quand. Dans la plupart des cas, il est dans ses indésirables.
+  </Accordion>
+
+  <Accordion title="Le propriétaire n'a rien reçu alors que j'ai coché « propriétaire impliqué »">
+    C'est le fonctionnement voulu : **Uplace n'automatise aucun envoi au propriétaire**. Cocher l'option enregistre simplement ses coordonnées et le propose comme destinataire lors de vos partages.
+
+    Tout partage d'information vers le propriétaire **exige une action de votre part**. Voir [Informer le propriétaire](/informer-proprietaire).
+  </Accordion>
+
+  <Accordion title="L'onglet « Personnaliser mes échanges » est grisé, impossible de cliquer dessus">
+    Ce n'est pas un bug : cet onglet est réservé à l'offre **marque grise**. Sur les formules qui ne l'incluent pas, il est volontairement désactivé.
+
+    Pour l'activer : **Modifier mon abonnement** \> _Nous contacter_.
+  </Accordion>
+
+  <Accordion title="Je voudrais modifier le texte d'un e-mail envoyé aux candidats">
+    Ce n'est pas possible, quelle que soit votre formule. Le **contenu textuel** des messages est écrit et maintenu par Uplace, identique pour toutes les agences.
+
+    La marque grise personnalise l'**habillage** — bannière, logo, couleur, expéditeur des SMS — pas le texte. Si une formulation vous pose problème, remontez-la au support : elle peut évoluer pour tout le monde.
+  </Accordion>
+
+  <Accordion title="Mon logo est refusé au téléversement">
+    Vérifiez lequel des deux logos vous êtes en train de charger — ils n'ont pas les mêmes contraintes.
+
+    | Logo | Emplacement | Formats | Poids max |
+    | --- | --- | --- | --- |
+    | **Logo de l'agence** | Fiche agence \> onglet _Mon agence_ | PNG, JPG | **5 Mo** |
+    | **Logo des e-mails** | Fiche agence \> onglet _Personnaliser mes échanges_ | PNG, JPEG | **2 Mo** |
+  </Accordion>
+
+  <Accordion title="Je n'arrive pas à changer le nom d'expéditeur de mes SMS">
+    Normal : ce champ n'est pas modifiable en autonomie. Les noms d'expéditeur SMS doivent être **déclarés auprès des opérateurs**. La demande passe par le support Uplace, et prend du temps — anticipez-la.
+  </Accordion>
+</AccordionGroup>
+
+## Intégrations
+
+<AccordionGroup>
+  <Accordion title="Le bouton « Activer la connexion » du multi-diffuseur reste grisé">
+    Il le reste tant que l'interrupteur **La connexion est établie** n'est pas activé. Et cet interrupteur ne doit être activé qu'**une fois la liaison validée par votre multi-diffuseur** — pas avant.
+
+    L'activation se fait donc en trois temps : choisir le diffuseur, **Demander l'activation** (ou écrire à `contact@uplace.fr`), puis attendre la validation externe.
+
+    <Warning>
+      Activer l'interrupteur avant la validation effective ne fait pas gagner de temps : la synchronisation ne fonctionnera pas.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="Je ne reçois pas les demandes de mon site internet ou d'un portail">
+    Vérifiez que l'adresse de contact renseignée chez ce portail — ou sur votre site — est bien votre **adresse de collecte Uplace**, de la forme `nom-de-votre-agence@inbox.uplace.fr`.
+
+    Vous la retrouvez dans _Paramètres de l'agence_ \> **Boîte de réception**, avec un bouton **Copier**.
+  </Accordion>
+
+  <Accordion title="Mes visites Uplace n'apparaissent pas dans mon agenda">
+    La synchronisation avec Google, Outlook ou Apple n'est pas active par défaut. Voir [Synchro calendrier](/synchronisation-calendrier).
+  </Accordion>
+</AccordionGroup>
+
+## Statistiques
+
+<AccordionGroup>
+  <Accordion title="J'ai plus de candidatures que de prises de contact, le funnel est incohérent">
+    Ce n'est pas une anomalie. **Le funnel n'est pas un entonnoir au sens strict** : toutes les candidatures ne naissent pas d'une prise de contact enregistrée.
+
+    Un candidat peut arriver par un **lien de candidature** que vous avez partagé, par une **invitation manuelle**, ou par la **vitrine publique** de l'agence, sans jamais générer de demande entrante.
+
+    Ne lisez donc pas les écarts entre deux étapes comme un taux de déperdition.
+  </Accordion>
+
+  <Accordion title="Un prospect m'a contacté depuis trois portails, il n'est compté qu'une fois">
+    C'est voulu. Uplace **rapproche les demandes multiples** d'une même personne. L'identifiant de rapprochement est l'**adresse e-mail** — ni le nom, ni le prénom, ni le téléphone.
+
+    Le prospect est donc compté une fois, affiché une fois, et ne reçoit la séquence d'e-mails et de SMS qu'une seule fois. C'est ce qui vous évite d'écrire trois fois à la même personne.
+  </Accordion>
+
+  <Accordion title="« Candidatures traitées » et « Candidatures complètes » affichent le même chiffre">
+    Parce que c'est la **même mesure**, sous deux libellés : un dossier complet est un dossier soumis, donc analysé, donc traité. Il n'y a rien à chercher de plus.
+  </Accordion>
+
+  <Accordion title="Le graphique par origine ne veut rien dire">
+    Il ne peut être fiable que si le champ **Origine de la demande** est renseigné avec soin à chaque entrée dans le parcours. Une origine saisie au hasard, ou toujours la même par habitude, rend l'analyse par canal inexploitable.
+
+    C'est un problème de saisie, pas d'outil — et il se corrige seulement pour l'avenir.
+  </Accordion>
+
+  <Accordion title="Mes taux bougent énormément d'un mois à l'autre">
+    Vérifiez le volume avant de conclure. Sur un petit nombre de dossiers, quelques unités suffisent à faire varier fortement les pourcentages.
+
+    Vérifiez aussi que vous comparez des **périodes de même durée** : la plage de dates étant entièrement libre, rien ne vous empêche de comparer un mois à un trimestre.
+  </Accordion>
+</AccordionGroup>
+
+## Rien ne correspond ?
+
+<CardGroup cols={2}>
+  <Card title="Demandez à Uppy" icon="sparkles" href="/uppy">
+    L'assistant intégré répond immédiatement aux questions sur la plateforme, et bascule vers un humain si besoin.
+  </Card>
+
+  <Card title="Vérifiez le vocabulaire" icon="book-a" href="/glossaire">
+    Beaucoup de faux problèmes viennent d'un terme compris de travers — « Propriétaire », « Inconnu », « pré-validation ».
+  </Card>
+</CardGroup>
+
+<Tip>
+  Quand vous contactez le support, gagnez un aller-retour en indiquant d'emblée : la **référence du lot**, le **rôle** du collaborateur concerné, et ce que vous avez **déjà tenté**.
+</Tip>
