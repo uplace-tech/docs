@@ -119,5 +119,43 @@
       "destination": "/marquer-loue",
       "permanent": true
     }
-  ]
+  ],
+  "footer": {
+    "links": [
+      {
+        "header": "Documents légaux",
+        "items": [
+          {
+            "label": "Protection des données",
+            "href": "https://uplace.fr/protection-des-donnees"
+          },
+          {
+            "label": "CGU",
+            "href": "https://uplace.fr/cgu"
+          },
+          {
+            "label": "CGV",
+            "href": "https://uplace.fr/cgv"
+          }
+        ]
+      },
+      {
+        "header": "Uplace",
+        "items": [
+          {
+            "label": "Site Uplace",
+            "href": "https://uplace.fr"
+          },
+          {
+            "label": "Accéder à l'application",
+            "href": "https://app.uplace.fr"
+          },
+          {
+            "label": "Support",
+            "href": "mailto:support@uplace.fr"
+          }
+        ]
+      }
+    ]
+  }
 }
