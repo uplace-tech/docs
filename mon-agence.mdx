@@ -58,9 +58,9 @@ La fenêtre **Acheter des lots supplémentaires** propose quatre packs. Le pack 
 Un récapitulatif rappelle le pack sélectionné et le total avant le bouton **Procéder au paiement**, qui ouvre le paiement Stripe.
 
 <Warning>
-  **Les lots achetés sont valables 12 mois glissants, jusqu'à la date anniversaire de votre abonnement.** Les compteurs sont remis à zéro à chaque reconduction : si vous avez souscrit le 12 juin, vos crédits repartent de zéro le 12 juin de l'année suivante, quel que soit le nombre de lots restants.
+  **Les lots achetés n'expirent pas.** La seule condition pour les utiliser est d'avoir un **abonnement en cours** : tant que c'est le cas, votre réserve de packs reste disponible, sans limite de durée et sans remise à zéro.
 
-  Dimensionnez donc vos packs sur les mois qui vous séparent de votre date anniversaire, pas sur un volume calendaire.
+  Vous pouvez donc acheter un pack à n'importe quel moment de l'année sans craindre de perdre les lots non consommés.
 </Warning>
 
 <Note>
@@ -282,7 +282,7 @@ Les cinq rôles existants sont **Propriétaire**, **Administrateur**, **Responsa
   - Renseignez complètement la **fiche agence** : logo, SIRET et identité apparaissent aux candidats.
   - Diffusez votre adresse `@inbox.uplace.fr` auprès de vos portails et sur votre site.
   - Lancez la demande de connexion multi-diffuseur **tôt** : elle dépend d'une validation externe.
-  - Surveillez les jauges **Lots** et **Sièges** avant les pics d'activité, et achetez vos packs en tenant compte de votre **date anniversaire** d'abonnement, qui remet les compteurs à zéro.
+  - Surveillez les jauges **Lots** et **Sièges** avant les pics d'activité. Les packs n'expirant pas, rien n'interdit d'anticiper largement.
   - Avant de déployer le rôle **Utilisateur**, vérifiez que votre multi-diffuseur remonte bien l'information gestionnaire.
   - Réservez **Administrateur** aux personnes qui doivent réellement toucher à l'abonnement et à la facturation.
 </Tip>
@@ -291,8 +291,7 @@ Les cinq rôles existants sont **Propriétaire**, **Administrateur**, **Responsa
 
 <Warning>
   - Confondre le quota de **lots de l'abonnement** et celui des **packs achetés** : ce sont deux compteurs séparés.
-  - Acheter un gros pack juste avant votre date anniversaire : les lots non consommés sont perdus à la reconduction.
-  - Croire que les crédits expirent au 31 décembre : la période est **glissante**, calée sur votre date de souscription.
+  - Renoncer à un pack par crainte de perdre les lots non consommés : les packs **n'expirent pas**.
   - Confondre le **logo de l'agence** (5 Mo) et le **logo des e-mails** (2 Mo).
   - Croire que l'onglet _Personnaliser mes échanges_ est en panne alors qu'il est simplement hors formule.
   - Attribuer le rôle « Administrateur » à des collaborateurs qui n'ont pas à toucher à l'abonnement.
@@ -310,7 +309,7 @@ Les cinq rôles existants sont **Propriétaire**, **Administrateur**, **Responsa
   - Envoie un e-mail d'invitation aux nouveaux membres.
   - Bloque l'ajout de nouveaux lots lorsque le quota est atteint.
   - Reconduit l'abonnement tacitement tous les 12 mois, sauf résiliation demandée dans l'intervalle.
-  - Remet les compteurs de lots à zéro à chaque reconduction, à la date anniversaire de la souscription.
+  - Renouvelle le quota de lots de la formule à chaque reconduction, et conserve indéfiniment les lots achetés en pack.
   - Maintient l'accès jusqu'au terme de la période en cas d'annulation d'abonnement.
 </Info>
 
@@ -318,13 +317,20 @@ Les cinq rôles existants sont **Propriétaire**, **Administrateur**, **Responsa
 
 <AccordionGroup>
   <Accordion title="Quelle est la différence entre les lots de l'abonnement et les packs achetés ?">
-    Ce sont **deux compteurs distincts**, avec chacun sa jauge. Les packs constituent une réserve complémentaire, ils ne viennent pas augmenter le quota de votre formule. Les deux compteurs sont remis à zéro à la **date anniversaire** de l'abonnement.
+    Ce sont **deux compteurs distincts**, avec chacun sa jauge. Les packs constituent une réserve complémentaire, ils ne viennent pas augmenter le quota de votre formule.
+
+    Ils ne se comportent pas non plus de la même façon dans le temps :
+
+    |  | Quota de la formule | Packs achetés |
+    | --- | --- | --- |
+    | **Dans le temps** | Se renouvelle à chaque reconduction annuelle | **N'expire pas** |
+    | **Condition d'usage** | Abonnement en cours | Abonnement en cours |
   </Accordion>
 
-  <Accordion title="Quand mes crédits de lots sont-ils remis à zéro ?">
-    À la **date anniversaire de votre souscription**, au moment de la reconduction tacite. Une souscription au 12 juin remet donc les compteurs à zéro le 12 juin de chaque année.
+  <Accordion title="Mes lots achetés en pack peuvent-ils expirer ?">
+    Non. **Les packs n'expirent pas.** La seule condition est d'avoir un **abonnement en cours** : tant que votre abonnement est actif, votre réserve reste utilisable, sans limite de durée.
 
-    Ce n'est pas une échéance calendaire au 31 décembre : la période est **glissante** et propre à votre agence.
+    Ne confondez pas avec le quota de la **formule**, qui lui se renouvelle à chaque reconduction annuelle de l'abonnement.
   </Accordion>
 
   <Accordion title="Combien coûte un lot supplémentaire ?">
