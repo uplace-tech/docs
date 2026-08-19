@@ -7,52 +7,107 @@ icon: "calendar-days"
 
 ## Objectif
 
-Visualiser d'un coup d'œil le planning des rendez-vous de visite de l'agence, semaine par semaine, pour équilibrer la charge entre responsables et éviter les conflits d'horaires.
+Visualiser d'un coup d'œil le planning des rendez-vous de visite, semaine par semaine, pour équilibrer la charge entre collaborateurs et éviter les conflits d'horaires.
 
 <Note>
   **Où trouver cette fonctionnalité ?** Sidebar \> **Calendrier** — ou Dashboard \> **Voir l'agenda**.
 </Note>
 
-## Fonctionnement étape par étape
+## L'écran
 
-<Steps>
-  <Step title="Parcourir la semaine">
-    Le calendrier affiche la semaine en cours (numéro de semaine en bas). Les flèches naviguent de semaine en semaine ; le bouton central revient à aujourd'hui.
-  </Step>
-  <Step title="Filtrer par responsable">
-    Le sélecteur **Toute l'agence** permet d'afficher uniquement le planning d'un membre de l'équipe.
-  </Step>
-  <Step title="Ouvrir une visite">
-    Cliquez sur un créneau pour consulter le détail : lot, candidat(s), horaire — et le modifier si besoin, voir [Gérer les visites](/gerer-visites).
-  </Step>
-  <Step title="Synchroniser">
-    Le bouton **Synchroniser** fournit le lien qui connecte le calendrier Uplace à votre agenda externe (Google, Outlook, Apple) — guide pas à pas : [Synchro calendrier](/synchronisation-calendrier).
-  </Step>
-</Steps>
+Le calendrier affiche une **semaine complète, du lundi au dimanche**, en colonnes. Le jour en cours est surligné, et un **trait rouge** matérialise l'heure actuelle.
+
+En bas de l'écran : deux **flèches** pour changer de semaine, un bouton pour **revenir à aujourd'hui**, le **numéro de la semaine**, et le bouton **Synchroniser**.
+
+<Tip>
+  La grille couvre la journée entière : faites défiler verticalement si vos visites tombent tôt le matin ou tard le soir.
+</Tip>
+
+## Filtrer le planning
+
+Le sélecteur en haut à droite propose :
+
+- **Toute l'agence** — la vue par défaut ;
+- **Mes visites** — votre planning personnel ;
+- **chaque membre de l'équipe**, nominativement ;
+- **chaque sous-traitant de visites**, signalé par un badge **Sous-traitant**.
+
+<Note>
+  **Les sous-traitants figurent dans ce filtre au même titre que vos collaborateurs.** C'est le moyen le plus rapide de vérifier ce qu'un prestataire externe a réellement au planning cette semaine — voir [Gérer les visites & sous-traitance](/gerer-visites).
+</Note>
+
+## Ouvrir une visite
+
+Un clic sur un créneau ouvre la **fiche complète de la visite**, et non une simple info-bulle. Vous y trouvez :
+
+| Bloc | Contenu |
+| --- | --- |
+| **Le bien** | Référence, intitulé, jour, horaires et **lieu de rendez-vous**. |
+| **Les compteurs** | Nombre de créneaux, durée, **places libres** et **inscrits**. |
+| **Le responsable** | Le membre ou le sous-traitant en charge. |
+| **Les candidats inscrits** | Coordonnées, créneau retenu, date de réservation et **annotation**. |
+
+Trois actions sont disponibles depuis cette fiche :
+
+- **Changer de responsable** — confier la visite à un autre membre de l'équipe ou à un sous-traitant ;
+- **Supprimer cette visite** — ce qui **notifie les candidats** et libère les créneaux ;
+- **Mode visite** — voir [Gérer les visites](/gerer-visites).
+
+<Warning>
+  La suppression d'une visite **prévient automatiquement les candidats inscrits**. N'écrivez pas en plus pour les avertir : ils recevraient deux messages.
+</Warning>
+
+## Synchroniser avec son agenda
+
+Le bouton **Synchroniser**, en bas à droite, ouvre la fenêtre **Synchroniser le calendrier** — _« Synchronisez vos plages de rendez-vous Uplace avec votre calendrier personnel ou professionnel. »_
+
+Quatre choix : **Google**, **Apple**, **Outlook** et **Autre** — cette dernière option servant à récupérer le lien iCal pour tout autre agenda.
+
+Le guide pas à pas se trouve dans [Synchro calendrier](/synchronisation-calendrier).
 
 ## Bonnes pratiques recommandées
 
-- Consultez le calendrier en début de journée avec le filtre sur votre nom : c'est votre feuille de route.
-- En cas d'absence d'un membre, filtrez sur son planning pour réaffecter ses visites.
+<Tip>
+  - Consultez le calendrier en début de journée avec le filtre sur **Mes visites** : c'est votre feuille de route.
+  - En cas d'absence d'un collaborateur, filtrez sur son planning et réaffectez ses visites avec **Changer de responsable**.
+  - Vérifiez le planning d'un **sous-traitant** avant de lui confier un créneau supplémentaire.
+  - Contrôlez le **lieu de rendez-vous** dans la fiche : il peut différer de l'adresse du bien.
+</Tip>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
   - Planifier des visites hors d'Uplace : elles n'apparaissent ni dans le calendrier ni dans les statistiques.
   - Oublier de vérifier le planning du responsable avant de programmer une visite à sa place.
+  - Prévenir manuellement les candidats après avoir supprimé une visite, alors qu'Uplace l'a déjà fait.
+  - Modifier une visite depuis son agenda externe : la synchronisation est **unidirectionnelle**.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Ajoute chaque visite créée (classique, instantanée ou sous-traitée) au calendrier de l'agence.
+  - Ajoute chaque visite créée — classique, instantanée ou sous-traitée — au calendrier de l'agence.
   - Met à jour le planning en temps réel en cas de modification ou d'annulation.
+  - Notifie les candidats inscrits lorsqu'une visite est supprimée, et libère leurs créneaux.
+  - Alimente le flux de synchronisation vers les agendas externes.
 </Info>
 
 ## Questions fréquentes
 
 <AccordionGroup>
   <Accordion title="Les visites sous-traitées apparaissent-elles dans le calendrier ?">
-    Oui, toutes les visites du lot sont visibles, y compris celles confiées à un sous-traitant — voir [Gérer les visites](/gerer-visites).
+    Oui. Elles sont visibles dans la vue **Toute l'agence**, et chaque sous-traitant dispose de sa propre entrée dans le filtre, signalée par un badge.
+  </Accordion>
+
+  <Accordion title="Comment réaffecter une visite ?">
+    Ouvrez le créneau, puis **Changer de responsable** : vous pouvez la confier à un membre de l'équipe ou à un sous-traitant.
+  </Accordion>
+
+  <Accordion title="Dois-je prévenir les candidats si je supprime une visite ?">
+    Non, Uplace s'en charge et libère les créneaux.
+  </Accordion>
+
+  <Accordion title="Puis-je gérer mes visites depuis Google ou Outlook ?">
+    Non. La synchronisation est **unidirectionnelle** : Uplace alimente votre agenda, mais rien de ce que vous y modifiez ne remonte — voir [Synchro calendrier](/synchronisation-calendrier).
   </Accordion>
 </AccordionGroup>
