@@ -5,4 +5,77 @@ description: "Connecter votre multi-diffuseur (Septeo, Apimo) pour importer auto
 icon: "arrows-rotate"
 ---
 
-CORPS\_A\_REMPLIR\_MD
+## Objectif
+
+En complément de la [redirection des prises de contact](/guide-installation/prises-de-contact), la connexion multi-diffuseur importe vos **annonces** et l'information **gestionnaire** — celle qui conditionne le déblocage des lots par le rôle Utilisateur, voir [Rôles et permissions](/roles-permissions). Les étapes 1 à 3 de la [création d'un lot](/creation-lot) s'en trouvent masquées ou pré-remplies.
+
+<Note>
+  Cette page reprend le contenu du **Guide d'installation** transmis aux agences lors de l'onboarding, captures d'écran incluses. Pour l'ordre global de mise en route, voir la [Checklist de mise en route](/onboarding).
+</Note>
+
+## Modelo / Netty — Septeo (clé API)
+
+Support : [support@netty.fr](mailto:support@netty.fr) — 03 67 10 68 28.
+
+<Steps>
+  <Step title="Créer une clé API dans Septeo">
+    Connectez-vous à votre logiciel Septeo, puis rendez-vous dans le menu **Paramètres** \> **Gestion des clés API** \> **Tester gratuitement l'API pendant 15 jours**.
+
+    Vérifiez que la clé est **Active**, et renseignez dans **IP autorisées** : `51.15.227.12`.
+  </Step>
+  <Step title="Activer le connecteur sur Uplace">
+    Une fois la clé obtenue, active et l'IP renseignée, rendez-vous dans [Mon agence](/mon-agence) \> **Paramètres de l'agence** \> **Multi-diffuseurs** pour activer la connexion.
+  </Step>
+</Steps>
+
+<Frame caption="Septeo (Modelo / Netty) — demander la clé API et autoriser l'IP Uplace (51.15.227.12)">
+  ![Obtenir la clé API Septeo](data:image/webp;base64,PLACEHOLDER_P17)
+</Frame>
+
+<Frame caption="Modelo Office — activer le connecteur pour la remontée des annonces">
+  ![Activer le connecteur dans Modelo Office](data:image/webp;base64,PLACEHOLDER_P18)
+</Frame>
+
+## Apimo (ID agence)
+
+Support : [support@apimo.com](mailto:support@apimo.com) — 04 92 91 90 63.
+
+<Steps>
+  <Step title="Faire la demande de connexion depuis Uplace">
+    [Mon agence](/mon-agence) \> **Paramètres de l'agence** \> **Multi-diffuseurs** \> **Demande d'activation**.
+  </Step>
+  <Step title="Renseigner votre ID Apimo">
+    Indiquez votre **ID Apimo** dans le champ prévu, puis validez.
+  </Step>
+</Steps>
+
+<Frame caption="Apimo — autoriser Uplace à récupérer les données de vos annonces">
+  ![Connecter Apimo à Uplace](data:image/webp;base64,PLACEHOLDER_P19)
+</Frame>
+
+<Note>
+  La connexion multi-diffuseur n'est **pas instantanée** : elle suppose une validation côté éditeur. Une fois active, vos annonces remontent dans [Lots en attente](/lots-en-attente), prêtes à être rapprochées.
+</Note>
+
+## Besoin d'aide ?
+
+L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](mailto:contact@uplace.fr) — 04 82 53 15 81.
+
+## Erreurs fréquentes à éviter
+
+<Warning>
+  - Activer l'interrupteur _La connexion est établie_ du multi-diffuseur avant la validation effective côté éditeur.
+  - Oublier l'**IP autorisée** `51.15.227.12` lors de la création de la clé API Septeo : la connexion échouera silencieusement.
+</Warning>
+
+## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="La connexion Septeo est-elle payante ?">
+    La clé API Septeo démarre par un **essai gratuit de 15 jours** depuis leur interface. Pour la suite, rapprochez-vous de votre contact Septeo.
+  </Accordion>
+
+  <Accordion title="Mon logiciel n'est ni Septeo ni Apimo, que faire ?">
+    Contactez [contact@uplace.fr](mailto:contact@uplace.fr) : l'équipe vous indiquera si un connecteur est disponible ou prévu pour votre logiciel. En attendant, vous pouvez créer vos lots manuellement, voir [Création d'un lot](/creation-lot).
+  </Accordion>
+</AccordionGroup>
