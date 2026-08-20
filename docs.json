@@ -27,7 +27,15 @@
           "cartographie",
           "glossaire",
           "onboarding",
-          "guide-installation"
+          "guide-installation",
+          {
+            "group": "Guide d'installation",
+            "icon": "plug",
+            "pages": [
+              "guide-installation/prises-de-contact",
+              "guide-installation/multi-diffuseur"
+            ]
+          }
         ]
       },
       {
