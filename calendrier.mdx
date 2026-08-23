@@ -21,6 +21,8 @@ Visualiser d'un coup d'œil le planning des rendez-vous de visite, semaine par s
 
 Le calendrier affiche une **semaine complète, du lundi au dimanche**, en colonnes. Le jour en cours est surligné, et un **trait rouge** matérialise l'heure actuelle.
 
+Un **code couleur** donne la lecture d'un coup d'œil : sur chaque plage de visite que vous avez ouverte, affichée en **clair**, les créneaux réellement **réservés apparaissent en foncé**. Vous voyez donc immédiatement ce qui est pris et ce qui reste à remplir. Si vous avez connecté votre agenda personnel (voir plus bas), vos rendez-vous Google ou Outlook s'affichent dans la même vue, avec leur propre couleur.
+
 En bas de l'écran : deux **flèches** pour changer de semaine, un bouton pour **revenir à aujourd'hui**, le **numéro de la semaine**, et le bouton **Synchroniser**.
 
 <Tip>
@@ -61,13 +63,20 @@ Trois actions sont disponibles depuis cette fiche :
   La suppression d'une visite **prévient automatiquement les candidats inscrits**. N'écrivez pas en plus pour les avertir : ils recevraient deux messages.
 </Warning>
 
-## Synchroniser avec son agenda
+## Connecter son agenda personnel
 
-Le bouton **Synchroniser**, en bas à droite, ouvre la fenêtre **Synchroniser le calendrier** — _« Synchronisez vos plages de rendez-vous Uplace avec votre calendrier personnel ou professionnel. »_
+Le calendrier se **connecte nativement à Google Agenda et à Outlook** : vos rendez-vous Uplace et vos rendez-vous personnels vivent dans la **même vue**, chacun avec sa couleur.
 
-Quatre choix : **Google**, **Apple**, **Outlook** et **Autre** — cette dernière option servant à récupérer le lien iCal pour tout autre agenda.
+- **Dans Uplace**, vos rendez-vous personnels apparaissent dans le calendrier : vous ouvrez vos plages de visite en voyant vos vraies disponibilités.
+- **Dans votre agenda habituel**, vos visites Uplace apparaissent avec un **lien direct vers le mode visite** : vous préparez votre tournée depuis Google Agenda ou Outlook, sans repasser par la plateforme.
+
+Le bouton **Synchroniser**, en bas à droite, ouvre la fenêtre **Synchroniser le calendrier**. Quatre choix : **Google** et **Outlook** pour la connexion native, **Apple** et **Autre** pour un abonnement par lien iCal (lecture seule).
 
 Le guide pas à pas se trouve dans [Synchro calendrier](/synchronisation-calendrier).
+
+## Les temps de trajet calculés pour vous
+
+Uplace peut **calculer automatiquement vos temps de trajet** d'une adresse à l'autre — **à pied, à vélo ou en voiture** — et **bloquer le temps nécessaire avant et après chaque visite** dans votre calendrier. Vous ne pouvez plus vous retrouver avec deux visites collées à deux bouts de la ville.
 
 ## Bonnes pratiques recommandées
 
@@ -84,7 +93,7 @@ Le guide pas à pas se trouve dans [Synchro calendrier](/synchronisation-calendr
   - Planifier des visites hors d'Uplace : elles n'apparaissent ni dans le calendrier ni dans les statistiques.
   - Oublier de vérifier le planning du responsable avant de programmer une visite à sa place.
   - Prévenir manuellement les candidats après avoir supprimé une visite, alors qu'Uplace l'a déjà fait.
-  - Modifier une visite depuis son agenda externe : la synchronisation est **unidirectionnelle**.
+  - Modifier une **visite Uplace** depuis son agenda externe : la gestion des visites se fait toujours dans Uplace, seule la consultation est synchronisée.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
@@ -93,6 +102,8 @@ Le guide pas à pas se trouve dans [Synchro calendrier](/synchronisation-calendr
   - Ajoute chaque visite créée — classique, instantanée ou sous-traitée — au calendrier de l'agence.
   - Met à jour le planning en temps réel en cas de modification ou d'annulation.
   - Notifie les candidats inscrits lorsqu'une visite est supprimée, et libère leurs créneaux.
+  - Affiche vos rendez-vous personnels Google ou Outlook dans la même vue, si vous avez connecté votre agenda.
+  - Calcule les temps de trajet entre deux adresses et bloque le temps nécessaire avant et après chaque visite, si vous activez l'option.
   - Alimente le flux de synchronisation vers les agendas externes.
 </Info>
 
@@ -112,6 +123,10 @@ Le guide pas à pas se trouve dans [Synchro calendrier](/synchronisation-calendr
   </Accordion>
 
   <Accordion title="Puis-je gérer mes visites depuis Google ou Outlook ?">
-    Non. La synchronisation est **unidirectionnelle** : Uplace alimente votre agenda, mais rien de ce que vous y modifiez ne remonte — voir [Synchro calendrier](/synchronisation-calendrier).
+    Non : la gestion des visites — création, modification, suppression — se fait toujours dans Uplace. En revanche, avec la connexion native Google ou Outlook, vos rendez-vous personnels s'affichent dans le calendrier Uplace, et vos visites Uplace apparaissent dans votre agenda avec un **lien direct vers le mode visite** — voir [Synchro calendrier](/synchronisation-calendrier).
+  </Accordion>
+
+  <Accordion title="À quoi servent les temps de trajet ?">
+    Uplace calcule le trajet entre l'adresse de votre rendez-vous précédent et celle de la visite — à pied, à vélo ou en voiture — et bloque ce temps dans votre calendrier avant et après la visite. Personne ne peut donc réserver un créneau que vous ne pourriez pas honorer.
   </Accordion>
 </AccordionGroup>
