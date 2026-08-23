@@ -86,7 +86,6 @@
           "roles-permissions",
           "notifications",
           "annexe",
-          "recapitulatif",
           "uppy",
           "personnalisation",
           "depannage",
@@ -129,6 +128,11 @@
     {
       "source": "/prospects",
       "destination": "/boite-reception",
+      "permanent": true
+    },
+    {
+      "source": "/recapitulatif",
+      "destination": "/",
       "permanent": true
     }
   ],
