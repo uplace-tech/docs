@@ -63,8 +63,8 @@
         ]
       },
       {
-        "group": "Côté candidat",
-        "icon": "user",
+        "group": "Communications automatiques",
+        "icon": "paper-plane",
         "pages": [
           "messages-candidats"
         ]
