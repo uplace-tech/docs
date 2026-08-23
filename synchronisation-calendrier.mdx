@@ -13,20 +13,20 @@ Deux mécanismes coexistent :
 
 | Agenda | Mécanisme | Ce que vous obtenez |
 | --- | --- | --- |
-| **Google Agenda**, **Outlook** | **Connexion native** | Vos rendez-vous personnels s'affichent dans le calendrier Uplace, et vos visites Uplace apparaissent dans votre agenda avec un **lien direct vers le mode visite**. |
-| **Apple**, **Autre** | **Lien iCal** (flux en lecture seule) | Vos visites Uplace s'affichent dans votre agenda, en consultation uniquement. |
+| **Google Agenda**, **Outlook** | **Connexion directe** | Vos rendez-vous personnels s'affichent dans le calendrier Uplace, et vos visites Uplace apparaissent dans votre agenda avec un **lien direct vers le mode visite**. |
+| **N'importe quel agenda** — Google, Apple, Outlook, autre | **Lien iCal** (flux en lecture seule) | Vos visites Uplace s'affichent dans votre agenda, en consultation uniquement. |
 
 <Note>
-  **Où trouver cette fonctionnalité ?** [Calendrier](/calendrier) \> bouton **Synchroniser** (en bas à droite).
+  **Où trouver cette fonctionnalité ?** [Calendrier](/calendrier) \> bouton **Synchroniser** (en haut à droite).
 
-  La fenêtre propose quatre entrées : **Google**, **Outlook**, **Apple** et **Autre**. Les deux premières lancent la connexion native (vous autorisez Uplace à accéder à votre agenda) ; **Apple** et **Autre** vous donnent le lien iCal, à coller dans votre agenda en suivant les étapes ci-dessous.
+  La fenêtre **Synchroniser le calendrier** propose deux blocs : **Connexion directe** — signalée _Recommandé_ — avec **Synchroniser avec Outlook** et **Synchroniser avec Google Agenda**, et **Par lien iCal**, _« un lien en lecture seule à ajouter dans n'importe quel agenda »_ — **Google**, **Apple**, **Outlook** ou **Autre**.
 </Note>
 
-## Connexion native Google ou Outlook
+## Connexion directe Google ou Outlook
 
 <Steps>
   <Step title="Ouvrir la fenêtre de synchronisation">
-    [Calendrier](/calendrier) \> **Synchroniser** \> **Google** ou **Outlook**.
+    [Calendrier](/calendrier) \> **Synchroniser** \> **Synchroniser avec Google Agenda** ou **Synchroniser avec Outlook**.
   </Step>
   <Step title="Autoriser l'accès">
     Connectez-vous à votre compte Google ou Microsoft et autorisez Uplace à accéder à votre agenda.
@@ -40,7 +40,7 @@ Deux mécanismes coexistent :
   La gestion des visites — création, modification, suppression — reste dans Uplace : ce que vous modifiez sur un événement Uplace depuis Google ou Outlook n'est pas pris en compte.
 </Note>
 
-## Abonnement par lien iCal (Apple et autres agendas)
+## Abonnement par lien iCal (tout agenda)
 
 <Tabs>
   <Tab title="Apple Calendrier">
@@ -67,7 +67,7 @@ Deux mécanismes coexistent :
   <Tab title="Autre agenda">
     <Steps>
       <Step title="Copier le lien de synchronisation Uplace">
-        Depuis le [Calendrier](/calendrier) Uplace, ouvrez **Synchroniser** \> **Autre** et copiez le lien iCal.
+        Depuis le [Calendrier](/calendrier) Uplace, ouvrez **Synchroniser** \> bloc **Par lien iCal** \> **Autre** et copiez le lien.
       </Step>
       <Step title="S'abonner depuis votre agenda">
         Dans votre application d'agenda, cherchez l'option d'abonnement à un calendrier externe (souvent « S'abonner à partir du web » ou « À partir de l'URL ») et collez le lien.
@@ -79,12 +79,12 @@ Deux mécanismes coexistent :
 </Tabs>
 
 <Note>
-  Ces étapes concernent l'abonnement **iCal**. Pour **Google Agenda** et **Outlook**, préférez la connexion native décrite plus haut : elle est plus rapide à mettre en place, plus réactive, et elle fait aussi remonter vos rendez-vous personnels dans Uplace.
+  Ces étapes concernent l'abonnement **iCal**. Pour **Google Agenda** et **Outlook**, préférez la connexion directe décrite plus haut : elle est plus rapide à mettre en place, plus réactive, et elle fait aussi remonter vos rendez-vous personnels dans Uplace.
 </Note>
 
 ## À propos des délais de mise à jour
 
-Avec la **connexion native** (Google, Outlook), les mises à jour sont rapides dans les deux sens d'affichage. Avec un **abonnement iCal** (Apple, Autre), il peut y avoir un **délai** entre une modification dans Uplace et son apparition dans votre agenda : chaque fournisseur actualise les calendriers externes à son propre rythme.
+Avec la **connexion directe** (Google, Outlook), les mises à jour sont rapides dans les deux sens d'affichage. Avec un **abonnement iCal**, il peut y avoir un **délai** entre une modification dans Uplace et son apparition dans votre agenda : chaque fournisseur actualise les calendriers externes à son propre rythme.
 
 <Info>
   Sur un flux iCal, un délai de plusieurs heures est tout à fait normal et ne signifie pas qu'il y a un problème. La fréquence de mise à jour dépend entièrement du fournisseur de l'agenda : elle ne peut pas être accélérée depuis Uplace. Sur Apple Calendrier, vous pouvez toutefois régler l'actualisation à « Toutes les 15 minutes ».
@@ -100,7 +100,7 @@ Avec la **connexion native** (Google, Outlook), les mises à jour sont rapides d
 
 <AccordionGroup>
   <Accordion title="Mes visites n'apparaissent pas immédiatement, est-ce normal ?">
-    Sur un abonnement iCal (Apple, Autre), oui : les agendas externes actualisent les flux à leur propre rythme et un délai de plusieurs heures est normal. Avec la connexion native Google ou Outlook, les mises à jour sont nettement plus rapides.
+    Sur un abonnement iCal, oui : les agendas externes actualisent les flux à leur propre rythme et un délai de plusieurs heures est normal. Avec la connexion directe Google ou Outlook, les mises à jour sont nettement plus rapides.
   </Accordion>
 
   <Accordion title="Puis-je modifier une visite depuis mon agenda externe ?">
@@ -108,7 +108,7 @@ Avec la **connexion native** (Google, Outlook), les mises à jour sont rapides d
   </Accordion>
 
   <Accordion title="Mes rendez-vous personnels sont-ils visibles par toute l'agence ?">
-    La connexion native fait apparaître vos rendez-vous personnels dans **votre** calendrier Uplace pour vous aider à placer vos plages de visite. Ils ne remplacent pas les visites de l'agence et ne sont pas des créneaux réservables.
+    La connexion directe fait apparaître vos rendez-vous personnels dans **votre** calendrier Uplace pour vous aider à placer vos plages de visite. Ils ne remplacent pas les visites de l'agence et ne sont pas des créneaux réservables.
   </Accordion>
 
   <Accordion title="Le lien de synchronisation est-il personnel ?">
