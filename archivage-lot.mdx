@@ -13,6 +13,10 @@ Sortir un lot du pipeline actif quand il n'a plus vocation à être commercialis
   **L'archivage est irréversible.** Il n'existe aucun moyen de désarchiver un lot. Avant de confirmer, assurez-vous que c'est bien ce que vous voulez faire.
 </Warning>
 
+<Warning>
+  **L'archivage clôt le parcours et écrit aux candidats.** Les candidatures en cours reçoivent l'e-mail de clôture, et les inscrits à une visite à venir reçoivent l'annulation. Ce n'est donc pas une sortie discrète : ne l'utilisez pas comme une mise en pause.
+</Warning>
+
 <Note>
   **Où trouver cette fonctionnalité ?** Fiche du lot \> **Actions du lot** \> **Gestion du lot** \> **Archiver le lot** — _« Retirer le lot du pipeline actif »_.
 </Note>
@@ -25,11 +29,16 @@ Les deux actions sortent le lot du marché, mais elles ne racontent pas la même
 | --- | --- | --- |
 | **Situation** | Le bien a trouvé son locataire | Le bien ne sera pas loué par vous |
 | **Candidat retenu** | Vous en désignez un | Aucun |
-| **Communications** | E-mails de félicitations et de remerciement envoyés | Aucun envoi |
+| **Communications aux candidats** | E-mail de félicitations au retenu, e-mail de clôture aux autres | E-mail de clôture à tous les candidats |
+| **Comptabilisé comme une location** | Oui, dans vos [statistiques](/statistiques) | Non |
 | **Réversible** | — | **Non, jamais** |
 
+<Note>
+  **Les deux actions clôturent le parcours et écrivent aux candidats.** C'est le point commun qu'on oublie souvent : archiver n'est pas une sortie discrète. Les candidats en cours reçoivent le même e-mail de clôture qu'à une mise en location, avec la **suggestion automatique d'autres lots** de votre portefeuille — voir [Décision finale & mise en location](/marquer-loue).
+</Note>
+
 <Tip>
-  Si vous avez trouvé un locataire, passez par [Décision finale & mise en location](/marquer-loue), pas par l'archivage : c'est le seul chemin qui prévient les candidats et alimente correctement vos statistiques.
+  Si vous avez trouvé un locataire, passez tout de même par [Décision finale & mise en location](/marquer-loue) : c'est le seul chemin qui désigne le candidat retenu, lui envoie ses félicitations et comptabilise la location dans vos statistiques.
 </Tip>
 
 ## Fonctionnement étape par étape
@@ -41,8 +50,8 @@ Les deux actions sortent le lot du marché, mais elles ne racontent pas la même
   <Step title="Lire l'avertissement">
     Une fenêtre de confirmation détaille les conséquences :
 
-    - la **suppression de toutes les visites à venir** sur ce lot ;
-    - le passage en **archivé** des candidatures encore en cours ;
+    - la **suppression de toutes les visites à venir** sur ce lot, dont les inscrits sont prévenus ;
+    - le passage en **archivé** des candidatures encore en cours, dont les candidats sont informés ;
     - le rappel que **l'action est irréversible**.
   </Step>
   <Step title="Confirmer explicitement">
@@ -61,11 +70,15 @@ Les deux actions sortent le lot du marché, mais elles ne racontent pas la même
 
 <AccordionGroup>
   <Accordion title="Les visites à venir">
-    Elles sont **supprimées**. Prévenez les candidats inscrits **avant** d'archiver : contrairement à la suppression d'une visite depuis [Gérer les visites](/gerer-visites), l'archivage ne leur adresse pas de message d'annulation individuel.
+    Elles sont **supprimées**, et les candidats inscrits sont **prévenus automatiquement** de l'annulation — comme lorsque vous supprimez une visite depuis [Gérer les visites](/gerer-visites).
+
+    N'écrivez donc pas en plus pour les avertir : ils recevraient deux messages.
   </Accordion>
 
   <Accordion title="Les candidatures en cours">
-    Elles passent en **archivées**. Les dossiers restent consultables, mais le lot ne reçoit plus rien.
+    Elles passent en **archivées**, et les candidats reçoivent l'**e-mail de clôture** : le bien n'est plus disponible, accompagné d'une sélection d'autres lots de votre portefeuille.
+
+    Les dossiers restent consultables de votre côté, mais le lot ne reçoit plus rien.
   </Accordion>
 
   <Accordion title="L'historique">
@@ -76,25 +89,26 @@ Les deux actions sortent le lot du marché, mais elles ne racontent pas la même
 ## Bonnes pratiques recommandées
 
 <Tip>
-  - **Traitez les candidats avant d'archiver** : refusez proprement les dossiers en cours et prévenez les personnes inscrites à une visite. L'archivage, lui, ne communique rien.
-  - Vérifiez que vous n'êtes pas en train de confondre avec **Marquer comme loué** : c'est l'erreur la plus coûteuse, parce qu'elle est définitive.
-  - Si le bien est simplement suspendu ou en attente d'une décision du propriétaire, **n'archivez pas** : vous ne pourrez pas revenir en arrière.
+  - **Archivez quand la décision est prise, pas « en attendant »** : l'action est définitive, et vos candidats sont prévenus immédiatement. Vous ne pourrez ni revenir en arrière, ni rattraper les e-mails partis.
+  - Vérifiez que vous n'êtes pas en train de confondre avec **Marquer comme loué** : si le bien a trouvé preneur, c'est ce chemin-là qu'il faut prendre.
+  - Si le bien est simplement suspendu ou en attente d'une décision du propriétaire, **n'archivez pas**.
   - Relisez la fenêtre de confirmation plutôt que de cocher la case machinalement.
+  - Inutile de refuser un à un les dossiers en cours avant d'archiver : l'archivage les clôt et informe les candidats.
 </Tip>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - **Archiver un lot loué** au lieu de le marquer comme loué : les candidats ne sont pas prévenus, aucune suggestion d'autres biens ne part, et vos statistiques ne comptabilisent pas la mise en location.
-  - Archiver un lot « en attendant » : il n'y a pas de retour en arrière.
-  - Archiver sans avoir prévenu les candidats inscrits à une visite à venir.
+  - **Archiver un lot loué** au lieu de le marquer comme loué : aucun candidat retenu n'est désigné, personne ne reçoit de félicitations, et vos [statistiques](/statistiques) ne comptabilisent pas la mise en location.
+  - Archiver un lot « en attendant » : il n'y a pas de retour en arrière, et les candidats ont déjà été prévenus.
+  - Écrire aux candidats inscrits à une visite après avoir archivé : Uplace les a déjà prévenus, ils recevraient deux messages.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Supprime **toutes les visites à venir** sur le lot.
-  - Marque les **candidatures en cours** comme archivées.
+  - Supprime **toutes les visites à venir** sur le lot et **prévient les candidats inscrits** de l'annulation.
+  - Marque les **candidatures en cours** comme archivées et envoie aux candidats l'**e-mail de clôture**, avec une suggestion d'autres lots de votre portefeuille.
   - Retire le lot du pipeline actif et le classe dans **Lots archivés**.
   - Conserve l'historique du lot et des dossiers.
 </Info>
@@ -107,11 +121,15 @@ Les deux actions sortent le lot du marché, mais elles ne racontent pas la même
   </Accordion>
 
   <Accordion title="Quelle différence avec « Marquer comme loué » ?">
-    **Marquer comme loué** acte une location : vous désignez le candidat retenu et Uplace envoie les communications aux candidats. **Archiver** retire simplement le lot du pipeline, sans désigner personne et sans rien envoyer.
+    Les deux clôturent le lot et écrivent aux candidats. La différence est ailleurs : **Marquer comme loué** acte une location — vous désignez le candidat retenu, qui reçoit ses félicitations, et la mise en location est comptabilisée dans vos statistiques. **Archiver** ferme le lot sans désigner personne et sans compter de location.
   </Accordion>
 
   <Accordion title="Que deviennent les candidats inscrits à une visite ?">
-    Leur visite est supprimée. Prévenez-les vous-même **avant** d'archiver : aucun message d'annulation n'est envoyé de la part d'Uplace lors de l'archivage.
+    Leur visite est supprimée et **Uplace les prévient automatiquement**. N'écrivez pas en plus : ils recevraient deux messages.
+  </Accordion>
+
+  <Accordion title="Dois-je refuser les candidatures en cours avant d'archiver ?">
+    Non, c'est inutile. L'archivage passe les candidatures en archivées et informe les candidats que le bien n'est plus disponible, avec une suggestion d'autres lots de votre portefeuille.
   </Accordion>
 
   <Accordion title="Le lot disparaît-il complètement ?">
