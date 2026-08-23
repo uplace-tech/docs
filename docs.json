@@ -81,7 +81,6 @@
         "group": "Pilotage & administration",
         "icon": "sliders",
         "pages": [
-          "prospects",
           "statistiques",
           "mon-agence",
           "roles-permissions",
@@ -125,6 +124,11 @@
     {
       "source": "/validation-refus",
       "destination": "/marquer-loue",
+      "permanent": true
+    },
+    {
+      "source": "/prospects",
+      "destination": "/boite-reception",
       "permanent": true
     }
   ],

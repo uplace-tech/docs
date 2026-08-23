@@ -1,54 +1,68 @@
 ---
-title: "Boîte de réception & gestion des prises de contact"
+title: "Boîte de réception et base de candidats"
 sidebarTitle: "Boîte de réception"
-description: "Centraliser toutes les demandes entrantes des portails dans une seule interface."
+description: "Des demandes entrantes des portails jusqu'à la base de candidats de l'agence."
 icon: "inbox"
 ---
 
 ## Objectif
 
-Centraliser toutes les demandes entrantes (Leboncoin, SeLoger, Bien'ici, etc.) et permettre à l'agent de les traiter une à une avec un statut clair, évitant ainsi qu'un prospect ne tombe entre les mailles du filet.
+Tout ce qui concerne les **personnes qui contactent votre agence** : comment leurs demandes entrent dans Uplace, comment vous les traitez lot par lot, et où elles s'accumulent ensuite pour être réutilisées sur vos futurs biens.
+
+C'est un seul flux, réparti sur deux écrans :
+
+| Écran | Ce qu'il montre | Quand vous y allez |
+| --- | --- | --- |
+| Fiche du lot \> **Prises de contact** | Les demandes reçues **sur ce bien** | Au quotidien, pour traiter les demandes d'un lot |
+| Sidebar \> **Mes candidats** | **Toute la base** de l'agence, tous lots et toutes périodes confondus | Pour relancer quelqu'un sur un autre bien, ou exporter |
 
 <Note>
-  **Où trouver cette fonctionnalité ?** Fiche du lot \> section **Prises de contact** — configuration dans Mon agence \> Paramètres \> **Boîte de réception**.
+  **Ne confondez pas avec [Contacts](/contacts).** _Contacts_ est la liste de travail du jour : les candidatures et prospects de vos **lots actifs**, à traiter au fil de l'eau. _Mes candidats_ est la base historique complète.
 </Note>
 
-## Fonctionnement étape par étape
+## Brancher la réception (une fois pour toutes)
 
 <Steps>
-  <Step title="Configurer la réception (une fois pour toutes)">
-    Dans [Mon agence](/mon-agence) \> Paramètres \> **Boîte de réception**, récupérez votre **adresse e-mail dédiée** (`votre-agence@inbox.uplace.fr`) et redirigez-y les e-mails de contact de vos portails. Activez si besoin le **renvoi automatique de tous les e-mails** pour continuer à recevoir une copie de chaque demande.
+  <Step title="Récupérer votre adresse de collecte">
+    Dans [Mon agence](/mon-agence) \> **Paramètres de l'agence** \> **Boîte de réception**, récupérez votre **adresse e-mail dédiée** (`votre-agence@inbox.uplace.fr`) avec le bouton **Copier**.
   </Step>
-  <Step title="Laisser Uplace rattacher les demandes">
-    Chaque demande entrante est analysée : identité, coordonnées, origine (Leboncoin, SeLoger, Bien'ici…) et message sont extraits, puis la demande est rattachée au bon lot. Si le bien n'existe pas encore dans Uplace, il apparaît en [lot en attente](/lots-en-attente).
+  <Step title="La renseigner chez vos portails">
+    Renseignez-la comme adresse de contact « location » chez chacune de vos plateformes, et sur le formulaire de votre site. Tout ce qui y arrive entre automatiquement dans le parcours Uplace.
+
+    Le guide [Rediriger les prises de contact](/guide-installation/prises-de-contact) détaille la manipulation **portail par portail**.
   </Step>
-  <Step title="Consulter les prises de contact d'un lot">
-    Fiche du lot \> section **Prises de contact** : identité, contact, origine, date et message de chaque prospect. Le statut **Automatique** indique que Uplace gère la réponse et l'invitation à candidater sans intervention manuelle.
-  </Step>
-  <Step title="Traiter chaque contact">
-    Depuis la ligne du contact : répondre (e-mail, téléphone, WhatsApp préformaté), inviter à déposer un dossier — voir [Inviter un candidat](/invitation-candidat) — ou écarter la demande.
+  <Step title="Choisir le renvoi automatique">
+    L'option **Renvoi automatique de tous les e-mails** (Oui / Non) détermine si vous recevez aussi une copie des demandes dans votre boîte habituelle, en plus de leur traitement dans Uplace.
+
+    En début de mise en route, laissez-la sur **Oui** : vous vérifiez ainsi que rien ne se perd.
   </Step>
 </Steps>
 
-## Bonnes pratiques recommandées
+<Tip>
+  C'est la seule étape indispensable de tout ce circuit. Une fois faite, l'essentiel du travail de réception ne vous demande plus rien.
+</Tip>
 
-- Configurez la redirection e-mail dès l'onboarding : c'est elle qui alimente tout le pipeline entrant.
-- Laissez le statut **Automatique** faire le premier tri sur les lots à fort volume, et concentrez-vous sur les dossiers déposés.
-- Consultez la vue [Contacts](/contacts) chaque matin pour traiter les demandes de toute l'agence d'un seul endroit.
+### Suivre ses raccordements : le volet Mes portails
 
-## Mes portails
-
-Le volet **Mes portails** rassemble en un seul endroit vos **raccordements aux plateformes d'annonces** : _« les portails qui vous envoient des demandes locatives, et ceux que vous pouvez connecter grâce à nos guides d'installation »_.
+Le volet **Mes portails** rassemble en un seul endroit vos raccordements aux plateformes d'annonces : _« les portails qui vous envoient des demandes locatives, et ceux que vous pouvez connecter grâce à nos guides d'installation »_.
 
 <Note>
-  **Où trouver cette fonctionnalité ?** [Mon agence](/mon-agence) \> **Paramètres de l'agence** \> rubrique **Flux et intégrations** \> **Mes portails** — _« Sources de leads entrants (Seloger, Leboncoin…) »_. Le volet s'ouvre sur la droite de l'écran.
+  **Où le trouver ?** [Mon agence](/mon-agence) \> **Paramètres de l'agence** \> rubrique **Flux et intégrations** \> **Mes portails** — _« Sources de leads entrants (Seloger, Leboncoin…) »_. Le volet s'ouvre sur la droite de l'écran.
 </Note>
 
-Chaque portail y est accompagné de sa **procédure d'installation** : vous branchez une nouvelle source vous-même, sans solliciter l'équipe Uplace. Les manipulations détaillées, portail par portail, restent décrites dans [Rediriger les prises de contact](/guide-installation/prises-de-contact).
+Chaque portail y est accompagné de sa **procédure d'installation** : vous branchez une nouvelle source vous-même, sans solliciter l'équipe Uplace.
 
-Dans la discussion avec un prospect, les messages qui arrivent d'un portail sont **estampillés du logo de la plateforme d'origine** : vous savez immédiatement d'où vient la demande.
+## Ce qu'Uplace fait de chaque demande
 
-## Le rapprochement des demandes multiples
+Chaque demande entrante est analysée automatiquement : **identité**, **coordonnées**, **origine** (Leboncoin, SeLoger, Bien'ici…) et **message** sont extraits, puis la demande est rattachée au bon lot.
+
+<Note>
+  Si le bien n'existe pas encore dans Uplace, il remonte en [lot en attente](/lots-en-attente) : aucune demande n'est perdue parce qu'un lot n'était pas configuré.
+</Note>
+
+Dans la discussion avec un prospect, les messages venus d'un portail sont **estampillés du logo de la plateforme d'origine** : vous savez immédiatement d'où vient la demande — voir [Messagerie](/messagerie).
+
+### Le rapprochement des demandes multiples
 
 Un prospect qui repère votre bien sur trois portails vous écrit souvent trois fois. Uplace **rapproche ces demandes** pour n'en faire qu'une.
 
@@ -66,22 +80,107 @@ Pour une même adresse e-mail :
   C'est ce qui vous évite d'écrire trois fois à la même personne — et d'apparaître désorganisé auprès d'un candidat qui, lui, sait très bien qu'il vous a contacté une seule fois « en vrai ».
 </Tip>
 
+## Traiter les prises de contact d'un lot
+
+<Note>
+  **Où ?** Fiche du lot \> section **Prises de contact**.
+</Note>
+
+La section liste, pour ce bien, l'**identité**, le **contact**, l'**origine**, la **date** et le **message** de chaque prospect.
+
+Le statut **Automatique** indique qu'Uplace gère la réponse et l'invitation à candidater sans intervention de votre part. Vous pouvez reprendre la main à tout moment.
+
+Depuis la ligne du contact, trois actions : **répondre** (e-mail, téléphone, WhatsApp préformaté), **inviter à déposer un dossier** — voir [Inviter un candidat](/invitation-candidat) — ou **écarter** la demande.
+
+## La base de candidats de l'agence
+
+<Note>
+  **Où ?** Sidebar \> **Mes candidats**. La page s'intitule **Candidats de l'agence**.
+</Note>
+
+C'est la base de fond : **tous les candidats qui ont interagi avec votre agence**, tous lots et toutes périodes confondus. Celle qui vous sert à relancer quelqu'un sur un autre bien que celui pour lequel il vous avait contacté.
+
+### Les quatre indicateurs
+
+| Indicateur | Libellé affiché |
+| --- | --- |
+| **Total Candidats** | Nombre total de candidats |
+| **Candidats Actifs** | Candidats actuellement actifs |
+| **Récents** | Candidats récents estimés |
+| **Taux d'activité** | Part de candidats actifs sur le total |
+
+<Tip>
+  Lisez ces chiffres comme des ordres de grandeur : ce sont des indicateurs de volume, pas des mesures de performance. Pour piloter votre activité, allez dans [Statistiques](/statistiques).
+</Tip>
+
+### La liste
+
+Un champ **Rechercher par nom ou email** filtre la base. Chaque ligne présente :
+
+| Colonne | Contenu |
+| --- | --- |
+| **Prospect** | Avatar et nom du candidat. |
+| **Contact** | E-mail et téléphone, avec copie en un clic et raccourcis d'appel, SMS et WhatsApp. |
+| **Candidatures** | Une vignette par lot sur lequel la personne a candidaté. |
+| **Dernière candidature** | Date **et heure** de la candidature la plus récente. |
+
+En bout de ligne, trois raccourcis directs : **e-mail**, **téléphone** et **WhatsApp**.
+
+Une colonne de **cases à cocher** permet de sélectionner des candidats ; le bouton **Inviter des candidats** reste inactif tant qu'aucune sélection n'est faite — voir [Inviter un candidat](/invitation-candidat).
+
+### Exporter la base
+
+Le bouton **Exporter** ouvre la fenêtre **Export des prises de contact (CSV)**.
+
+<Warning>
+  **L'export ne couvre pas toute votre base.** Il liste les leads issus des **lots actifs uniquement** — ni les lots archivés, ni les lots déjà loués. Si vous cherchez un contact rattaché à un bien loué, il ne sera pas dans le fichier.
+</Warning>
+
+Deux caractéristiques à connaître :
+
+- **Déduplication par e-mail** : une même personne n'apparaît qu'une fois, comme partout dans Uplace.
+- **Filtre « Créés à partir du »** : vous choisissez une date de départ. La date retenue correspond au **début de la journée**, en heure locale.
+
+Un bouton **Depuis le dernier export** permet de ne récupérer que les nouveautés depuis votre export précédent — il reste inactif tant que vous n'avez jamais exporté. La fenêtre rappelle la date de votre dernier export.
+
+<Tip>
+  Pour alimenter un outil externe de façon régulière, utilisez **Depuis le dernier export** plutôt qu'une date saisie à la main : vous évitez les doublons et les trous.
+</Tip>
+
+## Bonnes pratiques recommandées
+
+<Tip>
+  - Renseignez votre adresse `@inbox.uplace.fr` chez vos portails **dès l'installation** : c'est elle qui alimente tout le pipeline entrant.
+  - Laissez le statut **Automatique** faire le premier tri sur les lots à fort volume, et concentrez-vous sur les dossiers déposés.
+  - Consultez la vue [Contacts](/contacts) chaque matin pour traiter les demandes de toute l'agence d'un seul endroit.
+  - Après un refus sur un lot, revenez dans **Mes candidats** pour proposer au candidat un autre bien correspondant à son profil.
+  - Servez-vous de **Dernière candidature** pour prioriser les relances sur les personnes récemment actives.
+  - Exportez **avant** d'archiver ou de marquer un lot comme loué si vous voulez conserver ses leads : ils sortent ensuite du périmètre de l'export.
+  - Utilisez les raccourcis WhatsApp et téléphone pour les relances courtes plutôt que de recopier les numéros.
+</Tip>
+
 ## Erreurs fréquentes à éviter
 
 <Warning>
   - Laisser une demande sans action : le prospect est perdu.
   - Répondre par e-mail externe et oublier de tracer la réponse dans Uplace.
   - Écarter un contact sans relance préalable.
+  - Croire que l'export contient toute la base : il se limite aux **lots actifs**.
+  - Solliciter des candidats avec des biens hors de leur périmètre de recherche.
+  - Exporter des données personnelles sans respecter les obligations de votre agence — voir [RGPD & conservation](/rgpd).
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
   - Récupère les contacts depuis les portails via l'adresse dédiée et le multi-diffuseur.
+  - Extrait identité, coordonnées, origine et message de chaque demande, et la rattache au bon lot.
   - Identifie l'origine du contact et l'affiche avec le **logo du portail** dans la discussion.
-  - Compte les demandes multiples d'un même prospect.
+  - Rapproche les demandes multiples d'une même personne, sur l'**adresse e-mail**.
   - Répond et invite à candidater lorsque le statut est « Automatique ».
   - Centralise la conversation avec un lien WhatsApp préformaté.
+  - Tient à jour la base **Mes candidats**, dédoublonnée, en rattachant chaque personne à l'ensemble de ses candidatures.
+  - Mémorise la date de votre dernier export pour permettre un export incrémental.
 </Info>
 
 ## Questions fréquentes
@@ -93,5 +192,29 @@ Pour une même adresse e-mail :
 
   <Accordion title="Une demande arrive sur un bien absent d'Uplace, que se passe-t-il ?">
     Le bien remonte en **lot en attente** sur le Dashboard. Configurez-le ou rapprochez-le d'un lot existant — voir [Lots en attente](/lots-en-attente).
+  </Accordion>
+
+  <Accordion title="Quelle différence entre « Mes candidats » et « Contacts » ?">
+    [Contacts](/contacts) liste les candidatures et prospects **sur vos lots actifs**, pour le traitement quotidien. **Mes candidats** est la base de fond de l'agence, tous lots et toutes périodes confondus.
+  </Accordion>
+
+  <Accordion title="Un prospect qui me contacte depuis trois portails compte-t-il trois fois ?">
+    Non. Uplace rapproche les demandes sur l'**adresse e-mail** : le prospect est affiché une fois, compté une fois, et ne reçoit la séquence d'e-mails et de SMS qu'une seule fois.
+  </Accordion>
+
+  <Accordion title="Un candidat peut-il avoir plusieurs candidatures ?">
+    Oui : dans **Mes candidats**, la colonne **Candidatures** affiche une vignette par lot concerné.
+  </Accordion>
+
+  <Accordion title="Dans quel format se fait l'export ?">
+    En **CSV**, et il porte sur les **prises de contact** des lots actifs, dédoublonnées par e-mail, à partir de la date que vous choisissez.
+  </Accordion>
+
+  <Accordion title="Pourquoi un contact manque-t-il dans mon export ?">
+    Parce que son lot n'est plus actif — archivé ou marqué comme loué — ou parce qu'il est antérieur à la date de départ choisie. Une même adresse e-mail n'apparaît par ailleurs qu'une seule fois.
+  </Accordion>
+
+  <Accordion title="Le bouton « Inviter des candidats » est grisé.">
+    Sélectionnez d'abord des candidats à l'aide des cases à cocher de la première colonne.
   </Accordion>
 </AccordionGroup>
