@@ -123,11 +123,16 @@ Le second graphique — _« Répartition des étapes du funnel par origine »_ �
 
 C'est le graphique le plus directement actionnable de la page : il ne dit pas seulement **combien** de contacts un portail vous apporte, mais **jusqu'où** ils vont dans le parcours. Un canal très volumique qui ne produit aucun locataire coûte un abonnement pour rien.
 
-Les origines proviennent du champ **Origine de la demande** renseigné à chaque entrée dans le parcours — voir [Inviter un candidat](/invitation-candidat). On y retrouve les portails (Leboncoin, SeLoger, Bien'ici, ParuVendu, Logic-Immo, A Vendre A Louer, Figaro Immo, OuestFrance-Immo), les autres canaux (Jinka, FNAIM, Instagram, Site de l'agence, Bouche à oreille), ainsi qu'**Uplace** pour les candidatures arrivées directement par la plateforme.
+Les origines proviennent du champ **Origine de la demande**, que vous n'avez **pas à renseigner** : Uplace le remplit **automatiquement** pour toutes les demandes qui arrivent de vos plateformes d'annonces. On y retrouve les portails (Leboncoin, SeLoger, Bien'ici, ParuVendu, Logic-Immo, A Vendre A Louer, Figaro Immo, OuestFrance-Immo), les autres canaux (Jinka, FNAIM, Instagram, Site de l'agence, Bouche à oreille), ainsi qu'**Uplace** pour les candidatures arrivées directement par la plateforme.
 
-<Warning>
-  La qualité de ce graphique dépend entièrement du soin apporté à renseigner l'origine. Une origine saisie au hasard, ou toujours la même par habitude, rend l'analyse par canal inexploitable.
-</Warning>
+<Note>
+  **Deux cas seulement demandent une saisie de votre part** :
+
+  - vous avez **partagé le lien de dépôt de dossier** d'un lot ;
+  - vous avez **ajouté un contact vous-même** — voir [Inviter un candidat](/invitation-candidat).
+
+  Partout ailleurs, l'origine est détectée à la source. C'est ce qui rend ce graphique fiable sans effort de saisie.
+</Note>
 
 ## Statistiques et purges RGPD
 
@@ -146,7 +151,7 @@ Voir [RGPD et conservation des données](/rgpd).
   - Croisez le filtre **responsable** avec le funnel pour repérer où chaque collaborateur perd ses candidats.
   - Regardez le graphique par origine **jusqu'au bout du funnel**, pas seulement la hauteur totale des barres : un canal peut générer beaucoup de contacts et zéro locataire.
   - Sur un petit volume, méfiez-vous des pourcentages : quelques dossiers suffisent à faire bouger les taux dans un sens ou dans l'autre.
-  - Renseignez systématiquement l'**origine de la demande** : c'est la seule source de ce graphique.
+  - Dans les deux seuls cas où l'origine vous est demandée — lien de dépôt de dossier partagé, contact ajouté à la main —, prenez trois secondes pour la choisir juste : le reste du graphique est déjà alimenté automatiquement.
 </Tip>
 
 ## Erreurs fréquentes à éviter
@@ -155,13 +160,13 @@ Voir [RGPD et conservation des données](/rgpd).
   - Lire le funnel comme un entonnoir strict et conclure à une anomalie quand une étape dépasse la précédente.
   - Comparer deux périodes de tailles différentes.
   - Tirer des conclusions d'un volume trop faible.
-  - Négliger la saisie de l'origine, puis s'étonner que le graphique par canal ne veuille rien dire.
+  - Croire qu'il faut renseigner l'origine à la main : elle est détectée automatiquement, sauf sur un lien de dépôt partagé ou un contact ajouté manuellement.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Trace l'**origine** de chaque contact et candidature à partir du canal d'entrée.
+  - Renseigne **automatiquement l'origine** de chaque contact et candidature à partir de son canal d'entrée, pour l'ensemble des plateformes reliées à l'agence.
   - Recalcule l'ensemble des indicateurs et graphiques à chaque changement de filtre.
   - Alimente les statistiques au fil du parcours : prises de contact, dépôts de dossiers, visites et mises en location.
 </Info>
