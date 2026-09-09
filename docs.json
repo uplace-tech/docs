@@ -39,10 +39,16 @@
             "pages": [
               "guide-installation/prises-de-contact/email-automatique",
               "guide-installation/prises-de-contact/seloger",
-              "guide-installation/prises-de-contact/leboncoin"
+              "guide-installation/prises-de-contact/leboncoin",
+              "guide-installation/prises-de-contact/bienici",
+              "guide-installation/prises-de-contact/jinka",
+              "guide-installation/prises-de-contact/immojeune",
+              "guide-installation/prises-de-contact/carte-des-colocs",
+              "guide-installation/prises-de-contact/ac3-immofacile",
+              "guide-installation/prises-de-contact/modelo-netty",
+              "guide-installation/prises-de-contact/hektor"
             ]
           },
-          "guide-installation/prises-de-contact",
           {
             "group": "Récupérer les données des annonces",
             "icon": "arrows-rotate",
@@ -149,6 +155,11 @@
     {
       "source": "/recapitulatif",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact",
+      "destination": "/guide-installation/prises-de-contact/email-automatique",
       "permanent": true
     }
   ],
