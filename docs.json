@@ -38,7 +38,8 @@
             "icon": "envelopes-bulk",
             "pages": [
               "guide-installation/prises-de-contact/email-automatique",
-              "guide-installation/prises-de-contact/seloger"
+              "guide-installation/prises-de-contact/seloger",
+              "guide-installation/prises-de-contact/leboncoin"
             ]
           },
           "guide-installation/prises-de-contact",
