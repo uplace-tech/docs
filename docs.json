@@ -39,8 +39,7 @@
                   "guide-installation/multi-diffuseur-septeo",
                   "guide-installation/multi-diffuseur-apimo"
                 ]
-              },
-              "guide-installation/multi-diffuseur"
+              }
             ]
           }
         ]
@@ -141,6 +140,11 @@
     {
       "source": "/recapitulatif",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/multi-diffuseur",
+      "destination": "/guide-installation/multi-diffuseur-septeo",
       "permanent": true
     }
   ],
