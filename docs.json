@@ -26,20 +26,28 @@
           "index",
           "cartographie",
           "glossaire",
-          "onboarding",
+          "onboarding"
+        ]
+      },
+      {
+        "group": "Guide d'installation",
+        "icon": "plug",
+        "pages": [
           {
-            "group": "Guide d'installation",
-            "icon": "plug",
+            "group": "Rediriger les prises de contact",
+            "icon": "envelopes-bulk",
             "pages": [
-              "guide-installation/prises-de-contact",
-              {
-                "group": "Récupérer les données des annonces",
-                "icon": "arrows-rotate",
-                "pages": [
-                  "guide-installation/multi-diffuseur-septeo",
-                  "guide-installation/multi-diffuseur-apimo"
-                ]
-              }
+              "guide-installation/prises-de-contact/email-automatique",
+              "guide-installation/prises-de-contact/seloger"
+            ]
+          },
+          "guide-installation/prises-de-contact",
+          {
+            "group": "Récupérer les données des annonces",
+            "icon": "arrows-rotate",
+            "pages": [
+              "guide-installation/multi-diffuseur-septeo",
+              "guide-installation/multi-diffuseur-apimo"
             ]
           }
         ]
