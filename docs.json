@@ -32,6 +32,14 @@
             "icon": "plug",
             "pages": [
               "guide-installation/prises-de-contact",
+              {
+                "group": "Récupérer les données des annonces",
+                "icon": "arrows-rotate",
+                "pages": [
+                  "guide-installation/multi-diffuseur-septeo",
+                  "guide-installation/multi-diffuseur-apimo"
+                ]
+              },
               "guide-installation/multi-diffuseur"
             ]
           }
