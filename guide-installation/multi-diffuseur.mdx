@@ -13,56 +13,73 @@ En complément de la [redirection des prises de contact](/guide-installation/pri
   Cette page reprend le contenu du **Guide d'installation** transmis aux agences lors de l'onboarding. Pour l'ordre global de mise en route, voir la [Checklist de mise en route](/onboarding).
 </Note>
 
+<Tip>
+  Comptez environ **15 minutes** par logiciel.
+</Tip>
+
 ## Logiciel par logiciel
 
-### Modulo by Septeo (Modelo / Netty) — clé API
+<Warning>
+  Les modifications apportées à votre logiciel aident à centraliser les prises de contact provenant de SeLoger, Leboncoin, Bien'ici et de votre site internet. Selon votre configuration, des **connexions directes aux plateformes** peuvent rester nécessaires en complément.
+</Warning>
+
+### Semi-automatique
+
+Le mode **par défaut**, qui fonctionne avec tous les logiciels : ni clé API, ni validation d'un éditeur. C'est la solution de repli quand votre logiciel n'a pas de connecteur dédié.
+
+Sa mise en place se fait avec l'équipe Uplace : [contact@uplace.fr](mailto:contact@uplace.fr) — 04 82 53 15 81.
+
+### Modelo / Netty — Septeo
 
 Support : [support@netty.fr](mailto:support@netty.fr) — 03 67 10 68 28.
 
-<Card title="Guide illustré — Modulo by Septeo" icon="presentation-screen" href="https://canva.link/v0vkvsnwy5kzo51">
-  Le pas à pas en images, écran par écran.
-</Card>
-
 <Steps>
-  <Step title="Créer une clé API dans Septeo">
-    Connectez-vous à votre logiciel Septeo, puis rendez-vous dans le menu **Paramètres** \> **Gestion des clés API** \> **Tester gratuitement l'API pendant 15 jours**.
+  <Step title="Se connecter à votre espace client et créer une clé API">
+    Connectez-vous à votre logiciel Septeo, puis rendez-vous dans le menu **Paramètres**.
+
+    Cliquez sur **Gestion des clés API** > **Tester gratuitement l'API pendant 15 jours**.
 
     Vérifiez que la clé est **Active**, et renseignez dans **IP autorisées** : `51.15.227.12`.
   </Step>
-  <Step title="Activer le connecteur sur Uplace">
-    Une fois la clé obtenue, active et l'IP renseignée, rendez-vous dans [Mon agence](/mon-agence) \> **Paramètres de l'agence** \> **Multi-diffuseurs** pour activer la connexion.
+  <Step title="Activer le connecteur Uplace sur Septeo">
+    Dans **Modelo office**, ouvrez l'onglet **Configuration** > **Gestion des clés API**.
+
+    Le bloc **Ma clé API** affiche votre **Clé API**, le **Nom de l'accès API** et le champ **Clé associée à des** — à laisser sur _Données réelles_. Vérifiez que **Active** est sur **Oui**.
+
+    Dans le bloc **IP autorisées**, cliquez sur **Ajouter une ligne**, saisissez l'IP, puis **Valider**.
+
+    <Note>
+      Le renseignement des IP autorisées est **obligatoire** côté Septeo : ce sont les adresses des serveurs autorisés à accéder à l'API.
+    </Note>
+  </Step>
+  <Step title="Activer le connecteur Septeo sur Uplace">
+    Une fois la clé API obtenue, active et l'IP renseignée correctement, rendez-vous dans [Mon agence](/mon-agence) > **Paramètres de l'agence** > **Flux et intégrations** > **Multi-diffuseurs (CRM)**.
+
+    Dans la fenêtre **Configurer la connexion multi-diffuseurs**, choisissez **Modulo by Septeo**, collez votre **clé API Modulo**, puis cliquez sur **Activer la connexion**.
   </Step>
 </Steps>
 
-### Apimo — ID agence
+<Tip>
+  Votre clé API Modulo se trouve dans les paramètres de votre compte Modulo.
+</Tip>
+
+### Apimo
 
 Support : [support@apimo.com](mailto:support@apimo.com) — 04 92 91 90 63.
 
-<Card title="Guide illustré — Apimo" icon="presentation-screen" href="https://canva.link/v0vkvsnwy5kzo51">
-  Le pas à pas en images, écran par écran.
-</Card>
-
 <Steps>
-  <Step title="Faire la demande de connexion depuis Uplace">
-    [Mon agence](/mon-agence) \> **Paramètres de l'agence** \> **Multi-diffuseurs** \> **Demande d'activation**.
+  <Step title="Faire votre demande de connexion depuis Uplace">
+    [Mon agence](/mon-agence) > **Paramètres de l'agence** > **Flux et intégrations** > **Multi-diffuseurs (CRM)**.
   </Step>
-  <Step title="Renseigner votre ID Apimo">
-    Indiquez votre **ID Apimo** dans le champ prévu, puis validez.
+  <Step title="Demander l'activation">
+    Dans la fenêtre **Configurer la connexion multi-diffuseurs**, sélectionnez **Apimo**, puis cliquez sur **Demander l'activation de la connexion avec Apimo**.
+
+    Vous pouvez aussi envoyer manuellement un e-mail à [contact@uplace.fr](mailto:contact@uplace.fr).
   </Step>
-</Steps>
+  <Step title="Renseigner votre ID Apimo sur Uplace">
+    Une fois la liaison avec Uplace validée par Apimo, activez l'interrupteur **La connexion est établie**.
 
-### Ubiflow
-
-<Card title="Guide illustré — Ubiflow" icon="presentation-screen" href="https://canva.link/v0vkvsnwy5kzo51">
-  Le pas à pas en images, écran par écran.
-</Card>
-
-<Steps>
-  <Step title="Faire la demande de connexion depuis Uplace">
-    [Mon agence](/mon-agence) > **Paramètres de l'agence** > **Multi-diffuseurs** > sélectionnez **Ubiflow**, puis **Demander l'activation de la connexion**.
-  </Step>
-  <Step title="Confirmer la liaison">
-    Une fois la liaison validée côté Ubiflow, activez l'interrupteur **La connexion est établie**, puis **Activer la connexion**.
+    Renseignez ensuite l'**ID Apimo de l'agence** — votre identifiant d'agence Apimo (`agency_id`) — puis cliquez sur **Activer la connexion**.
   </Step>
 </Steps>
 
@@ -79,6 +96,7 @@ L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](ma
 <Warning>
   - Activer l'interrupteur _La connexion est établie_ du multi-diffuseur avant la validation effective côté éditeur.
   - Oublier l'**IP autorisée** `51.15.227.12` lors de la création de la clé API Septeo : la connexion échouera silencieusement.
+  - Laisser la clé API Septeo sur un autre réglage que _Données réelles_, ou avec **Active** sur _Non_.
 </Warning>
 
 ## Questions fréquentes
@@ -88,7 +106,11 @@ L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](ma
     La clé API Septeo démarre par un **essai gratuit de 15 jours** depuis leur interface. Pour la suite, rapprochez-vous de votre contact Septeo.
   </Accordion>
 
-  <Accordion title="Mon logiciel n'est ni Septeo, ni Apimo, ni Ubiflow, que faire ?">
-    Contactez [contact@uplace.fr](mailto:contact@uplace.fr) : l'équipe vous indiquera si un connecteur est disponible ou prévu pour votre logiciel. En attendant, vous pouvez créer vos lots manuellement, voir [Création d'un lot](/creation-lot).
+  <Accordion title="Mon logiciel n'est ni Septeo ni Apimo, que faire ?">
+    Vous passez par le mode **semi-automatique**, qui fonctionne avec tous les logiciels. Contactez [contact@uplace.fr](mailto:contact@uplace.fr) : l'équipe le met en place avec vous et vous indiquera si un connecteur dédié est prévu pour votre logiciel.
+  </Accordion>
+
+  <Accordion title="Où trouver mon ID d'agence Apimo ?">
+    C'est votre identifiant d'agence Apimo (`agency_id`). Si vous ne le retrouvez pas, le support Apimo vous le communique : [support@apimo.com](mailto:support@apimo.com) — 04 92 91 90 63.
   </Accordion>
 </AccordionGroup>
