@@ -50,7 +50,35 @@ Le volet **Mes portails** rassemble en un seul endroit vos raccordements aux pla
   **Où le trouver ?** [Mon agence](/mon-agence) \> **Paramètres de l'agence** \> rubrique **Flux et intégrations** \> **Mes portails** — _« Sources de leads entrants (Seloger, Leboncoin…) »_. Le volet s'ouvre sur la droite de l'écran.
 </Note>
 
-Chaque portail y est accompagné de sa **procédure d'installation** : vous branchez une nouvelle source vous-même, sans solliciter l'équipe Uplace.
+#### L'en-tête du volet
+
+Deux compteurs résument votre réception : le nombre de **sources actives** — les portails qui collectent effectivement — et le **total de leads collectés**, tous portails confondus depuis vos raccordements.
+
+Juste en dessous, votre **adresse de collecte** `@inbox.uplace.fr` est rappelée avec un bouton **Copier** : vous n'avez pas à ressortir de ce volet pour aller la renseigner chez un nouveau portail.
+
+#### La liste des portails
+
+Chaque portail raccordé apparaît sous forme de carte.
+
+| Élément | Ce qu'il indique |
+| --- | --- |
+| **Logo et nom** | La source des demandes : Bien'ici, SeLoger, Leboncoin, Logic-Immo… ainsi que **Site de l'agence** pour celles qui arrivent de votre propre formulaire. |
+| **Nombre de leads** | Le volume total collecté depuis cette source. |
+| **Dernier** | L'ancienneté de la dernière demande reçue — _« il y a environ 3 heures »_, _« il y a 14 jours »_, _« il y a 3 mois »_. |
+| **Bandeau d'état** | **Collecte active** en vert, ou **Aucun lead depuis plus de 5 jours** en orange. |
+| **Chevron** | Ouvre le détail du portail et sa **procédure d'installation**. |
+
+Le lien **Voir plus de portails** déplie les plateformes que vous n'avez pas encore branchées, chacune avec son guide.
+
+<Warning>
+  **Le bandeau orange n'est pas une panne.** _Aucun lead depuis plus de 5 jours_ est un indicateur d'activité, pas un message d'erreur : il signale simplement que rien n'est arrivé de cette source récemment. Les causes habituelles sont que vous ne diffusez plus sur ce portail, ou que l'adresse `@inbox.uplace.fr` n'y est plus renseignée comme contact.
+</Warning>
+
+Chaque portail est accompagné de sa **procédure d'installation** : vous branchez une nouvelle source vous-même, sans solliciter l'équipe Uplace. Les manipulations à faire côté portail sont détaillées dans [Rediriger les prises de contact](/guide-installation/prises-de-contact).
+
+<Tip>
+  Ce volet est le premier endroit à ouvrir quand vous trouvez que « les demandes ne rentrent plus ». Le portail qui vous apporte le plus de volume est aussi celui dont le bandeau orange coûte le plus cher : commencez par vérifier sa colonne **Dernier** avant de chercher ailleurs.
+</Tip>
 
 ## Ce qu'Uplace fait de chaque demande
 
@@ -188,6 +216,14 @@ Un bouton **Depuis le dernier export** permet de ne récupérer que les nouveaut
 <AccordionGroup>
   <Accordion title="Que signifie le statut « Automatique » sur une prise de contact ?">
     Uplace a pris en charge la demande : réponse au prospect et invitation à déposer un dossier sont gérées automatiquement. Vous pouvez reprendre la main à tout moment.
+  </Accordion>
+
+  <Accordion title="Un portail affiche « Aucun lead depuis plus de 5 jours », est-ce un bug ?">
+    Non, c'est un indicateur d'activité : aucune demande n'est arrivée de cette source depuis cinq jours. Vérifiez que vous diffusez toujours sur ce portail et que votre adresse `@inbox.uplace.fr` y est bien renseignée comme adresse de contact « location ».
+  </Accordion>
+
+  <Accordion title="Où voir combien de demandes chaque portail m'apporte ?">
+    Dans le volet **Mes portails** ([Mon agence](/mon-agence) > **Paramètres de l'agence** > **Flux et intégrations**) : chaque source affiche son volume de leads et la date de la dernière demande reçue, avec le total collecté en en-tête.
   </Accordion>
 
   <Accordion title="Une demande arrive sur un bien absent d'Uplace, que se passe-t-il ?">
