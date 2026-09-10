@@ -33,36 +33,8 @@
         "group": "Guide d'installation",
         "icon": "plug",
         "pages": [
-          {
-            "group": "Remontée et création d'une annonce",
-            "icon": "arrows-rotate",
-            "pages": [
-              "guide-installation/annonces",
-              "guide-installation/multi-diffuseur-septeo",
-              "guide-installation/multi-diffuseur-apimo",
-              "guide-installation/annonces/orisha",
-              "guide-installation/annonces/la-boite-immo",
-              "guide-installation/annonces/naxos",
-              "guide-installation/annonces/sweepbright"
-            ]
-          },
-          {
-            "group": "Rediriger les prises de contact",
-            "icon": "envelopes-bulk",
-            "pages": [
-              "guide-installation/prises-de-contact/email-automatique",
-              "guide-installation/prises-de-contact/seloger",
-              "guide-installation/prises-de-contact/leboncoin",
-              "guide-installation/prises-de-contact/bienici",
-              "guide-installation/prises-de-contact/jinka",
-              "guide-installation/prises-de-contact/immojeune",
-              "guide-installation/prises-de-contact/carte-des-colocs",
-              "guide-installation/prises-de-contact/ac3-immofacile",
-              "guide-installation/prises-de-contact/modelo-netty",
-              "guide-installation/prises-de-contact/hektor",
-              "guide-installation/prises-de-contact/naxos"
-            ]
-          },
+          "guide-installation/annonces",
+          "guide-installation/prises-de-contact",
           {
             "group": "Les logiciels métiers",
             "icon": "desktop",
@@ -70,6 +42,7 @@
               "guide-installation/logiciels/septeo",
               "guide-installation/logiciels/apimo",
               "guide-installation/logiciels/orisha",
+              "guide-installation/logiciels/la-boite-immo",
               "guide-installation/logiciels/naxos",
               "guide-installation/logiciels/sweepbright"
             ]
@@ -187,13 +160,93 @@
       "permanent": true
     },
     {
-      "source": "/guide-installation/prises-de-contact",
-      "destination": "/guide-installation/prises-de-contact/email-automatique",
+      "source": "/guide-installation/multi-diffuseur",
+      "destination": "/guide-installation/annonces",
       "permanent": true
     },
     {
-      "source": "/guide-installation/multi-diffuseur",
-      "destination": "/guide-installation/annonces",
+      "source": "/guide-installation/multi-diffuseur-septeo",
+      "destination": "/guide-installation/logiciels/septeo",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/multi-diffuseur-apimo",
+      "destination": "/guide-installation/logiciels/apimo",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/annonces/orisha",
+      "destination": "/guide-installation/logiciels/orisha",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/annonces/la-boite-immo",
+      "destination": "/guide-installation/logiciels/la-boite-immo",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/annonces/naxos",
+      "destination": "/guide-installation/logiciels/naxos",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/annonces/sweepbright",
+      "destination": "/guide-installation/logiciels/sweepbright",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/email-automatique",
+      "destination": "/guide-installation/prises-de-contact",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/seloger",
+      "destination": "/guide-installation/plateformes/seloger",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/leboncoin",
+      "destination": "/guide-installation/plateformes/leboncoin",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/bienici",
+      "destination": "/guide-installation/plateformes/bienici",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/jinka",
+      "destination": "/guide-installation/plateformes/jinka",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/immojeune",
+      "destination": "/guide-installation/plateformes/immojeune",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/carte-des-colocs",
+      "destination": "/guide-installation/plateformes/carte-des-colocs",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/ac3-immofacile",
+      "destination": "/guide-installation/logiciels/orisha",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/hektor",
+      "destination": "/guide-installation/logiciels/la-boite-immo",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/modelo-netty",
+      "destination": "/guide-installation/logiciels/septeo",
+      "permanent": true
+    },
+    {
+      "source": "/guide-installation/prises-de-contact/naxos",
+      "destination": "/guide-installation/logiciels/naxos",
       "permanent": true
     }
   ],
