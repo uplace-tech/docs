@@ -69,7 +69,9 @@
             "pages": [
               "guide-installation/logiciels/septeo",
               "guide-installation/logiciels/apimo",
-              "guide-installation/logiciels/orisha"
+              "guide-installation/logiciels/orisha",
+              "guide-installation/logiciels/naxos",
+              "guide-installation/logiciels/sweepbright"
             ]
           },
           {
