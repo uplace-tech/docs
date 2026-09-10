@@ -163,6 +163,11 @@
       "source": "/guide-installation/prises-de-contact",
       "destination": "/guide-installation/prises-de-contact/email-automatique",
       "permanent": true
+    },
+    {
+      "source": "/guide-installation/multi-diffuseur",
+      "destination": "/guide-installation/annonces",
+      "permanent": true
     }
   ],
   "footer": {

@@ -20,17 +20,17 @@ Cette fonctionnalité permet de configurer un bien complet en cinq étapes guid�
 
   | Étape | Avec multi-diffuseur |
   | --- | --- |
-  | 1. Par où commencer ? | **Non affichée** — l'import est déjà fait |
+  | 1. Par où commencer ? | **Pré-remplie** — l'import est déjà fait |
   | 2. Spécificités techniques | **Pré-remplie** |
   | 3. Adresse et photo | **Pré-remplie** |
   | 4. Critères | À remplir |
   | 5. Finalisation | À remplir |
 
-  Il ne vous reste donc que les **critères de candidature** et la **finalisation** — c'est-à-dire les seuls réglages qui relèvent d'une décision commerciale, pas d'une ressaisie. Voir [Multi-diffuseurs (CRM)](/mon-agence) pour la configuration de la connexion.
+  Les étapes 1 à 3 arrivent **pré-remplies, pas masquées** : vous les parcourez, vous corrigez ce qui doit l'être, et il ne vous reste vraiment à saisir que les **critères de candidature** et la **finalisation** — c'est-à-dire les seuls réglages qui relèvent d'une décision commerciale, pas d'une ressaisie. Voir [Remontée et création d'une annonce](/guide-installation/annonces) pour la configuration de la connexion.
 </Info>
 
 <Tip>
-  C'est aussi cette remontée du **gestionnaire** qui permet au rôle **Utilisateur** de débloquer ses propres lots : sans multi-diffuseur connecté, l'information n'existe pas et le déblocage lui reste inaccessible. Voir [Rôles et permissions](/roles-permissions).
+  Le multi-diffuseur transmet aussi le **gestionnaire** de chaque bien. C'est ce champ qui permet à un membre ayant le rôle **Utilisateur** de retrouver et débloquer les lots dont il est le gestionnaire : sans connecteur, l'information n'existe pas dans Uplace et le déblocage ne lui est pas proposé. Voir [Rôles et permissions](/roles-permissions).
 </Tip>
 
 ## Fonctionnement étape par étape
@@ -81,7 +81,7 @@ Cette fonctionnalité permet de configurer un bien complet en cinq étapes guid�
 - Préparez vos **critères pré-définis** et vos **GLI pré-remplies** dans [Mon agence](/mon-agence) : la création d'un lot se résume alors à quelques clics.
 - Utilisez l'**import par URL** dès que l'annonce existe déjà sur un portail : gain de temps et zéro faute de frappe.
 - Mieux encore : **connectez votre multi-diffuseur**. L'import devient permanent et automatique, et vous ne saisissez plus que les critères et la finalisation.
-- Même pré-remplies, **relisez les étapes 2 et 3** : le loyer attendu par Uplace est le loyer **charges comprises**, ce qui n'est pas toujours la convention du logiciel source.
+- Même pré-remplies, **relisez les étapes 1 à 3** : le loyer attendu par Uplace est le loyer **charges comprises**, ce qui n'est pas toujours la convention du logiciel source.
 - Réservez le **fast pass** aux lots à forte demande : il accélère le remplissage du planning de visites sans attendre les dossiers.
 
 ## Erreurs fréquentes à éviter
@@ -98,7 +98,7 @@ Cette fonctionnalité permet de configurer un bien complet en cinq étapes guid�
 
 <Info>
   - Préremplit les champs du lot depuis l'URL d'annonce importée.
-  - Récupère les informations du bien **et son gestionnaire** depuis Modulo by Septeo, Apimo ou Ubiflow : les étapes 2 et 3 arrivent déjà remplies, l'étape 1 disparaît.
+  - Récupère les informations du bien **et son gestionnaire** depuis Modulo by Septeo, Apimo ou Ubiflow : les étapes 1 à 3 arrivent déjà remplies.
   - Calcule le salaire minimum requis selon le multiplicateur choisi (ex. x3 pour 500 € → 1 500 €).
   - Applique les critères à toutes les candidatures pour évaluer leur cohérence (Mauvais / Moyen / Bon / Excellent). Voir [Analyse des candidatures](/analyse-candidatures).
   - Pré-remplit la GLI sélectionnée sur les futures candidatures du lot.
@@ -111,12 +111,12 @@ Cette fonctionnalité permet de configurer un bien complet en cinq étapes guid�
     La **validation automatique** accepte d'office les dossiers conformes aux critères. Le **fast pass** inverse l'ordre du parcours : visite d'abord, dossier ensuite. Les deux options sont indépendantes et se règlent à l'étape Finalisation.
   </Accordion>
 
-  <Accordion title="Pourquoi ma création de lot ne commence-t-elle pas à l'étape 1 ?">
-    Parce que votre agence est connectée à un multi-diffuseur (**Modulo by Septeo**, **Apimo** ou **Ubiflow**). Uplace a déjà récupéré les informations du bien et son gestionnaire : l'étape « Par où commencer ? » n'a plus lieu d'être, et les étapes **Spécificités techniques** et **Adresse et photo** arrivent pré-remplies. Vous reprenez la main aux **critères**.
+  <Accordion title="Que change un multi-diffuseur connecté dans la création d'un lot ?">
+    Uplace a déjà récupéré les informations du bien et son gestionnaire depuis **Modulo by Septeo**, **Apimo** ou **Ubiflow** : les étapes **Par où commencer ?**, **Spécificités techniques** et **Adresse et photo** arrivent pré-remplies. Vous les parcourez pour vérification, et vous reprenez vraiment la main aux **critères**.
   </Accordion>
 
   <Accordion title="Les informations remontées du multi-diffuseur sont-elles modifiables ?">
-    Oui. Les étapes 2 et 3 sont **pré-remplies, pas verrouillées** : relisez-les et corrigez ce qui doit l'être — en particulier le loyer, qu'Uplace attend **charges comprises**, et qui n'est pas toujours saisi ainsi dans le logiciel d'origine.
+    Oui. Les étapes 1 à 3 sont **pré-remplies, pas verrouillées** : relisez-les et corrigez ce qui doit l'être — en particulier le loyer, qu'Uplace attend **charges comprises**, et qui n'est pas toujours saisi ainsi dans le logiciel d'origine.
   </Accordion>
 
   <Accordion title="Puis-je modifier un lot après sa mise en ligne ?">
