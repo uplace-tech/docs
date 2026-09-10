@@ -1,0 +1,81 @@
+---
+title: "Septeo (Modelo / Netty) — installation Uplace"
+sidebarTitle: "Septeo (Modelo / Netty)"
+description: "Connecter l'API Septeo pour importer vos annonces, et rediriger vos prises de contact depuis Netty / Modelo."
+icon: "key"
+---
+
+Support Septeo : [support@netty.fr](mailto:support@netty.fr) — 03 67 10 68 28.
+
+<Note>
+  Cette page couvre les **deux volets** de l'installation pour Septeo. Les principes généraux sont sur [Remontée et création d'une annonce](/guide-installation/annonces) et [Rediriger les prises de contact](/guide-installation/prises-de-contact).
+</Note>
+
+## 1. Remontée et création d'une annonce
+
+<Check>
+  **Connexion native.** Une API est en place : une fois la clé créée, Uplace récupère directement les données de vos annonces.
+</Check>
+
+<Steps>
+  <Step title="Créer une clé API dans Septeo">
+    Connectez-vous à votre logiciel Septeo, puis rendez-vous dans le menu **Paramètres** > **Gestion des clés API** > **Tester gratuitement l'API pendant 15 jours**.
+
+    Vérifiez que la clé est **Active**, et renseignez dans **IP autorisées** : `51.15.227.12`.
+
+    <Frame>
+      ![02 Septeo Uplace Cle Api](/images/02-septeo-uplace-cle-api.png "02 Septeo Uplace Cle Api")
+    </Frame>
+  </Step>
+  <Step title="Activer le connecteur sur Uplace">
+    Une fois la clé obtenue, active et l'IP renseignée, rendez-vous dans [Mon agence](/mon-agence) > **Paramètres de l'agence** > **Multi-diffuseurs** pour activer la connexion.
+
+    <Frame>
+      ![Capture D’écran 2026 09 09 À 16 52 14](/images/Capture-d’écran-2026-09-09-à-16.52.14.png "Capture D’écran 2026 09 09 À 16 52 14")
+    </Frame>
+  </Step>
+</Steps>
+
+<Warning>
+  Oublier l'**IP autorisée** `51.15.227.12` lors de la création de la clé : la connexion échouera silencieusement. Et n'activez pas l'interrupteur _La connexion est établie_ avant la validation effective côté Septeo.
+</Warning>
+
+<Note>
+  Une fois la connexion active, vos annonces remontent dans [Lots en attente](/lots-en-attente), prêtes à être rapprochées. Les étapes 1 à 3 de la [création d'un lot](/creation-lot) arrivent pré-remplies.
+</Note>
+
+## 2. Rediriger les prises de contact
+
+<Note>
+  Munissez-vous de votre **e-mail automatique** `nom-de-votre-agence@inbox.uplace.fr` : voir [Rediriger les prises de contact](/guide-installation/prises-de-contact).
+</Note>
+
+Renseignez votre e-mail automatique comme **adresse de contact location** dans votre interface Netty / Modelo.
+
+<Frame>
+  ![Capture D’écran 2026 09 09 À 17 08 09](/images/Capture-d’écran-2026-09-09-à-17.08.09.png "Capture D’écran 2026 09 09 À 17 08 09")
+</Frame>
+
+<Note>
+  Si vous n'avez **pas accès à cette interface**, signalez-le au contact privilégié Uplace chez Septeo, qui fera la modification pour vous — demandez ses coordonnées à [contact@uplace.fr](mailto:contact@uplace.fr).
+</Note>
+
+<Tip>
+  La modification dans votre logiciel centralise une partie des demandes. Selon votre configuration, il reste utile de rediriger aussi chaque **plateforme de diffusion** — voir [Les plateformes de diffusion](/guide-installation/prises-de-contact).
+</Tip>
+
+## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="La connexion Septeo est-elle payante ?">
+    La clé API Septeo démarre par un **essai gratuit de 15 jours** depuis leur interface. Pour la suite, rapprochez-vous de votre contact Septeo.
+  </Accordion>
+
+  <Accordion title="Je n'ai pas accès au menu Gestion des clés API, que faire ?">
+    Demandez son ouverture au support Septeo : [support@netty.fr](mailto:support@netty.fr) — 03 67 10 68 28. En attendant, créez vos lots par **import d'URL** ou en **saisie manuelle**, voir [Création d'un lot](/creation-lot).
+  </Accordion>
+</AccordionGroup>
+
+## Besoin d'aide ?
+
+L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](mailto:contact@uplace.fr) — 04 82 53 15 81.

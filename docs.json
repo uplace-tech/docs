@@ -62,6 +62,19 @@
               "guide-installation/prises-de-contact/hektor",
               "guide-installation/prises-de-contact/naxos"
             ]
+          },
+          {
+            "group": "Les logiciels métiers",
+            "icon": "desktop",
+            "pages": [
+              "guide-installation/logiciels/septeo",
+              "guide-installation/logiciels/apimo"
+            ]
+          },
+          {
+            "group": "Les plateformes de diffusion",
+            "icon": "globe",
+            "pages": []
           }
         ]
       },
