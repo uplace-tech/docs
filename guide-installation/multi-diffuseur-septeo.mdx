@@ -5,15 +5,11 @@ description: "Créer une clé API Septeo et activer le connecteur pour importer 
 icon: "key"
 ---
 
-## Objectif
-
-En complément de la [redirection des prises de contact](/guide-installation/prises-de-contact/email-automatique), la connexion multi-diffuseur importe vos **annonces** et l'information **gestionnaire** — celle qui conditionne le déblocage des lots par le rôle Utilisateur, voir [Rôles et permissions](/roles-permissions). Les étapes 1 à 3 de la [création d'un lot](/creation-lot) s'en trouvent masquées ou pré-remplies.
+Support Septeo : [support@netty.fr](mailto:support@netty.fr) — 03 67 10 68 28.
 
 <Note>
-  Cette page reprend le contenu du **Guide d'installation** transmis aux agences lors de l'onboarding. Pour l'ordre global de mise en route, voir la [Checklist de mise en route](/onboarding). Si votre logiciel est Apimo, voir [Apimo](/guide-installation/multi-diffuseur-apimo).
+  Avant de commencer, voir la [vue d'ensemble](/guide-installation/annonces) : ce que la connexion importe, ce qu'elle change dans la création d'un lot, et quoi faire si aucun connecteur n'existe pour votre logiciel.
 </Note>
-
-Support Septeo : [support@netty.fr](mailto:support@netty.fr) — 03 67 10 68 28.
 
 ## Connecter Septeo
 
@@ -24,41 +20,28 @@ Support Septeo : [support@netty.fr](mailto:support@netty.fr) — 03 67 10 68 28.
     Vérifiez que la clé est **Active**, et renseignez dans **IP autorisées** : `51.15.227.12`.
 
     <Frame>
-      ![Capture D’écran 2026 09 09 À 16 52 14](/images/Capture-d’écran-2026-09-09-à-16.52.14.png "Capture D’écran 2026 09 09 À 16 52 14")
+      ![02 Septeo Uplace Cle Api](/images/02-septeo-uplace-cle-api.png "02 Septeo Uplace Cle Api")
     </Frame>
   </Step>
   <Step title="Activer le connecteur sur Uplace">
     Une fois la clé obtenue, active et l'IP renseignée, rendez-vous dans [Mon agence](/mon-agence) > **Paramètres de l'agence** > **Multi-diffuseurs** pour activer la connexion.
 
     <Frame>
-      ![Capture D’écran 2026 09 10 À 09 34 58](/images/Capture-d’écran-2026-09-10-à-09.34.58.png "Capture D’écran 2026 09 10 À 09 34 58")
-
-      ![02 Septeo Uplace Cle Api](/images/02-septeo-uplace-cle-api.png "02 Septeo Uplace Cle Api")
+      ![Capture D’écran 2026 09 09 À 16 52 14](/images/Capture-d’écran-2026-09-09-à-16.52.14.png "Capture D’écran 2026 09 09 À 16 52 14")
     </Frame>
   </Step>
 </Steps>
 
 <Note>
-  La connexion multi-diffuseur n'est **pas instantanée** : elle suppose une validation côté éditeur. Une fois active, vos annonces remontent dans [Lots en attente](/lots-en-attente), prêtes à être rapprochées.
+  La validation reste à la main de l'éditeur : la connexion n'est donc pas active immédiatement. Une fois établie, vos annonces remontent dans [Lots en attente](/lots-en-attente).
 </Note>
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
-  - Oublier l'**IP autorisée** `51.15.227.12` lors de la création de la clé API Septeo : la connexion échouera silencieusement.
-  - Activer l'interrupteur _La connexion est établie_ avant la validation effective côté éditeur.
+  - Oublier l'**IP autorisée** `51.15.227.12` lors de la création de la clé API : la connexion échouera silencieusement.
+  - Activer l'interrupteur _La connexion est établie_ avant la validation effective côté Septeo.
 </Warning>
-
-## Pas de connecteur pour votre logiciel ?
-
-<Info>
-  Vous n'avez pas besoin d'attendre un connecteur pour mettre un lot en ligne. À l'étape **Par où commencer ?** de la création d'un lot, deux entrées sont possibles :
-
-  - **Importer depuis une URL** : collez le lien d'une annonce déjà publiée, Uplace préremplit les champs à l'étape suivante.
-  - **Saisie manuelle** : cliquez sur **Continuer sans importer**, puis renseignez vous-même le nom du lot, la surface et la typologie, le **loyer charges comprises**, le dépôt de garantie, la photo et l'adresse du bien.
-
-  Le détail des cinq étapes — jusqu'aux critères de candidature et à la finalisation — est sur [Création d'un lot](/creation-lot).
-</Info>
 
 ## Besoin d'aide ?
 
@@ -71,7 +54,7 @@ L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](ma
     La clé API Septeo démarre par un **essai gratuit de 15 jours** depuis leur interface. Pour la suite, rapprochez-vous de votre contact Septeo.
   </Accordion>
 
-  <Accordion title="Mon logiciel n'est ni Septeo ni Apimo, que faire ?">
-    Contactez [contact@uplace.fr](mailto:contact@uplace.fr) : l'équipe vous indiquera si un connecteur est disponible ou prévu pour votre logiciel. En attendant, créez vos lots par **import d'URL** ou en **saisie manuelle**, voir [Création d'un lot](/creation-lot).
+  <Accordion title="Je n'ai pas accès au menu Gestion des clés API, que faire ?">
+    Demandez son ouverture au support Septeo : [support@netty.fr](mailto:support@netty.fr) — 03 67 10 68 28. En attendant, vous pouvez créer vos lots par **import d'URL** ou en **saisie manuelle**, voir la [vue d'ensemble](/guide-installation/annonces).
   </Accordion>
 </AccordionGroup>

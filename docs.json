@@ -37,6 +37,7 @@
             "group": "Remontée et création d'une annonce",
             "icon": "arrows-rotate",
             "pages": [
+              "guide-installation/annonces",
               "guide-installation/multi-diffuseur-septeo",
               "guide-installation/multi-diffuseur-apimo"
             ]
