@@ -1,15 +1,15 @@
 ---
-title: "Remontée et création d'une annonce — vue d'ensemble"
-sidebarTitle: "Vue d'ensemble"
-description: "Ce qu'apporte une connexion multi-diffuseur, quel logiciel connecter, et comment créer une annonce quand aucun connecteur n'existe."
-icon: "circle-info"
+title: "Remontée et création d'une annonce"
+sidebarTitle: "Remontée et création d'une annonce"
+description: "Ce qu'apporte une connexion à votre logiciel métier, quel logiciel choisir, et comment créer une annonce quand aucune connexion n'est en place."
+icon: "arrows-rotate"
 ---
 
 ## Objectif
 
-Connecter votre multi-diffuseur à Uplace évite de ressaisir vos biens : la connexion importe vos **annonces** et l'information **gestionnaire**. Les étapes 1 à 3 de la [création d'un lot](/creation-lot) — point de départ, spécificités techniques, adresse et photo — arrivent alors **pré-remplies** : vous les relisez, vous ne les saisissez plus.
+Connecter votre logiciel métier à Uplace évite de ressaisir vos biens : la connexion importe vos **annonces** et l'information **gestionnaire**. Les étapes 1 à 3 de la [création d'un lot](/creation-lot) — point de départ, spécificités techniques, adresse et photo — arrivent alors **pré-remplies** : vous les relisez, vous ne les saisissez plus.
 
-| Étape de la création d'un lot | Avec un connecteur actif |
+| Étape de la création d'un lot | Avec une connexion active |
 | --- | --- |
 | 1. Par où commencer ? | Pré-remplie — l'import est déjà fait |
 | 2. Spécificités techniques | Pré-remplie |
@@ -21,10 +21,6 @@ Connecter votre multi-diffuseur à Uplace évite de ressaisir vos biens : la con
   Pré-rempli ne veut pas dire verrouillé : relisez surtout le **loyer**, qu'Uplace attend **charges comprises**, ce qui n'est pas toujours la convention du logiciel source.
 </Tip>
 
-<Note>
-  Ce dossier reprend le contenu du **Guide d'installation** transmis aux agences lors de l'onboarding. Pour l'ordre global de mise en route, voir la [Checklist de mise en route](/onboarding) ; pour les demandes entrantes des portails, voir [Rediriger les prises de contact](/guide-installation/prises-de-contact/email-automatique).
-</Note>
-
 ## Choisissez votre logiciel
 
 ### Connexion native
@@ -32,51 +28,55 @@ Connecter votre multi-diffuseur à Uplace évite de ressaisir vos biens : la con
 Une API est en place : Uplace récupère directement toutes les données de vos annonces.
 
 <CardGroup cols={2}>
-  <Card title="Septeo (Modelo / Netty)" icon="key" href="/guide-installation/multi-diffuseur-septeo">
+  <Card title="Septeo (Modelo / Netty)" icon="key" href="/guide-installation/logiciels/septeo">
     Créer une clé API, autoriser l'IP Uplace, puis activer le connecteur.
   </Card>
 
-  <Card title="Apimo" icon="id-card" href="/guide-installation/multi-diffuseur-apimo">
+  <Card title="Apimo" icon="id-card" href="/guide-installation/logiciels/apimo">
     Demander l'activation depuis Uplace, puis renseigner votre ID agence.
   </Card>
 </CardGroup>
 
 <Note>
-  La connexion multi-diffuseur n'est **pas instantanée** : elle suppose une validation côté éditeur. Une fois active, vos annonces remontent dans [Lots en attente](/lots-en-attente), prêtes à être rapprochées.
+  La connexion n'est **pas instantanée** : elle suppose une validation côté éditeur. Une fois active, vos annonces remontent dans [Lots en attente](/lots-en-attente), prêtes à être rapprochées.
 </Note>
 
 ### Connexion incluse à partir du pack Max
 
-Pour ces quatre logiciels, **aucune API n'est en place à ce jour** : les annonces ne remontent pas automatiquement. La connexion peut être mise en place selon votre pack — elle est **incluse à partir du pack Max**. En deçà, créez vos lots dans Uplace par import d'URL ou saisie manuelle, voir [Création d'un lot](/creation-lot).
+Pour ces quatre logiciels, **aucune API n'est en place à ce jour** : les annonces ne remontent pas automatiquement. La connexion peut être mise en place selon votre pack — elle est **incluse à partir du pack Max**. En deçà, créez vos lots dans Uplace par import d'URL ou saisie manuelle.
 
 <CardGroup cols={2}>
-  <Card title="Orisha (Immofacile / AC3)" icon="desktop" href="/guide-installation/annonces/orisha">
+  <Card title="Orisha (Immofacile / AC3)" icon="desktop" href="/guide-installation/logiciels/orisha">
     Pas de connexion native — incluse à partir du pack Max.
   </Card>
 
-  <Card title="La Boîte Immo (Hektor)" icon="laptop" href="/guide-installation/annonces/la-boite-immo">
+  <Card title="La Boîte Immo (Hektor)" icon="laptop" href="/guide-installation/logiciels/la-boite-immo">
     Pas de connexion native — incluse à partir du pack Max.
   </Card>
 
-  <Card title="Naxos (Marguerite / MyCanopé)" icon="browser" href="/guide-installation/annonces/naxos">
+  <Card title="Naxos (Marguerite / MyCanopé)" icon="browser" href="/guide-installation/logiciels/naxos">
     Pas de connexion native — incluse à partir du pack Max.
   </Card>
 
-  <Card title="Sweepbright" icon="house-laptop" href="/guide-installation/annonces/sweepbright">
+  <Card title="Sweepbright" icon="house-laptop" href="/guide-installation/logiciels/sweepbright">
     Pas de connexion native — incluse à partir du pack Max.
   </Card>
 </CardGroup>
 
-## Pas de connecteur pour votre logiciel ?
+<Note>
+  Chaque page logiciel couvre **les deux volets** de l'installation : la remontée des annonces et la redirection des prises de contact.
+</Note>
 
-Vous n'avez pas besoin d'attendre un connecteur pour mettre un lot en ligne. À l'étape **Par où commencer ?** de la création d'un lot, deux entrées sont possibles :
+## Pas de connexion pour votre logiciel ?
+
+Vous n'avez pas besoin d'attendre une connexion pour mettre un lot en ligne. À l'étape **Par où commencer ?** de la création d'un lot, deux entrées sont possibles :
 
 <CardGroup cols={2}>
-  <Card title="Importer depuis une URL" icon="link">
+  <Card title="Importer depuis une URL" icon="link" href="/creation-lot">
     Collez le lien d'une annonce déjà publiée : Uplace préremplit les champs à l'étape suivante. Gain de temps et zéro faute de frappe.
   </Card>
 
-  <Card title="Saisie manuelle" icon="keyboard">
+  <Card title="Saisie manuelle" icon="keyboard" href="/creation-lot">
     Cliquez sur **Continuer sans importer**, puis renseignez tout vous-même.
   </Card>
 </CardGroup>
@@ -84,10 +84,6 @@ Vous n'avez pas besoin d'attendre un connecteur pour mettre un lot en ligne. À 
 En saisie manuelle, prévoyez : le **nom du lot** et sa référence interne, le **nombre de pièces**, la **surface**, le caractère meublé ou non et le **type de bien**, le **loyer charges comprises**, le **dépôt de garantie** et les **frais d'agence**, la **photo** du lot (JPG, PNG ou WebP, 5 Mo max, recadrage 16:9) et l'**adresse** du bien — plus une adresse de visite distincte si besoin.
 
 Le détail des cinq étapes, jusqu'aux critères de candidature et à la finalisation, est sur [Création d'un lot](/creation-lot).
-
-## Besoin d'aide ?
-
-L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](mailto:contact@uplace.fr) — 04 82 53 15 81.
 
 ## Erreurs fréquentes à éviter
 
@@ -100,8 +96,8 @@ L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](ma
 ## Questions fréquentes
 
 <AccordionGroup>
-  <Accordion title="Mon logiciel n'est ni Septeo ni Apimo, que faire ?">
-    Pour **Orisha (Immofacile / AC3)**, **La Boîte Immo (Hektor)**, **Naxos (Marguerite / MyCanopé)** et **Sweepbright**, il n'y a pas d'API en place aujourd'hui, mais la connexion est **incluse à partir du pack Max** : voir la page de votre logiciel ci-dessus. Pour tout autre logiciel, contactez [contact@uplace.fr](mailto:contact@uplace.fr) : l'équipe vous indiquera si un connecteur est disponible ou prévu. En attendant, créez vos lots par **import d'URL** ou en **saisie manuelle**, voir [Création d'un lot](/creation-lot).
+  <Accordion title="Mon logiciel n'est pas dans la liste, que faire ?">
+    Contactez [contact@uplace.fr](mailto:contact@uplace.fr) : l'équipe vous indiquera si une connexion est disponible ou prévue pour votre logiciel. En attendant, créez vos lots par **import d'URL** ou en **saisie manuelle**, voir [Création d'un lot](/creation-lot).
   </Accordion>
 
   <Accordion title="Où arrivent les annonces une fois la connexion active ?">
@@ -112,3 +108,7 @@ L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](ma
     Oui. Les étapes pré-remplies restent éditables : corrigez ce qui doit l'être, en particulier le loyer, attendu **charges comprises** par Uplace.
   </Accordion>
 </AccordionGroup>
+
+## Besoin d'aide ?
+
+L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](mailto:contact@uplace.fr) — 04 82 53 15 81.
