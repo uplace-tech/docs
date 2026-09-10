@@ -39,7 +39,11 @@
             "pages": [
               "guide-installation/annonces",
               "guide-installation/multi-diffuseur-septeo",
-              "guide-installation/multi-diffuseur-apimo"
+              "guide-installation/multi-diffuseur-apimo",
+              "guide-installation/annonces/orisha",
+              "guide-installation/annonces/la-boite-immo",
+              "guide-installation/annonces/naxos",
+              "guide-installation/annonces/sweepbright"
             ]
           },
           {

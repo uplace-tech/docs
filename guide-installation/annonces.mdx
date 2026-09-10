@@ -27,6 +27,10 @@ Connecter votre multi-diffuseur à Uplace évite de ressaisir vos biens : la con
 
 ## Choisissez votre logiciel
 
+### Connexion native
+
+Une API est en place : Uplace récupère directement toutes les données de vos annonces.
+
 <CardGroup cols={2}>
   <Card title="Septeo (Modelo / Netty)" icon="key" href="/guide-installation/multi-diffuseur-septeo">
     Créer une clé API, autoriser l'IP Uplace, puis activer le connecteur.
@@ -41,21 +45,27 @@ Connecter votre multi-diffuseur à Uplace évite de ressaisir vos biens : la con
   La connexion multi-diffuseur n'est **pas instantanée** : elle suppose une validation côté éditeur. Une fois active, vos annonces remontent dans [Lots en attente](/lots-en-attente), prêtes à être rapprochées.
 </Note>
 
-## Le gestionnaire, et pourquoi il compte pour le rôle Utilisateur
+### Connexion incluse à partir du pack Max
 
-Le **gestionnaire** d'un lot — le collaborateur qui suit le bien — ne se saisit pas dans Uplace : cette information remonte de votre multi-diffuseur (aujourd'hui **Modulo by Septeo**, **Apimo** ou **Ubiflow**).
+Pour ces quatre logiciels, **aucune API n'est en place à ce jour** : les annonces ne remontent pas automatiquement. La connexion peut être mise en place selon votre pack — elle est **incluse à partir du pack Max**. En deçà, créez vos lots dans Uplace par import d'URL ou saisie manuelle, voir [Création d'un lot](/creation-lot).
 
-Elle détermine ce qu'un membre au rôle **Utilisateur** peut faire :
+<CardGroup cols={2}>
+  <Card title="Orisha (Immofacile / AC3)" icon="desktop" href="/guide-installation/annonces/orisha">
+    Pas de connexion native — incluse à partir du pack Max.
+  </Card>
 
-| Rôle | Peut débloquer un lot en attente ? |
-| --- | --- |
-| Propriétaire, Administrateur, Responsable | Oui, tous les lots |
-| Utilisateur | Uniquement les lots dont il est **gestionnaire** |
-| Opérateur | Jamais |
+  <Card title="La Boîte Immo (Hektor)" icon="laptop" href="/guide-installation/annonces/la-boite-immo">
+    Pas de connexion native — incluse à partir du pack Max.
+  </Card>
 
-<Warning>
-  Sans connexion active, l'information gestionnaire n'existe pas : vos **Utilisateurs ne peuvent débloquer aucun lot**. Deux contournements en attendant la connexion : leur attribuer le rôle **Responsable**, ou faire débloquer le lot par un Responsable — ce qui le leur affecte. Voir [Rôles et permissions](/roles-permissions) et [Lots en attente](/lots-en-attente).
-</Warning>
+  <Card title="Naxos (Marguerite / MyCanopé)" icon="browser" href="/guide-installation/annonces/naxos">
+    Pas de connexion native — incluse à partir du pack Max.
+  </Card>
+
+  <Card title="Sweepbright" icon="house-laptop" href="/guide-installation/annonces/sweepbright">
+    Pas de connexion native — incluse à partir du pack Max.
+  </Card>
+</CardGroup>
 
 ## Pas de connecteur pour votre logiciel ?
 
@@ -91,7 +101,7 @@ L'équipe Uplace peut faire ces manipulations avec vous : [contact@uplace.fr](ma
 
 <AccordionGroup>
   <Accordion title="Mon logiciel n'est ni Septeo ni Apimo, que faire ?">
-    Contactez [contact@uplace.fr](mailto:contact@uplace.fr) : l'équipe vous indiquera si un connecteur est disponible ou prévu pour votre logiciel. En attendant, créez vos lots par **import d'URL** ou en **saisie manuelle**, voir [Création d'un lot](/creation-lot).
+    Pour **Orisha (Immofacile / AC3)**, **La Boîte Immo (Hektor)**, **Naxos (Marguerite / MyCanopé)** et **Sweepbright**, il n'y a pas d'API en place aujourd'hui, mais la connexion est **incluse à partir du pack Max** : voir la page de votre logiciel ci-dessus. Pour tout autre logiciel, contactez [contact@uplace.fr](mailto:contact@uplace.fr) : l'équipe vous indiquera si un connecteur est disponible ou prévu. En attendant, créez vos lots par **import d'URL** ou en **saisie manuelle**, voir [Création d'un lot](/creation-lot).
   </Accordion>
 
   <Accordion title="Où arrivent les annonces une fois la connexion active ?">
