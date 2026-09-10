@@ -34,6 +34,14 @@
         "icon": "plug",
         "pages": [
           {
+            "group": "Remontée et création d'une annonce",
+            "icon": "arrows-rotate",
+            "pages": [
+              "guide-installation/multi-diffuseur-septeo",
+              "guide-installation/multi-diffuseur-apimo"
+            ]
+          },
+          {
             "group": "Rediriger les prises de contact",
             "icon": "envelopes-bulk",
             "pages": [
@@ -48,14 +56,6 @@
               "guide-installation/prises-de-contact/modelo-netty",
               "guide-installation/prises-de-contact/hektor",
               "guide-installation/prises-de-contact/naxos"
-            ]
-          },
-          {
-            "group": "Récupérer les données des annonces",
-            "icon": "arrows-rotate",
-            "pages": [
-              "guide-installation/multi-diffuseur-septeo",
-              "guide-installation/multi-diffuseur-apimo"
             ]
           }
         ]
