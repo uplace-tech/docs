@@ -78,7 +78,12 @@
             "group": "Les plateformes de diffusion",
             "icon": "globe",
             "pages": [
-              "guide-installation/plateformes/seloger"
+              "guide-installation/plateformes/seloger",
+              "guide-installation/plateformes/leboncoin",
+              "guide-installation/plateformes/bienici",
+              "guide-installation/plateformes/jinka",
+              "guide-installation/plateformes/immojeune",
+              "guide-installation/plateformes/carte-des-colocs"
             ]
           }
         ]
