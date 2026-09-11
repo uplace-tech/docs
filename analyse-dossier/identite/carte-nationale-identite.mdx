@@ -1,0 +1,30 @@
+---
+title: "Carte Nationale d'Identité (CNI) — points de contrôle"
+sidebarTitle: "Carte Nationale d'Identité"
+description: "Ce qu'Uplace vérifie sur une CNI française : mentions, MRZ, validité réelle et cohérence avec l'identité déclarée."
+icon: "id-card"
+---
+
+<Note>
+  Les trois niveaux de vérification et la note de 0 à 3 sont expliqués sur la [vue d'ensemble](/analyse-dossier/index).
+</Note>
+
+## Points de contrôle
+
+- Présence des mentions obligatoires : « CARTE NATIONALE D'IDENTITÉ » et « République Française »
+- Photo d'identité intégrée, signature et bande MRZ au verso présentes
+- Distinction du format : ID-1 (nouveau format carte, depuis 2021) ou ID-2 (ancien format papier)
+- Calcul de la validité réelle selon le format — pour l'ID-2, une CNI délivrée entre 2004 et 2013 à un majeur est valable 15 ans même si « 10 ans » est écrit dessus
+- Recoupement recto / bande MRZ (nom, prénom, date de naissance, numéro, genre)
+- Cohérence du numéro de document entre recto, verso et MRZ
+- Comparaison nom/prénom avec l'identité déclarée (accents, ordre des prénoms, nom marital tolérés)
+- Vérification visuelle globale : couleur, police, format conformes à une CNI française
+- Détection d'éléments visuels suspects : retouches, incohérences graphiques ou éléments inhabituels sur le document
+
+<Warning>
+  **Signature obligatoire** : son absence ou toute anomalie entraîne un refus du document.
+</Warning>
+
+<Tip>
+  En cas de nom marital ou d'usage, c'est celui-ci qui est utilisé en priorité pour la comparaison avec l'identité déclarée.
+</Tip>

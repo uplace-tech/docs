@@ -1,0 +1,29 @@
+---
+title: "Passeport français — points de contrôle"
+sidebarTitle: "Passeport"
+description: "Ce qu'Uplace vérifie sur un passeport français : mentions, MRZ, validité et contrôles anti-fraude."
+icon: "passport"
+---
+
+<Note>
+  Les trois niveaux de vérification et la note de 0 à 3 sont expliqués sur la [vue d'ensemble](/analyse-dossier/index).
+</Note>
+
+## Points de contrôle
+
+- Présence des mentions : « PASSEPORT », « République Française », logo RF
+- Photo d'identité et signature présentes
+- Bande MRZ (2 lignes de 30 caractères) présente et vérifiée par algorithme 7-3-1
+- Calcul de la validité selon la date de délivrance et l'âge du titulaire
+- Ordre logique des dates : naissance < délivrance < expiration
+- Comparaison nom/prénom avec l'identité déclarée
+- Vérification visuelle : format, couleur, structure conformes à un passeport français
+- Contrôle anti-fraude : vérification des logos officiels, du symbole biométrique, de la numérotation des pages et de la cohérence générale du document
+
+<Warning>
+  **Signature obligatoire** : son absence ou toute anomalie entraîne un refus du document.
+</Warning>
+
+<Tip>
+  En cas de nom marital ou d'usage, c'est celui-ci qui est utilisé en priorité pour la comparaison avec l'identité déclarée.
+</Tip>

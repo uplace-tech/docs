@@ -62,6 +62,65 @@
         ]
       },
       {
+        "group": "Analyse de dossier",
+        "icon": "shield-check",
+        "pages": [
+          "analyse-dossier/index",
+          {
+            "group": "Pièces d'identité",
+            "icon": "id-card",
+            "pages": [
+              "analyse-dossier/identite/carte-nationale-identite",
+              "analyse-dossier/identite/passeport",
+              "analyse-dossier/identite/permis-de-conduire",
+              "analyse-dossier/identite/titre-de-sejour"
+            ]
+          },
+          {
+            "group": "Justificatifs de domicile",
+            "icon": "house",
+            "pages": [
+              "analyse-dossier/domicile/quittance-de-loyer",
+              "analyse-dossier/domicile/attestation-hebergement",
+              "analyse-dossier/domicile/taxe-fonciere",
+              "analyse-dossier/domicile/election-de-domicile",
+              "analyse-dossier/domicile/logement-de-fonction"
+            ]
+          },
+          {
+            "group": "Situation professionnelle — contrat",
+            "icon": "file-signature",
+            "pages": [
+              "analyse-dossier/situation-professionnelle/cdi-confirme",
+              "analyse-dossier/situation-professionnelle/cdi-periode-essai",
+              "analyse-dossier/situation-professionnelle/cdd",
+              "analyse-dossier/situation-professionnelle/alternance-cerfa"
+            ]
+          },
+          {
+            "group": "Professionnel indépendant",
+            "icon": "briefcase",
+            "pages": [
+              "analyse-dossier/independant/index",
+              "analyse-dossier/independant/extrait-kbis",
+              "analyse-dossier/independant/avis-sirene",
+              "analyse-dossier/independant/attestation-rne"
+            ]
+          },
+          "analyse-dossier/etudiant",
+          {
+            "group": "Justificatifs de revenus",
+            "icon": "money-check-dollar",
+            "pages": [
+              "analyse-dossier/revenus/fiches-de-paie",
+              "analyse-dossier/revenus/prestations-sociales"
+            ]
+          },
+          "analyse-dossier/avis-imposition",
+          "analyse-dossier/garantie-locative"
+        ]
+      },
+      {
         "group": "Le parcours locatif",
         "icon": "route",
         "pages": [
