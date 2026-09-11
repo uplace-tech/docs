@@ -116,7 +116,8 @@
               "analyse-dossier/revenus/prestations-sociales"
             ]
           },
-          "analyse-dossier/avis-imposition"
+          "analyse-dossier/avis-imposition",
+          "analyse-dossier/garantie-locative"
         ]
       },
       {
