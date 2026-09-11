@@ -112,9 +112,11 @@
             "group": "Justificatifs de revenus",
             "icon": "money-check-dollar",
             "pages": [
-              "analyse-dossier/revenus/fiches-de-paie"
+              "analyse-dossier/revenus/fiches-de-paie",
+              "analyse-dossier/revenus/prestations-sociales"
             ]
-          }
+          },
+          "analyse-dossier/avis-imposition"
         ]
       },
       {
