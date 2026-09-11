@@ -79,6 +79,17 @@
           {
             "group": "Justificatifs de domicile",
             "icon": "house",
+            "pages": [
+              "analyse-dossier/domicile/quittance-de-loyer",
+              "analyse-dossier/domicile/attestation-hebergement",
+              "analyse-dossier/domicile/taxe-fonciere",
+              "analyse-dossier/domicile/election-de-domicile",
+              "analyse-dossier/domicile/logement-de-fonction"
+            ]
+          },
+          {
+            "group": "Situation professionnelle — contrat",
+            "icon": "file-signature",
             "pages": []
           }
         ]
