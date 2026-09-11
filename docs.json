@@ -72,8 +72,14 @@
             "pages": [
               "analyse-dossier/identite/carte-nationale-identite",
               "analyse-dossier/identite/passeport",
-              "analyse-dossier/identite/permis-de-conduire"
+              "analyse-dossier/identite/permis-de-conduire",
+              "analyse-dossier/identite/titre-de-sejour"
             ]
+          },
+          {
+            "group": "Justificatifs de domicile",
+            "icon": "house",
+            "pages": []
           }
         ]
       },
