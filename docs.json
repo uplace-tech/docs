@@ -93,7 +93,15 @@
             "pages": [
               "analyse-dossier/situation-professionnelle/cdi-confirme",
               "analyse-dossier/situation-professionnelle/cdi-periode-essai",
-              "analyse-dossier/situation-professionnelle/cdd"
+              "analyse-dossier/situation-professionnelle/cdd",
+              "analyse-dossier/situation-professionnelle/alternance-cerfa"
+            ]
+          },
+          {
+            "group": "Professionnel indépendant",
+            "icon": "briefcase",
+            "pages": [
+              "analyse-dossier/independant/index"
             ]
           }
         ]
