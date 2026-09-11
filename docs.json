@@ -70,7 +70,9 @@
             "group": "Pièces d'identité",
             "icon": "id-card",
             "pages": [
-              "analyse-dossier/identite/carte-nationale-identite"
+              "analyse-dossier/identite/carte-nationale-identite",
+              "analyse-dossier/identite/passeport",
+              "analyse-dossier/identite/permis-de-conduire"
             ]
           }
         ]
