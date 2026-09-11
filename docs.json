@@ -101,7 +101,18 @@
             "group": "Professionnel indépendant",
             "icon": "briefcase",
             "pages": [
-              "analyse-dossier/independant/index"
+              "analyse-dossier/independant/index",
+              "analyse-dossier/independant/extrait-kbis",
+              "analyse-dossier/independant/avis-sirene",
+              "analyse-dossier/independant/attestation-rne"
+            ]
+          },
+          "analyse-dossier/etudiant",
+          {
+            "group": "Justificatifs de revenus",
+            "icon": "money-check-dollar",
+            "pages": [
+              "analyse-dossier/revenus/fiches-de-paie"
             ]
           }
         ]
