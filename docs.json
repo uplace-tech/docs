@@ -92,7 +92,8 @@
             "icon": "file-signature",
             "pages": [
               "analyse-dossier/situation-professionnelle/cdi-confirme",
-              "analyse-dossier/situation-professionnelle/cdi-periode-essai"
+              "analyse-dossier/situation-professionnelle/cdi-periode-essai",
+              "analyse-dossier/situation-professionnelle/cdd"
             ]
           }
         ]
