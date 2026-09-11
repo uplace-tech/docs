@@ -42,35 +42,95 @@ Deux mécanismes coexistent :
 
 ## Abonnement par lien iCal (tout agenda)
 
+Toutes les procédures commencent de la même façon : depuis le [Calendrier](/calendrier) Uplace, ouvrez **Synchroniser** > bloc **Par lien iCal** et **copiez le lien** via le bouton prévu. Gardez-le sous la main, vous allez le coller dans votre agenda.
+
 <Tabs>
+  <Tab title="Google Agenda">
+    <Steps>
+      <Step title="Ouvrir Google Agenda">
+        Rendez-vous sur [calendar.google.com](https://calendar.google.com/calendar) et connectez-vous à votre compte Google si nécessaire.
+      </Step>
+      <Step title="Ajouter un agenda">
+        Dans le menu de gauche, à la ligne **Autres agendas**, cliquez sur le bouton **\+**.
+      </Step>
+      <Step title="Choisir « À partir de l'URL »">
+        Dans le menu qui s'ouvre, cliquez sur **À partir de l'URL**.
+      </Step>
+      <Step title="Coller le lien">
+        Collez le lien de synchronisation Uplace dans le champ **URL de l'agenda**, puis cliquez sur **Ajouter un agenda**.
+
+        <Tip>
+          Laissez décochée la case **Rendre l'agenda accessible en mode public** : votre planning de visites n'a pas à être public.
+        </Tip>
+      </Step>
+      <Step title="Renommer l'agenda">
+        L'agenda apparaît dans le menu de gauche, sous **Autres agendas**, avec l'URL `webcal://api.uplace.fr/ical-fe…` comme nom. Cliquez dessus pour le renommer à votre convenance.
+      </Step>
+    </Steps>
+
+    Votre compte Google Agenda est synchronisé avec Uplace.
+  </Tab>
+  <Tab title="Outlook">
+    <Steps>
+      <Step title="Ouvrir Outlook Agenda">
+        Rendez-vous sur [outlook.live.com](https://outlook.live.com/calendar/0/view/workweek) et connectez-vous à votre compte Outlook si nécessaire.
+      </Step>
+      <Step title="Ajouter un calendrier">
+        Dans le menu de gauche, cliquez sur **Ajouter un calendrier**.
+      </Step>
+      <Step title="S'abonner à partir du web">
+        Dans le menu de gauche de la fenêtre, cliquez sur **S'abonner à partir du web**.
+      </Step>
+      <Step title="Coller le lien">
+        Collez le lien de synchronisation Uplace dans le champ prévu.
+      </Step>
+      <Step title="Nommer et personnaliser">
+        Donnez un nom à l'agenda et choisissez son icône.
+
+        <Tip>
+          Pour la couleur, cliquez sur **Personnalisation** et collez le code `1ac385` dans le champ **Hex** : c'est le vert officiel Uplace.
+        </Tip>
+      </Step>
+      <Step title="Importer">
+        Dans **Ajouter à**, choisissez **Mes calendriers** (ou un autre emplacement selon votre organisation), puis cliquez sur **Importer**.
+      </Step>
+    </Steps>
+
+    Votre compte Outlook est synchronisé avec Uplace.
+
+    <Warning>
+      Si les visites importées apparaissent avec une heure décalée, votre compte Outlook n'est pas sur le bon fuseau horaire — voir [Corriger un décalage horaire dans Outlook](#corriger-un-decalage-horaire-dans-outlook).
+    </Warning>
+  </Tab>
   <Tab title="Apple Calendrier">
     <Steps>
-      <Step title="Copier le lien de synchronisation Uplace">
-        Depuis le [Calendrier](/calendrier) Uplace, copiez le lien de synchronisation via le bouton **Synchroniser**.
-      </Step>
       <Step title="Ouvrir l'application Calendrier">
         Sur votre Mac, ouvrez l'application **Calendrier**.
       </Step>
       <Step title="S'abonner au calendrier">
-        Menu **Fichier** (en haut à gauche) \> **Abonnement à un calendrier…**
+        Menu **Fichier** (en haut à gauche) > **Abonnement à un calendrier…**
       </Step>
       <Step title="Coller le lien">
-        Collez le lien de synchronisation Uplace, puis cliquez sur **S'abonner**.
+        Collez le lien de synchronisation Uplace dans le champ **URL du calendrier**, puis cliquez sur **S'abonner**.
       </Step>
       <Step title="Régler la fréquence d'actualisation">
         Dans le menu déroulant **Actualisation automatique**, nous conseillons **Toutes les 15 minutes**. Cliquez sur **OK**.
       </Step>
     </Steps>
 
-    Et voilà, votre compte Apple Calendar est synchronisé avec Uplace.
+    Votre compte Apple Calendrier est synchronisé avec Uplace.
+
+    <Tip>
+      Apple est le seul des trois à vous laisser choisir la fréquence de rafraîchissement. C'est aussi ce qui en fait l'abonnement iCal le plus réactif.
+    </Tip>
   </Tab>
   <Tab title="Autre agenda">
     <Steps>
-      <Step title="Copier le lien de synchronisation Uplace">
-        Depuis le [Calendrier](/calendrier) Uplace, ouvrez **Synchroniser** \> bloc **Par lien iCal** \> **Autre** et copiez le lien.
+      <Step title="Copier le lien">
+        [Calendrier](/calendrier) > **Synchroniser** > bloc **Par lien iCal** > **Autre**, puis copiez le lien.
       </Step>
       <Step title="S'abonner depuis votre agenda">
-        Dans votre application d'agenda, cherchez l'option d'abonnement à un calendrier externe (souvent « S'abonner à partir du web » ou « À partir de l'URL ») et collez le lien.
+        Dans votre application d'agenda, cherchez l'option d'abonnement à un calendrier externe — souvent formulée **S'abonner à partir du web**, **À partir de l'URL** ou **Abonnement à un calendrier** — et collez le lien.
       </Step>
     </Steps>
 
@@ -82,18 +142,40 @@ Deux mécanismes coexistent :
   Ces étapes concernent l'abonnement **iCal**. Pour **Google Agenda** et **Outlook**, préférez la connexion directe décrite plus haut : elle est plus rapide à mettre en place, plus réactive, et elle fait aussi remonter vos rendez-vous personnels dans Uplace.
 </Note>
 
+<div id="corriger-un-decalage-horaire-dans-outlook" />
+
+## Corriger un décalage horaire dans Outlook
+
+Si les visites importées dans Outlook s'affichent à une heure qui n'est pas la bonne, le fuseau horaire du compte Outlook est en cause — pas le flux Uplace.
+
+<Steps>
+  <Step title="Ouvrir les paramètres">
+    En haut à droite de votre fenêtre Outlook, cliquez sur l'engrenage **Paramètres**.
+  </Step>
+  <Step title="Vérifier le fuseau horaire">
+    Allez dans **Calendrier** > **Affichage**, puis regardez le champ **Afficher mon calendrier dans le fuseau horaire**. Pour la France métropolitaine, choisissez **(UTC+01:00) Bruxelles, Copenhague, Madrid, Paris**.
+  </Step>
+  <Step title="Enregistrer">
+    Outlook propose alors d'aligner aussi le fuseau de vos heures de réunion : cliquez sur **Oui, mettre à jour** pour sauvegarder la nouvelle configuration.
+  </Step>
+</Steps>
+
+<Tip>
+  Un décalage d'une heure exactement, qui apparaît ou disparaît au changement d'heure, vient presque toujours de ce réglage.
+</Tip>
+
 ## À propos des délais de mise à jour
 
 Avec la **connexion directe** (Google, Outlook), les mises à jour sont rapides dans les deux sens d'affichage. Avec un **abonnement iCal**, il peut y avoir un **délai** entre une modification dans Uplace et son apparition dans votre agenda : chaque fournisseur actualise les calendriers externes à son propre rythme.
 
 <Info>
-  Sur un flux iCal, un délai de plusieurs heures est tout à fait normal et ne signifie pas qu'il y a un problème. La fréquence de mise à jour dépend entièrement du fournisseur de l'agenda : elle ne peut pas être accélérée depuis Uplace. Sur Apple Calendrier, vous pouvez toutefois régler l'actualisation à « Toutes les 15 minutes ».
+  Sur un flux iCal, un délai de plusieurs heures est tout à fait normal et ne signifie pas qu'il y a un problème. La fréquence de mise à jour dépend entièrement du fournisseur de l'agenda — Google, Microsoft ou Apple — et **ne peut pas être accélérée depuis Uplace**. Seul Apple Calendrier permet de la régler, via **Actualisation automatique**.
 </Info>
 
 ## La gestion des visites reste dans Uplace
 
 <Warning>
-  Quel que soit le mécanisme, vos **visites Uplace se gèrent dans Uplace** : modifier ou supprimer un événement Uplace depuis Google, Outlook ou Apple n'est **pas** pris en compte. Gérez toujours vos visites depuis la plateforme — voir [Gérer les visites](/gerer-visites).
+  Quel que soit le mécanisme, la synchronisation fonctionne **dans un seul sens** : d'Uplace vers votre agenda. Les événements Uplace y sont **en lecture seule** — si vous en modifiez l'horaire ou le titre, ou si vous le supprimez depuis Google, Outlook ou Apple, le changement n'est **pas** répercuté dans Uplace. Gérez toujours vos visites depuis la plateforme — voir [Gérer les visites](/gerer-visites).
 </Warning>
 
 ## Questions fréquentes
@@ -103,8 +185,16 @@ Avec la **connexion directe** (Google, Outlook), les mises à jour sont rapides 
     Sur un abonnement iCal, oui : les agendas externes actualisent les flux à leur propre rythme et un délai de plusieurs heures est normal. Avec la connexion directe Google ou Outlook, les mises à jour sont nettement plus rapides.
   </Accordion>
 
+  <Accordion title="Mes visites Outlook sont décalées d'une heure, que faire ?">
+    Le fuseau horaire de votre compte Outlook n'est pas le bon. Corrigez-le dans **Paramètres** > **Calendrier** > **Affichage** — voir [Corriger un décalage horaire dans Outlook](#corriger-un-decalage-horaire-dans-outlook).
+  </Accordion>
+
   <Accordion title="Puis-je modifier une visite depuis mon agenda externe ?">
     Non : les visites Uplace se gèrent dans Uplace. Toute modification doit être faite dans la plateforme, elle sera ensuite répercutée dans votre agenda.
+  </Accordion>
+
+  <Accordion title="Puis-je accélérer la synchronisation ?">
+    Seulement sur Apple Calendrier, via le menu **Actualisation automatique** — réglez-le sur **Toutes les 15 minutes**. Google et Outlook actualisent les flux externes à leur propre rythme, sans réglage possible ni côté Uplace ni côté agenda.
   </Accordion>
 
   <Accordion title="Mes rendez-vous personnels sont-ils visibles par toute l'agence ?">
