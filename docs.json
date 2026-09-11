@@ -62,6 +62,20 @@
         ]
       },
       {
+        "group": "Analyse de dossier",
+        "icon": "shield-check",
+        "pages": [
+          "analyse-dossier/index",
+          {
+            "group": "Pièces d'identité",
+            "icon": "id-card",
+            "pages": [
+              "analyse-dossier/identite/carte-nationale-identite"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Le parcours locatif",
         "icon": "route",
         "pages": [
