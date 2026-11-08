@@ -123,42 +123,54 @@ Depuis la ligne du contact, trois actions : **répondre** (e-mail, téléphone, 
 ## La base de candidats de l'agence
 
 <Note>
-  **Où ?** Sidebar \> **Mes candidats**. La page s'intitule **Candidats de l'agence**.
+  **Où ?** Sidebar > **Mes candidats** : _« Toutes les personnes qui ont candidaté sur vos biens, avec leur dernière candidature. »_
 </Note>
 
-C'est la base de fond : **tous les candidats qui ont interagi avec votre agence**, tous lots et toutes périodes confondus. Celle qui vous sert à relancer quelqu'un sur un autre bien que celui pour lequel il vous avait contacté.
-
-### Les quatre indicateurs
-
-| Indicateur | Libellé affiché |
-| --- | --- |
-| **Total Candidats** | Nombre total de candidats |
-| **Candidats Actifs** | Candidats actuellement actifs |
-| **Récents** | Candidats récents estimés |
-| **Taux d'activité** | Part de candidats actifs sur le total |
-
-<Tip>
-  Lisez ces chiffres comme des ordres de grandeur : ce sont des indicateurs de volume, pas des mesures de performance. Pour piloter votre activité, allez dans [Statistiques](/statistiques).
-</Tip>
+C'est la base de fond : **tous les candidats de votre agence**, tous lots et toutes périodes confondus. Celle qui vous sert à proposer à quelqu'un un autre bien que celui pour lequel il vous avait contacté.
 
 ### La liste
 
-Un champ **Rechercher par nom ou email** filtre la base. Chaque ligne présente :
+Un champ **Rechercher par nom, email, téléphone…** filtre la base, ainsi que les filtres par **lots**, par **négociateur** (si votre agence suit ses contacts par négociateur) et par **personas** (voir ci-dessous). Chaque ligne présente :
 
 | Colonne | Contenu |
 | --- | --- |
-| **Prospect** | Avatar et nom du candidat. |
-| **Contact** | E-mail et téléphone, avec copie en un clic et raccourcis d'appel, SMS et WhatsApp. |
-| **Candidatures** | Une vignette par lot sur lequel la personne a candidaté. |
-| **Dernière candidature** | Date **et heure** de la candidature la plus récente. |
+| **Contact** | Le nom du candidat. |
+| **Coordonnées** | E-mail et téléphone. |
+| **Foyer** | La composition déclarée : seul, _En couple avec…_, _Colocation · 3 personnes_. |
+| **Dernière candidature** | Le bien de sa candidature la plus récente. |
+| **Négociateur** | Si votre agence suit ses contacts par négociateur. |
+| **Dernière activité** | La date de sa dernière action. |
+| **Recontactable le** | Si vous lui avez proposé un bien récemment, la date à partir de laquelle vous pourrez lui en proposer d'autres. |
 
-En bout de ligne, trois raccourcis directs : **e-mail**, **téléphone** et **WhatsApp**.
+Cliquez sur un en-tête pour trier. En bout de ligne, **Voir les biens** ouvre la liste de ses candidatures, et **Rapport IA** la synthèse de son dossier.
 
-Une colonne de **cases à cocher** permet de sélectionner des candidats ; le bouton **Inviter des candidats** reste inactif tant qu'aucune sélection n'est faite — voir [Inviter un candidat](/invitation-candidat).
+### Les personas
+
+Un **persona** est un portrait type de candidat : _des portraits types pour repérer vite les bons profils et leur proposer un bien_. Créez-les avec **Gérer mes personas**, en combinant les critères qui vous intéressent : biens recherchés (zone, loyer), foyer et garanties, revenus déclarés, situation professionnelle, portail d'origine…
+
+La pastille **Personas** filtre ensuite la liste et affiche, pour chaque persona, le nombre de candidats qui y correspondent.
+
+<Tip>
+  Créez un persona par type de bien que vous louez souvent (_Étudiants lyonnais_, _Couples avec garant_…) : quand un lot de ce type se libère, vous retrouvez en un clic les candidats à qui le proposer.
+</Tip>
+
+### Proposer des biens
+
+Cochez un ou plusieurs candidats (50 au plus par envoi), puis :
+
+- **Proposer des biens** : choisissez un ou plusieurs de vos biens, envoyés dans **un seul e-mail** ;
+- **Proposer tous les biens** : envoie le lien de votre [vitrine publique](/partage-lots), si l'affichage public est activé.
+
+<Note>
+  **Un candidat ne reçoit pas plus d'une proposition tous les 4 jours.** Ceux à qui vous avez déjà proposé un bien récemment sont ignorés, et la fenêtre d'envoi vous le signale. La colonne **Recontactable le** indique quand ils pourront de nouveau recevoir une proposition.
+</Note>
 
 ### Exporter la base
 
-Le bouton **Exporter** ouvre la fenêtre **Export des prises de contact (CSV)**.
+Le menu **Plus d'actions** propose deux exports :
+
+- **Exporter la sélection (CSV)** : les candidats cochés, avec les colonnes de la liste ;
+- **Exporter les prises de contact (CSV)** : ouvre la fenêtre **Export des prises de contact (CSV)**, décrite ci-dessous. Elle n'est pas proposée aux rôles **Utilisateur** et **Opérateur**.
 
 <Warning>
   **L'export ne couvre pas toute votre base.** Il liste les leads issus des **lots actifs uniquement** — ni les lots archivés, ni les lots déjà loués. Si vous cherchez un contact rattaché à un bien loué, il ne sera pas dans le fichier.
@@ -239,18 +251,18 @@ Un bouton **Depuis le dernier export** permet de ne récupérer que les nouveaut
   </Accordion>
 
   <Accordion title="Un candidat peut-il avoir plusieurs candidatures ?">
-    Oui : dans **Mes candidats**, la colonne **Candidatures** affiche une vignette par lot concerné.
+    Oui : dans **Mes candidats**, la colonne **Dernière candidature** montre la plus récente, et **Voir les biens** les liste toutes.
   </Accordion>
 
   <Accordion title="Dans quel format se fait l'export ?">
-    En **CSV**, et il porte sur les **prises de contact** des lots actifs, dédoublonnées par e-mail, à partir de la date que vous choisissez.
+    En **CSV**. **Exporter les prises de contact** porte sur les prises de contact des lots actifs, dédoublonnées par e-mail, à partir de la date que vous choisissez. **Exporter la sélection** porte sur les candidats cochés.
   </Accordion>
 
   <Accordion title="Pourquoi un contact manque-t-il dans mon export ?">
     Parce que son lot n'est plus actif — archivé ou marqué comme loué — ou parce qu'il est antérieur à la date de départ choisie. Une même adresse e-mail n'apparaît par ailleurs qu'une seule fois.
   </Accordion>
 
-  <Accordion title="Le bouton « Inviter des candidats » est grisé.">
-    Sélectionnez d'abord des candidats à l'aide des cases à cocher de la première colonne.
+  <Accordion title="Un candidat coché n'a pas reçu ma proposition de biens.">
+    Il en avait déjà reçu une il y a moins de 4 jours : il a été ignoré pour ne pas le solliciter trop souvent. La colonne **Recontactable le** indique à partir de quand vous pourrez lui écrire de nouveau.
   </Accordion>
 </AccordionGroup>

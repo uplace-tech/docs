@@ -1,92 +1,143 @@
 ---
 title: "Création et configuration d'un lot"
 sidebarTitle: "Création d'un lot"
-description: "Configurer un bien complet en cinq étapes guidées."
+description: "Configurer un bien complet avec le formulaire guidé : six sections, dans l'ordre de votre choix."
 icon: "house-circle-check"
 ---
 
 ## Objectif
 
-Cette fonctionnalité permet de configurer un bien complet en cinq étapes guidées : point de départ, spécificités techniques, adresse et photo, critères de candidature et finalisation. Elle constitue la base de tout le parcours locatif puisque c'est elle qui filtre automatiquement les candidatures recevables.
+Cette fonctionnalité permet de configurer un bien complet à l'aide d'un formulaire guidé en six sections : le bien, le loyer et les frais, la photo et l'adresse, les critères de sélection, le traitement des dossiers, la gestion et les options. Elle constitue la base de tout le parcours locatif puisque c'est elle qui filtre automatiquement les candidatures recevables.
 
 <Note>
-  **Où trouver cette fonctionnalité ?** Dashboard \> **Configurer un nouveau lot** — ou depuis une fiche lot \> **Gestion du lot** \> **Modifier le lot**.
+  **Où trouver cette fonctionnalité ?**
+
+  - **Créer un lot** : Dashboard > **Configurer un lot** (**Configurer un nouveau lot** tant que l'agence n'a aucun lot).
+  - **Activer un lot en attente** : Dashboard > **Configurer** sur la ligne du lot en attente, ou **Activer** depuis la liste des lots. Voir [Lots en attente](/lots-en-attente).
+  - **Modifier un lot** : fiche du lot > **Gestion du lot** > **Modifier le lot**.
 </Note>
 
 <Tip>
   **Plusieurs logements derrière une même annonce ?** Une résidence ou une colocation se crée comme un lot, en activant la carte **Bien multi-unités** dans la section **Le bien**. Voir [Gérer une résidence et ses unités](/residence-multi-unites).
 </Tip>
 
-<Info>
-  **Si votre agence est connectée à un multi-diffuseur, le parcours est nettement plus court.**
+## Le parcours guidé
 
-  Avec **Modulo by Septeo**, **Apimo** ou **Ubiflow**, Uplace récupère directement les informations du bien **ainsi que son gestionnaire**. Concrètement :
+<Steps>
+  <Step title="Choisir le point de départ">
+    À la création, l'écran **Créer un lot** propose deux cartes :
 
-  | Étape | Avec multi-diffuseur |
-  | --- | --- |
-  | 1. Par où commencer ? | **Pré-remplie** — l'import est déjà fait |
-  | 2. Spécificités techniques | **Pré-remplie** |
-  | 3. Adresse et photo | **Pré-remplie** |
-  | 4. Critères | À remplir |
-  | 5. Finalisation | À remplir |
+    - **Importer une annonce** (_Le plus rapide_) : collez le lien d'une annonce prise en charge, Uplace préremplit la fiche.
+    - **Saisir moi-même** : cliquez sur **Commencer la saisie** et remplissez tout vous-même.
 
-  Les étapes 1 à 3 arrivent **pré-remplies, pas masquées** : vous les parcourez, vous corrigez ce qui doit l'être, et il ne vous reste vraiment à saisir que les **critères de candidature** et la **finalisation** — c'est-à-dire les seuls réglages qui relèvent d'une décision commerciale, pas d'une ressaisie. Voir [Remontée et création d'une annonce](/guide-installation/annonces) pour la configuration de la connexion.
-</Info>
+    Ce point de départ n'apparaît pas pour un lot remonté par votre multi-diffuseur : la fiche arrive déjà préremplie.
+  </Step>
+  <Step title="Parcourir les six sections">
+    Le sommaire **Sections du formulaire**, à gauche, liste les six sections. Vous pouvez les remplir dans l'ordre de votre choix en cliquant dessus, ou les enchaîner avec **Continuer** (ou la touche Entrée) et **Retour**. L'en-tête indique la section en cours (_Section 2 sur 6_) et l'avancement (_Fiche complète à 80 %_).
+  </Step>
+  <Step title="Mettre le lot en ligne">
+    Dans la dernière section, cliquez sur **C'est parti !** (ou **Activer le lot** pour un lot en attente). S'il manque une information, le message _« Il reste N informations à compléter »_ vous emmène directement à la première section concernée.
+
+    Une fois le lot créé, l'écran **Votre lot est en ligne !** propose **Voir mon lot** ou **Créer un autre lot**, et rappelle les crédits utilisés et ceux qui vous restent.
+  </Step>
+</Steps>
+
+## Le contenu des six sections
+
+<AccordionGroup>
+  <Accordion title="1. Le bien">
+    _Ce qui décrit le logement, dans l'annonce comme dans les dossiers._
+
+    - **Type de bien** : appartement, maison, parking, terrain ou autre.
+    - **Bien multi-unités** : à activer pour une résidence ou une colocation louée chambre par chambre. Voir [Gérer une résidence et ses unités](/residence-multi-unites).
+    - **Nom du lot** et **Référence interne** : obligatoires.
+    - **Surface, pièces et ameublement** : surface (obligatoire), nombre de pièces (sauf pour un parking), meublé ou non meublé.
+  </Accordion>
+
+  <Accordion title="2. Loyer et frais">
+    _Le loyer sert aussi à calculer les revenus demandés aux candidats._
+
+    - **Loyer** : mensuel, **charges comprises**.
+    - **Dépôt de garantie**.
+    - **Frais d'agence locataire** (0 accepté).
+  </Accordion>
+
+  <Accordion title="3. Photo et adresse">
+    - **Photo du bien** : facultative. Une photo importée avec l'annonce peut être recadrée ou écartée (**Ne pas utiliser cette photo**).
+    - **Adresse du bien** : obligatoire ; recherchez-la et sélectionnez-la dans les suggestions.
+    - **Les visites ont lieu à une autre adresse** : activez cet interrupteur pour saisir une **adresse de visite** différente.
+  </Accordion>
+
+  <Accordion title="4. Critères de sélection">
+    Partez d'un **modèle de critères** de l'agence (configuré dans [Mon agence](/mon-agence)) ou réglez les critères vous-même. Un modèle appliqué puis modifié est signalé comme _Ajusté_.
+
+    - **Revenus minimum du candidat** : de x1 à x5 le loyer charges comprises, au dixième près (ex. x3 = 1 500 € de revenus nets avant impôt exigés pour un loyer de 500 € CC). Les revenus d'un couple ou d'une colocation sont cumulés. Voir [Analyse des candidatures](/analyse-candidatures).
+    - **Garant** : requis, facultatif ou refusé. **Requis** ajoute les **revenus minimum du garant**, évalués séparément, et rend le garant obligatoire au dépôt du dossier.
+    - **Étudiants acceptés** : oui ou non, avec les **revenus minimum du garant étudiant**.
+  </Accordion>
+
+  <Accordion title="5. Traitement des dossiers">
+    - **Parcours du candidat** : **Classique** (dossier puis visite) ou **Fast pass** (visite puis dossier).
+    - **Bien soumis à la loi Pinel** : les avis d'imposition N-1 et N-2 sont exigés des candidats.
+    - **Visite virtuelle** : un lien facultatif (Matterport, Ricoh360, YouTube…) proposé aux candidats. Laissé vide, il n'y a pas de visite virtuelle. Avec Ubiflow, le lien de l'annonce peut remonter tout seul.
+    - **Candidatures validées automatiquement** : voir ci-dessous.
+    - **Étape supplémentaire candidat** : un [formulaire modulable](/mon-agence) de l'agence pour demander des documents en plus, et, si le formulaire les contient, la **date d'entrée** et la **durée souhaitées**.
+    - **Message au candidat** : un mot affiché au candidat, 300 caractères au plus.
+  </Accordion>
+
+  <Accordion title="6. Gestion et options">
+    - **Responsable du lot** : obligatoire. Il est imposé pour les rôles **Utilisateur** et **Opérateur**, et pour un lot en attente déjà attribué.
+    - **Parties prenantes** : la **GLI** (choisir une GLI enregistrée ou en créer une) et l'**implication du propriétaire**, avec ses prénom, nom, téléphone et e-mail. Ces coordonnées ne déclenchent **aucun envoi automatique** : elles servent à le proposer comme destinataire lors de vos partages. Voir [Informer le propriétaire](/informer-proprietaire).
+  </Accordion>
+</AccordionGroup>
+
+### La validation automatique
+
+Activée, l'option **Candidatures validées automatiquement** accepte d'office les dossiers qui remplissent toutes les conditions choisies :
+
+| Réglage | Ce qu'il exige |
+| --- | --- |
+| **Cohérence minimale de la candidature** | Un score de cohérence au moins égal à Mauvais, Moyen, Bon ou Excellent. C'est la **moyenne du dossier** qui compte : un justificatif isolé noté 0 n'écarte pas mécaniquement un dossier par ailleurs solide. |
+| **Professions acceptées automatiquement** | Les situations professionnelles qui peuvent passer sans examen. |
+| **Exiger au moins un garant** | Un garant parmi les **types de garant acceptés** (Visale, autre organisme, personne morale, personne physique), avec une **cohérence minimale du garant**. Ce réglage disparaît si le garant est refusé. |
+
+Les dossiers qui ne remplissent pas toutes les conditions restent à valider à la main. Voir [Validation d'une candidature](/validation-candidature).
+
+## Avec un multi-diffuseur ou un lot en attente
+
+Avec **Modulo by Septeo**, **Apimo** ou **Ubiflow**, Uplace récupère directement les informations du bien **ainsi que son gestionnaire**. Le lot remonte en [lot en attente](/lots-en-attente), et son activation ouvre le formulaire déjà rempli :
+
+- un bandeau rappelle le logiciel d'origine et le nombre de prospects déjà associés au lot ;
+- chaque champ prérempli porte la pastille **Importé** ; les sections complètes sont validées d'office ;
+- il vous reste en pratique les **critères de sélection**, le **traitement des dossiers** et les **options** : les réglages qui relèvent d'une décision commerciale, pas d'une ressaisie.
+
+Les champs importés restent **modifiables**. Relisez en particulier le loyer, qu'Uplace attend **charges comprises**. Voir [Remontée et création d'une annonce](/guide-installation/annonces) pour la configuration de la connexion.
+
+À l'activation, Uplace vous demande s'il faut **envoyer les invitations** aux prospects déjà arrivés sur ce lot (**Envoyer les invitations** ou **Ne pas envoyer**).
 
 <Tip>
   Le multi-diffuseur transmet aussi le **gestionnaire** de chaque bien. C'est ce champ qui permet à un membre ayant le rôle **Utilisateur** de retrouver et débloquer les lots dont il est le gestionnaire : sans connecteur, l'information n'existe pas dans Uplace et le déblocage ne lui est pas proposé. Voir [Rôles et permissions](/roles-permissions).
 </Tip>
 
-## Fonctionnement étape par étape
+## Modifier un lot
 
-<Steps>
-  <Step title="Par où commencer ?">
-    Deux entrées possibles, le parcours ensuite est le même :
+**Gestion du lot** > **Modifier le lot** ouvre les mêmes six sections, sans le point de départ. Une barre en bas de l'écran compte les modifications non enregistrées : **Mettre à jour le lot** les enregistre, **Annuler les modifications** les abandonne. Les nouveaux critères s'appliquent aux candidatures suivantes.
 
-    - **Importer depuis une URL** : collez le lien d'une annonce prise en charge, Uplace préremplit les champs à l'étape suivante.
-    - **Saisie manuelle** : cliquez sur **Continuer sans importer** et remplissez tout vous-même.
-  </Step>
-  <Step title="Spécificités techniques">
-    La base de l'annonce et des critères de candidature :
+<Warning>
+  Désactiver le **Fast pass** d'un lot en ligne demande une confirmation : le parcours change pour tous les candidats suivants, qui devront déposer leur dossier avant de réserver une visite.
+</Warning>
 
-    - **Identité du lot** : nom du lot et référence interne (tous deux requis).
-    - **Surface, pièces et typologie** : nombre de pièces, surface (m²), logement meublé (oui/non), type de bien (appartement, maison, terrain, parking, autre).
-    - **Loyer et frais** : loyer **charges comprises**, dépôt de garantie, frais d'agence.
-  </Step>
-  <Step title="Adresse et photo du bien">
-    - **Photo du lot** : glissez une image ou parcourez vos fichiers (JPG, PNG ou WebP, 5 Mo max, recadrage 16:9).
-    - **Localisation du bien** : recherchez l'adresse (numéro, rue, ville) et sélectionnez-la dans les suggestions.
-    - **Adresse de visite** : activez l'option si l'adresse de visite diffère de celle du bien.
-  </Step>
-  <Step title="Critères">
-    Partez d'un **modèle de critères pré-défini** (configuré dans [Mon agence](/mon-agence)) ou créez des **critères personnalisés** :
+## Les crédits
 
-    - **Capacité financière minimum** : multiplicateur de x1 à x5, appliqué au **loyer charges comprises** (ex. x3 = 1 500 € de revenus nets avant impôt exigés pour un loyer de 500 € CC). Les revenus d'un couple ou d'une colocation sont cumulés ; le garant, lui, est évalué séparément. Voir [Analyse des candidatures](/analyse-candidatures).
-    - **Garant** : requis, facultatif ou refusé.
-    - **Étudiants acceptés** : oui/non, avec capacité financière minimum du garant étudiant (x1 à x5).
-    - **Loi Pinel** : si le bien y est soumis, l'avis d'imposition N-2 est exigé des candidats.
-  </Step>
-  <Step title="Finalisation">
-    Les derniers ajustements avant la mise en ligne :
-
-    - **Responsable du lot** : le membre de l'équipe en charge du suivi.
-    - **Parties prenantes** — GLI et implication du propriétaire. En activant l'implication du propriétaire, une fenêtre **Coordonnées du propriétaire** vous demande ses prénom, nom, téléphone et e-mail. Ces informations ne déclenchent **aucun envoi automatique** : elles servent à le proposer comme destinataire lors de vos partages — voir [Informer le propriétaire](/informer-proprietaire).
-    - **Étape supplémentaire candidat** : demandez des documents additionnels via un [formulaire modulable](/mon-agence).
-    - **Date d'entrée et durée souhaitées** : une étape optionnelle du parcours candidat, activable **lot par lot** depuis le formulaire, qui demande au candidat sa **date d'entrée souhaitée** et la **durée souhaitée**. Elle n'entre pas dans le parcours par défaut.
-    - **Validation automatique** : si activée, les candidatures répondant aux critères sont automatiquement acceptées. C'est la **moyenne du dossier** qui est comparée à la note minimale renseignée dans les critères du lot : un justificatif isolé noté 0 n'écarte pas mécaniquement un dossier par ailleurs solide.
-    - **Fast pass** : si activé, les candidats réservent d'abord une visite puis déposent leur dossier ; sinon, parcours classique (dépôt du dossier avant la visite).
-
-    Cliquez sur **C'est parti !** pour mettre le lot en ligne.
-  </Step>
-</Steps>
+Chaque nouveau lot consomme un crédit de votre abonnement ou de vos packs ; une résidence en consomme un par unité disponible. Le coût s'affiche au pied de la dernière section : _« Ce lot utilisera N crédits »_, ou _« Crédits insuffisants »_ s'il ne vous en reste pas assez. Voir [Mon agence](/mon-agence).
 
 ## Bonnes pratiques recommandées
 
-- Préparez vos **critères pré-définis** et vos **GLI pré-remplies** dans [Mon agence](/mon-agence) : la création d'un lot se résume alors à quelques clics.
-- Utilisez l'**import par URL** dès que l'annonce existe déjà sur un portail : gain de temps et zéro faute de frappe.
-- Mieux encore : **connectez votre multi-diffuseur**. L'import devient permanent et automatique, et vous ne saisissez plus que les critères et la finalisation.
-- Même pré-remplies, **relisez les étapes 1 à 3** : le loyer attendu par Uplace est le loyer **charges comprises**, ce qui n'est pas toujours la convention du logiciel source.
-- Réservez le **fast pass** aux lots à forte demande : il accélère le remplissage du planning de visites sans attendre les dossiers.
+- Préparez vos **modèles de critères** et vos **GLI** dans [Mon agence](/mon-agence) : la création d'un lot se résume alors à quelques clics.
+- Utilisez **Importer une annonce** dès que l'annonce existe déjà sur un portail : gain de temps et zéro faute de frappe.
+- Mieux encore : **connectez votre multi-diffuseur**. L'import devient permanent et automatique.
+- Même préremplis, **relisez le loyer** : Uplace attend le loyer **charges comprises**, ce qui n'est pas toujours la convention du logiciel source.
+- Réservez le **Fast pass** aux lots à forte demande : il accélère le remplissage du planning de visites sans attendre les dossiers.
 
 ## Erreurs fréquentes à éviter
 
@@ -94,44 +145,42 @@ Cette fonctionnalité permet de configurer un bien complet en cinq étapes guid�
   - Saisir le loyer hors charges : Uplace calcule les seuils de revenus sur le loyer total CC.
   - Mettre « Garant : Refusé » par erreur, ce qui élimine de bons dossiers avec garant.
   - Mettre « Garant : Requis », ce qui élimine de bons dossiers sans garant.
-  - Oublier d'attribuer un responsable, ce qui empêche un suivi clair des candidatures.
   - Activer la validation automatique sur un lot atypique aux critères mal calibrés.
 </Warning>
 
 ## Ce que fait Uplace automatiquement
 
 <Info>
-  - Préremplit les champs du lot depuis l'URL d'annonce importée.
-  - Récupère les informations du bien **et son gestionnaire** depuis Modulo by Septeo, Apimo ou Ubiflow : les étapes 1 à 3 arrivent déjà remplies.
-  - Calcule le salaire minimum requis selon le multiplicateur choisi (ex. x3 pour 500 € → 1 500 €).
+  - Préremplit la fiche depuis l'annonce importée ou depuis votre multi-diffuseur, gestionnaire compris.
+  - Calcule le revenu minimum requis selon le multiplicateur choisi (ex. x3 pour 500 € → 1 500 €).
   - Applique les critères à toutes les candidatures pour évaluer leur cohérence (Mauvais / Moyen / Bon / Excellent). Voir [Analyse des candidatures](/analyse-candidatures).
-  - Pré-remplit la GLI sélectionnée sur les futures candidatures du lot.
+  - Affiche le coût en crédits avant la mise en ligne.
 </Info>
 
 ## Questions fréquentes
 
 <AccordionGroup>
   <Accordion title="Quelle est la différence entre validation automatique et fast pass ?">
-    La **validation automatique** accepte d'office les dossiers conformes aux critères. Le **fast pass** inverse l'ordre du parcours : visite d'abord, dossier ensuite. Les deux options sont indépendantes et se règlent à l'étape Finalisation.
+    La **validation automatique** accepte d'office les dossiers conformes aux conditions choisies. Le **Fast pass** inverse l'ordre du parcours : visite d'abord, dossier ensuite. Les deux options sont indépendantes et se règlent dans la section **Traitement des dossiers**.
   </Accordion>
 
-  <Accordion title="Que change un multi-diffuseur connecté dans la création d'un lot ?">
-    Uplace a déjà récupéré les informations du bien et son gestionnaire depuis **Modulo by Septeo**, **Apimo** ou **Ubiflow** : les étapes **Par où commencer ?**, **Spécificités techniques** et **Adresse et photo** arrivent pré-remplies. Vous les parcourez pour vérification, et vous reprenez vraiment la main aux **critères**.
+  <Accordion title="Dois-je remplir les sections dans l'ordre ?">
+    Non. Le sommaire permet d'ouvrir n'importe quelle section. Au moment de mettre le lot en ligne, Uplace vous signale ce qui manque et vous y emmène.
   </Accordion>
 
   <Accordion title="Les informations remontées du multi-diffuseur sont-elles modifiables ?">
-    Oui. Les étapes 1 à 3 sont **pré-remplies, pas verrouillées** : relisez-les et corrigez ce qui doit l'être — en particulier le loyer, qu'Uplace attend **charges comprises**, et qui n'est pas toujours saisi ainsi dans le logiciel d'origine.
+    Oui. Les champs marqués **Importé** sont préremplis, pas verrouillés : corrigez ce qui doit l'être, en particulier le loyer.
   </Accordion>
 
-  <Accordion title="Puis-je modifier un lot après sa mise en ligne ?">
-    Oui : fiche du lot \> **Gestion du lot** \> **Modifier le lot** (adresse, critères, photos, description). Les nouveaux critères s'appliquent aux candidatures suivantes.
+  <Accordion title="Où régler la date d'entrée et la durée souhaitées ?">
+    Ce sont deux champs d'un [formulaire modulable](/mon-agence). Ajoutez-les à un formulaire de l'agence, puis choisissez ce formulaire dans **Étape supplémentaire candidat**.
   </Accordion>
 
-  <Accordion title="Activer « propriétaire impliqué » déclenche-t-il des envois automatiques ?">
-    Non. Aucun message n'est envoyé au propriétaire sans une action de votre part. Le réglage sert uniquement à conserver ses coordonnées et à le proposer comme destinataire lors de vos partages — voir [Informer le propriétaire](/informer-proprietaire).
+  <Accordion title="Activer « implication du propriétaire » déclenche-t-il des envois automatiques ?">
+    Non. Aucun message n'est envoyé au propriétaire sans une action de votre part. Le réglage sert uniquement à conserver ses coordonnées et à le proposer comme destinataire lors de vos partages. Voir [Informer le propriétaire](/informer-proprietaire).
   </Accordion>
 
   <Accordion title="Que se passe-t-il si mon quota de lots est atteint ?">
-    L'ajout de nouveaux lots est bloqué. Achetez un pack complémentaire ou modifiez votre abonnement depuis [Mon agence](/mon-agence).
+    La fenêtre **Nombre de lots maximal atteint** s'affiche et la création est bloquée. Achetez un pack complémentaire ou modifiez votre abonnement depuis [Mon agence](/mon-agence).
   </Accordion>
 </AccordionGroup>
