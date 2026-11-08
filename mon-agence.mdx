@@ -21,13 +21,13 @@ La page s'ouvre sur le nom de votre agence et s'organise en trois zones : les **
 
 ## Suivre ses ressources
 
-Le bloc de gauche affiche votre **formule** — par exemple _EASY_ —, son état (période d'essai, actif) et sa **date de fin**, puis trois jauges.
+Le bloc de gauche affiche votre **formule** (par exemple _EASY_, ou _ENTREPRISE_ pour une offre sur devis) et son échéance : **Renouvellement le …** pour un abonnement en cours, **Fin le …** pour un abonnement résilié, **Essai jusqu'au …** pendant une période d'essai. Viennent ensuite trois jauges.
 
 | Jauge | Ce qu'elle mesure |
 | --- | --- |
 | **Lots (abonnement)** | Les lots consommés sur le quota inclus dans votre formule, en pourcentage et en valeur absolue (`3 / 12 lots`). |
 | **Mon équipe** | La **capacité** en sièges utilisateurs (`4 / 10 sièges`). |
-| **Packs de lots achetés** | Les lots consommés sur les packs achetés **en complément** de l'abonnement (`0 / 15 lots`). |
+| **Packs de lots achetés** | Les lots **encore disponibles** sur les packs achetés **en complément** de l'abonnement (`12 restants`). |
 
 <Note>
   Les lots de l'abonnement et les **packs complémentaires** sont deux compteurs **distincts**. Un pack ne vient pas gonfler le quota de la formule : il constitue une réserve à part, avec sa propre jauge.
@@ -39,14 +39,18 @@ Le bloc de gauche affiche votre **formule** — par exemple _EASY_ —, son éta
 
 ## Facturation et paramètres
 
-Le bloc de droite — _« Lots ponctuels, abonnement, portail Stripe et réglages de l'agence »_ — regroupe quatre entrées.
+Le bloc de droite (**Facturation** sur mobile) regroupe le menu des réglages et trois entrées de facturation.
 
 | Entrée | Ce qu'elle permet |
 | --- | --- |
 | **Paramètres de l'agence** | Identité, modèles de mise en location, parcours candidat et intégrations. Détail ci-dessous. |
-| **Acheter des lots** | Souscrire des **packs en complément** de votre abonnement. |
-| **Modifier mon abonnement** | Changer de **formule**, ou résilier. |
-| **Espace facturation** | Vos **factures** et vos **moyens de paiement**, via le portail Stripe. Détail du parcours dans [Espace facturation](/espace-facturation). |
+| **Acheter des lots** | _Packs en complément de votre abonnement._ |
+| **Modifier mon abonnement** | _Formule, facturation et engagement_ : changer de formule, ou résilier. |
+| **Espace facturation** | _Factures et moyens de paiement_, via le portail Stripe. Détail du parcours dans [Espace facturation](/espace-facturation). |
+
+<Info>
+  **Acheter des lots**, **Modifier mon abonnement** et **Espace facturation** ne s'affichent que pour les rôles **Propriétaire** et **Administrateur**. Voir [Rôles et permissions](/roles-permissions).
+</Info>
 
 ### Acheter des lots
 
@@ -60,6 +64,12 @@ La fenêtre **Acheter des lots supplémentaires** propose quatre packs. Le pack 
 | 50 lots | 2 500,00 € | 50 € |
 
 Un récapitulatif rappelle le pack sélectionné et le total avant le bouton **Procéder au paiement**, qui ouvre le paiement Stripe.
+
+Le paiement se fait **par carte** ou **par prélèvement SEPA**. Les lots sont ajoutés à votre compte dès la commande, y compris pendant le délai de traitement d'un prélèvement.
+
+<Warning>
+  **Si le prélèvement SEPA est rejeté**, les lots non encore utilisés de ce pack sont **gelés** : ils ne peuvent plus servir à créer un lot. Les lots déjà créés avec ce pack restent en ligne. Tant que ce prélèvement n'est pas régularisé, votre prochain achat se fait par carte uniquement.
+</Warning>
 
 <Warning>
   **Les lots achetés n'expirent pas.** La seule condition pour les utiliser est d'avoir un **abonnement en cours** : tant que c'est le cas, votre réserve de packs reste disponible, sans limite de durée et sans remise à zéro.
@@ -81,7 +91,7 @@ La fenêtre **Modifier mon agence** contient deux volets dépliants.
   </Accordion>
 
   <Accordion title="Annuler mon abonnement">
-    Ce volet indique la **date de fin de la période en cours** et permet de demander la résiliation.
+    Ce volet indique la **date de fin de la période en cours** et permet de demander la résiliation, avec le bouton **J'annule mon abonnement**.
 
     Une fois l'annulation demandée, la fenêtre affiche l'état **« Votre abonnement sera annulé à la fin de la période »** et propose **Réactiver mon abonnement**.
   </Accordion>
