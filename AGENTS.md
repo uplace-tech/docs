@@ -22,7 +22,8 @@
 {/* Add any project-specific style rules below */}
 
 - Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
+- Keep sentences concise, one idea per sentence
+- Never use em dashes (—). Use a comma or a period instead; a colon only after a label or in a title
 - Use sentence case for headings
 - Bold for UI elements: Click **Settings**
 - Code formatting for file names, commands, paths, and code references
