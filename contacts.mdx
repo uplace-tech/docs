@@ -10,37 +10,85 @@ icon: "address-book"
 La vue **Contacts** rassemble, tous lots actifs confondus, les candidatures et prospects à traiter : c'est la liste de travail quotidienne de l'agence, complémentaire de la vue par lot.
 
 <Note>
-  **Où trouver cette fonctionnalité ?** Sidebar \> **Contacts**.
+  **Où trouver cette fonctionnalité ?** Sidebar > **Contacts** (sur mobile, dans la barre du bas). La page s'intitule **Contacts** : _« Candidatures et prospects sur vos lots actifs. »_
 </Note>
 
 ## Fonctionnement étape par étape
 
 <Steps>
-  <Step title="Filtrer la période et le périmètre">
-    Choisissez la fenêtre de temps (**7 j**, **30 j**, **3 mois**), filtrez par **responsable** et triez (_Plus récent_…). La liste est groupée par jour. Le bouton **Filtres** affine encore la sélection.
+  <Step title="Filtrer la liste">
+    Une barre de pastilles en haut de page règle ce que vous voyez :
+
+    | Filtre | Ce qu'il fait |
+    | --- | --- |
+    | **Rechercher** | Adresse du bien, nom, prénom, e-mail… |
+    | **Période** | **7 j** (par défaut), **14 j** ou **30 j**. |
+    | **Type** | **Prospects** (prises de contact sans dossier) ou **Candidats** (dossier ouvert). |
+    | **Qualité** | **Dossier complet (≥ 80 %)** ou **Revenus ≥ 3× le loyer**. |
+    | **Responsable** | Le responsable du lot. |
+    | **Négociateur** | Le négociateur du contact, si votre agence suit ses contacts par négociateur. |
+    | **Tri** | **Plus récent**, **En attente d'une action** ou **Le plus ancien sans action**. |
+
+    **Réinitialiser les filtres** remet tout à zéro. Les filtres ne sont pas mémorisés : à chaque visite, la page repart sur 7 jours, triée du plus récent au plus ancien.
   </Step>
   <Step title="Lire chaque ligne">
-    Pour chaque contact : identité, coordonnées (copie en un clic, appel, WhatsApp), **bien concerné** (avec lien vers la fiche du lot), **statut** d'avancement, puis les indicateurs du dossier : **revenus**, **garant** et **cohérence** (Mauvais, Moyen, Bon, Excellent — voir [Analyse des candidatures](/analyse-candidatures)).
+    La liste est groupée par jour, 20 contacts par page (réglable avec **Contacts par page**). Pour chaque contact :
+
+    | Colonne | Contenu |
+    | --- | --- |
+    | **Candidat** | Le nom, et les autres membres du dossier s'il y en a (conjoint, colocataires). |
+    | **Négociateur** | Affichée si votre agence suit ses contacts par négociateur. |
+    | **Contact** | E-mail et téléphone, avec copie en un clic. Pour un dossier déposé par un tiers, ce sont les coordonnées du tiers. |
+    | **Bien** | Le lot concerné ; un clic ouvre sa fiche. |
+    | **Statut** | Voir l'étape suivante. |
+    | **Revenus nets**, **Garant**, **Cohérence** | Les indicateurs du dossier : revenus, type de garantie (Visale, organisme, garant moral…) et score de cohérence (Mauvais, Moyen, Bon, Excellent). Voir [Analyse des candidatures](/analyse-candidatures). |
   </Step>
   <Step title="Comprendre le statut">
-    La colonne Statut matérialise la progression du dossier (prise de contact → dossier déposé → dossier complet). La mention **Automatique** indique que Uplace gère la réponse et l'invitation à candidater — voir [Boîte de réception](/boite-reception).
+    Le statut dépend de la nature du contact :
+
+    - **Prospect** (pas encore de dossier) : un menu que vous pouvez modifier, avec **Automatique**, **En attente**, **Relance envoyée** et **Abandon candidat**. **Automatique** indique qu'Uplace gère la réponse et l'invitation à candidater ; voir [Boîte de réception](/boite-reception).
+    - **Candidature** : l'avancement du dossier, par exemple **Dossier incomplet** avec son pourcentage, **Modification demandée**, **Dossier complet**, **À vérifier manuellement**, **Dossier validé**, **Dossier refusé** ou **Visite planifiée**.
   </Step>
-  <Step title="Agir sur le dossier">
-    Les actions en bout de ligne permettent de : **valider** ou **refuser** la candidature, relancer le candidat, modifier le dossier, ouvrir la discussion ou consulter le dossier complet — voir [Analyse des candidatures](/analyse-candidatures) et [Validation d'une candidature](/validation-candidature).
+  <Step title="Agir sur le contact">
+    Les actions en bout de ligne permettent de :
+
+    - **Accepter la candidature** ou **Refuser la candidature**, une fois le dossier déposé (avant, les boutons sont grisés : _« Disponible une fois la candidature déposée »_) ; voir [Validation d'une candidature](/validation-candidature) ;
+    - ouvrir le **Rapport d'analyse** ;
+    - ouvrir la **Discussion interne (équipe)** ou la **Discussion avec les candidats** ; voir [Messagerie](/messagerie) ;
+    - **Voir le dossier**, qui ouvre le détail de la candidature ;
+    - **Réattribuer** le contact à un autre négociateur, selon vos droits.
+
+    Pour réattribuer plusieurs contacts d'un coup, cochez-les (ou **Tout sélectionner sur la page**), choisissez le **Négociateur cible** puis cliquez sur **Réattribuer**.
   </Step>
 </Steps>
+
+## Qui voit quoi
+
+Ce que la page affiche dépend de votre rôle et de la façon dont votre agence répartit le travail : par lot (chaque lot a son responsable) ou par contact (chaque contact a son négociateur).
+
+|  | Suivi par lot | Suivi par contact |
+| --- | --- | --- |
+| **Filtre Responsable** | Masqué pour les rôles **Utilisateur** et **Opérateur** | Affiché |
+| **Filtre Négociateur** | Affiché si l'attribution manuelle des négociateurs est activée | Masqué pour les rôles **Utilisateur** et **Opérateur** ; propose aussi **Non attribué** |
+| **Accepter ou refuser** | Tous les membres | **Propriétaire**, **Administrateur**, ou le négociateur de la candidature |
+| **Réattribuer** | Tous les membres, si l'attribution manuelle est activée | **Propriétaire** et **Administrateur** |
+
+Un membre qui ne peut pas décider voit le message : _« Si une décision doit être prise sur cette candidature, rapprochez-vous de son négociateur ou d'un administrateur. »_ Voir [Rôles et permissions](/roles-permissions).
 
 ## Bonnes pratiques recommandées
 
 - Consultez cette vue **chaque matin** sur la période 7 jours : elle concentre tout ce qui attend une action.
-- Traitez en priorité les dossiers avec une cohérence **Excellent** : ce sont les plus susceptibles de partir ailleurs.
-- Utilisez le filtre par responsable en réunion d'équipe pour passer en revue le pipeline de chacun.
+- Triez par **En attente d'une action** pour traiter d'abord ce qui bloque, puis par **Le plus ancien sans action** pour ne laisser personne de côté.
+- Combinez **Type : Candidats** et **Qualité : Dossier complet** pour isoler les dossiers prêts à être décidés.
+- Mettez à jour le statut d'un prospect (**Relance envoyée**, **Abandon candidat**) quand vous reprenez la main : l'équipe sait où il en est.
+- Utilisez le filtre **Responsable** ou **Négociateur** en réunion d'équipe pour passer en revue le pipeline de chacun.
 
 ## Erreurs fréquentes à éviter
 
 <Warning>
   - Laisser des contacts sans action au-delà de 48 h : le prospect est probablement déjà passé à un autre bien.
   - Travailler uniquement fiche par fiche : la vue Contacts évite de manquer les lots peu consultés.
+  - Chercher un contact ancien ici : la page couvre 30 jours au plus. Pour l'historique complet, passez par [Mes candidats](/boite-reception#la-base-de-candidats-de-lagence).
 </Warning>
 
 ## Ce que fait Uplace automatiquement
@@ -48,17 +96,25 @@ La vue **Contacts** rassemble, tous lots actifs confondus, les candidatures et p
 <Info>
   - Agrège les contacts de tous les lots actifs en une seule liste, groupée par jour.
   - Évalue chaque dossier déposé : revenus, garant et score de cohérence.
-  - Traite les demandes en statut « Automatique » (réponse et invitation à candidater).
+  - Traite les prospects en statut **Automatique** (réponse et invitation à candidater).
 </Info>
 
 ## Questions fréquentes
 
 <AccordionGroup>
   <Accordion title="Quelle différence avec « Mes candidats » ?">
-    **Contacts** montre l'activité à traiter sur les lots actifs. [Mes candidats](/boite-reception) est la base de fond de l'agence, tous lots et toutes périodes confondus.
+    **Contacts** montre l'activité récente à traiter sur les lots actifs, 30 jours au plus. [Mes candidats](/boite-reception#la-base-de-candidats-de-lagence) est la base de fond de l'agence, toutes périodes confondues, d'où vous proposez des biens à vos candidats.
   </Accordion>
 
   <Accordion title="Que signifie « Inconnu » dans les colonnes Revenus / Garant / Cohérence ?">
-    Le candidat n'a pas encore déposé (ou complété) son dossier : les indicateurs se remplissent au fur et à mesure du dépôt des pièces.
+    Un membre du dossier n'a pas encore déposé ou complété ses pièces : les indicateurs se remplissent au fur et à mesure. Pour un prospect qui n'a pas encore de dossier, ces colonnes affichent un simple tiret.
+  </Accordion>
+
+  <Accordion title="Les boutons Accepter et Refuser sont grisés">
+    Le dossier n'est pas encore déposé. Si votre agence suit ses contacts par négociateur, il faut aussi être Propriétaire, Administrateur ou le négociateur de la candidature.
+  </Accordion>
+
+  <Accordion title="Où est passée la période « 3 mois » ?">
+    La vue Contacts se limite désormais à 7, 14 ou 30 jours : c'est une liste de travail. Les statistiques sur une plus longue période sont dans [Statistiques](/statistiques).
   </Accordion>
 </AccordionGroup>
