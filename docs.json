@@ -178,6 +178,14 @@
           "mode-affiliation",
           "permanences"
         ]
+      },
+      {
+        "group": "Upportunity",
+        "pages": [
+          "upportunity",
+          "upportunity-suivi",
+          "upportunity-alertes"
+        ]
       }
     ]
   },

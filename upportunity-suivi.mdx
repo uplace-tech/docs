@@ -1,0 +1,98 @@
+---
+title: "Upportunity – Suivre un lead : étapes, actions et scripts"
+sidebarTitle: "Suivre un lead"
+description: "Attribuer un lead propriétaire à un agent, le faire avancer d'étape en étape et le contacter avec des scripts prêts à l'emploi."
+icon: "user-check"
+---
+
+## Objectif
+
+Une fois attribué à un agent, un lead Upportunity entre dans un suivi de relation : des étapes, un historique des actions, et des scripts d'appel, de SMS et d'e-mail partagés par toute l'agence.
+
+<Note>
+  **Où trouver cette fonctionnalité ?** Sidebar > **Upportunity** > **Leads en cours**, _« Les prospects attribués à un agent, avec leur suivi de relation »_. Les scripts sont dans Upportunity > **Scripts**.
+</Note>
+
+## Fonctionnement étape par étape
+
+<Steps>
+  <Step title="Attribuer le lead">
+    Dans **Tous les leads** ou sur la fiche du lead, choisissez un membre dans **Agent responsable**. Le lead rejoint **Leads en cours** à l'étape **Prise de contact**, et la fiche affiche _« Suivi par… »_.
+  </Step>
+  <Step title="Créer une action">
+    Cliquez sur **Créer une action**, depuis la ligne du lead ou depuis sa fiche. La fenêtre se déroule en deux temps : _« choisissez le canal, puis préparez votre action »_.
+
+    | Canal | Ce qu'il propose |
+    | --- | --- |
+    | **Appeler** | Les scripts d'appel de l'agence. |
+    | **SMS** | Un SMS envoyé depuis la plateforme. |
+    | **Envoyer un email** | Des modèles préremplis. |
+    | **Rendez-vous** | Un créneau à caler avec le propriétaire. |
+  </Step>
+  <Step title="Programmer un rappel">
+    Sur la fiche, **Programmer un rappel** vous fixe une échéance pour reprendre contact.
+  </Step>
+  <Step title="Faire avancer l'étape">
+    L'étape se règle en haut de la fiche. Quatre valeurs : **Prise de contact**, **Rendez-vous**, **Signature** et **Disqualifié**.
+  </Step>
+  <Step title="Relire le suivi">
+    Le bloc **Suivi de la relation** de la fiche retrace l'attribution et chaque action, dans l'ordre chronologique. La colonne **Dernière action** de Leads en cours en donne le résumé.
+  </Step>
+</Steps>
+
+Leads en cours se filtre par **Étape**, par **Alerte** et par chaleur.
+
+## Les scripts d'action
+
+La page **Scripts d'action** rassemble les _« trames d'appel et modèles de SMS et d'email proposés à toute l'agence »_ dans la fenêtre Créer une action. Un compteur indique le nombre de scripts utilisés sur 100 possibles.
+
+Uplace fournit des scripts de départ :
+
+| Type | Scripts fournis |
+| --- | --- |
+| **Appel** | Estimation patrimoniale, Prise de contact, Proposition de gestion locative, Relance douce |
+| **Email** | Bilan fiscal et rendement, Présenter une opportunité, Proposer la gestion locative, Proposer une estimation, Proposer un point patrimonial, Relance douce |
+| **SMS** | Confirmation de rendez-vous, Demande de rappel, Estimation gratuite, Relance douce |
+
+Chaque script se **modifie** ou se **supprime**, et **Nouveau script** en crée un. Les variables se remplissent seules à l'envoi : `{{lead}}` pour le nom du prospect, `{{agent}}` pour celui de l'agent, `{{agence}}` pour votre agence.
+
+**Restaurer les scripts par défaut** remet les scripts d'origine.
+
+## Bonnes pratiques recommandées
+
+- Adaptez les scripts fournis à votre ton et à votre secteur avant de lancer l'équipe.
+- Créez une action après chaque échange, même un appel sans réponse : l'historique sert à toute l'agence.
+- Passez l'étape à **Disqualifié** plutôt que de laisser un lead sans suite : vos statistiques restent justes.
+- Filtrez Leads en cours par étape en réunion pour passer en revue chaque rendez-vous à venir.
+
+## Erreurs fréquentes à éviter
+
+<Warning>
+  - Appeler sans enregistrer l'action : le suivi reste vide et la date de dernier contact n'évolue pas.
+  - Supprimer un script utilisé par vos collègues : les scripts sont communs à toute l'agence.
+  - Laisser tous les leads à l'étape Prise de contact : l'entonnoir des statistiques ne reflète plus votre activité.
+</Warning>
+
+## Ce que fait Uplace automatiquement
+
+<Note>
+  - Place le lead à l'étape **Prise de contact** dès son attribution.
+  - Inscrit l'attribution et chaque action dans le suivi de la relation.
+  - Remplit les variables des scripts avec le nom du prospect, de l'agent et de l'agence.
+</Note>
+
+## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Qui voit les scripts que je crée ?">
+    Toute l'agence : les scripts sont proposés à tous les membres dans la fenêtre Créer une action.
+  </Accordion>
+
+  <Accordion title="J'ai modifié un script par erreur">
+    **Restaurer les scripts par défaut** remet les scripts d'origine fournis par Uplace.
+  </Accordion>
+
+  <Accordion title="Peut-on changer l'agent d'un lead ?">
+    Oui, depuis la colonne **Agent responsable** de la liste.
+  </Accordion>
+</AccordionGroup>
