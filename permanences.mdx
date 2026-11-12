@@ -1,0 +1,148 @@
+---
+title: "Permanences – Planifier qui reçoit les contacts"
+sidebarTitle: "Permanences"
+description: "Construire et prolonger le planning des permanences qui répartit les prises de contact entre vos négociateurs."
+icon: "calendar"
+---
+
+## Objectif
+
+Le **planning des permanences** indique, créneau par créneau, quel négociateur reçoit les demandes qui arrivent. Il sert aux agences en **affiliation par contacts** : chaque prise de contact est affiliée au négociateur de permanence à la date et à l'heure où elle arrive. Voir [Mode d'affiliation](/mode-affiliation).
+
+<Note>
+  **Où trouver cette fonctionnalité ?** Sidebar > **Permanences**. Également accessible depuis Mon agence > Paramètres de l'agence > **Mode d'affiliation** > **Planning des permanences**.
+
+  L'entrée Permanences n'apparaît dans la sidebar qu'en affiliation par contacts.
+</Note>
+
+## Lire le planning
+
+La page **Permanences**, _« Planning des permanences de l'agence, par semaine ou par mois »_, présente :
+
+- un **bandeau d'état**, avec la date jusqu'à laquelle le planning est établi (_« Planifié jusqu'au… »_) et la mention **Aucun planning opérationnel** lorsqu'il ne couvre plus la période en cours ;
+- la vue **Semaine** ou **Mois**, deux flèches pour changer de période et le bouton **Aujourd'hui** ;
+- l'interrupteur **Mes permanences seulement**, pour n'afficher que vos propres créneaux ;
+- la grille : une colonne par jour, un bloc par créneau, avec le nom du négociateur et ses horaires. Chaque négociateur a sa couleur. Un créneau peut passer minuit : il s'affiche alors sur les deux jours.
+
+## Créer ou prolonger le planning
+
+<Warning>
+  **Seuls le Propriétaire et les Administrateurs peuvent créer ou prolonger le planning.** Les autres membres le consultent, sans pouvoir le modifier. Voir [Rôles et permissions](/roles-permissions).
+</Warning>
+
+Le bouton **Prolonger le planning**, en haut à droite, ouvre un assistant en cinq étapes. Lorsqu'un planning existe déjà, son découpage, ses participants et sa répartition sont repris : vous pouvez tout modifier.
+
+<Steps>
+  <Step title="Période">
+    _« Les dates couvertes par ce planning. »_ Choisissez la **Période couverte**. L'assistant indique le nombre de jours couverts. La nouvelle période doit commencer après la fin du planning actuel.
+
+    Si des jours restent sans permanence entre la fin du planning actuel et le début du nouveau, un avertissement rouge les compte et précise que, sur ces jours, _« les prises de contact ne seront rattachées à aucune permanence »_.
+  </Step>
+  <Step title="Découpage">
+    _« La forme des créneaux de permanence. »_ Trois découpages :
+
+    | Découpage | Ce qu'il produit |
+    | --- | --- |
+    | **Par semaine** | Un créneau par semaine, du lundi au lundi, tronqué aux bornes de la période. |
+    | **Par journée** | Un créneau par jour civil, de minuit à minuit. |
+    | **Personnalisé** | Un découpage libre qui se répète chaque semaine : à vous de poser les créneaux. |
+
+    En **Personnalisé**, vous composez les **créneaux du cycle** avec **Ajouter un créneau**. Chaque créneau se modifie ou se supprime. Deux règles de saisie :
+
+    - la fin d'un créneau est exclue : une fin à minuit se saisit avec **00:00 sur le jour suivant** ;
+    - un créneau peut passer minuit, et boucler du dimanche au lundi.
+  </Step>
+  <Step title="Participants">
+    _« Les négociateurs qui prennent des permanences. »_ Sélectionnez les membres concernés. L'assistant affiche le nombre de créneaux sur la période et la charge moyenne par négociateur.
+  </Step>
+  <Step title="Répartition">
+    _« Comment les créneaux sont attribués. »_ Deux modes : **Fixe** ou **Fluctuant**.
+
+    En **Fixe**, des **règles** attribuent les créneaux : par jour, par parité de semaine ou par rang dans le cycle. Cliquez sur **Ajouter une règle**, puis sur **Actualiser l'aperçu**. Le bloc **Résultat des règles** montre la répartition obtenue : vous pouvez corriger un créneau à la main, et modifier une règle recalcule toute la répartition. Sans règle, tous les créneaux restent à pourvoir.
+
+    En **Fluctuant**, vous choisissez le négociateur de chaque créneau, un par un, semaine par semaine, ou vous cliquez sur **Répartir au hasard**. Le tirage respecte deux règles : deux créneaux qui se suivent ne vont jamais au même négociateur, et chacun en reçoit autant que les autres, à un près.
+
+    L'option **Pas deux semaines de suite sur le même créneau** empêche un négociateur de garder le même créneau, même jour et même heure de début, d'une semaine à l'autre. Elle tient compte de la dernière semaine du planning précédent.
+
+    Un compteur rappelle le nombre de créneaux restant **à pourvoir**.
+  </Step>
+  <Step title="Aperçu et validation">
+    _« Le planning final, créneau par créneau. »_ L'étape récapitule la période, le découpage, le mode de répartition, le nombre de négociateurs et de créneaux, puis la **Répartition par négociateur** : nombre de créneaux et d'heures pour chacun.
+
+    Si des créneaux n'ont pas de négociateur, ils sont comptés sur une ligne **À pourvoir**. Vous pouvez valider quand même : ils s'attribuent ensuite un par un depuis le planning.
+
+    Cliquez sur **Valider le planning**. Rien n'est enregistré avant ce clic.
+  </Step>
+</Steps>
+
+**Annuler et retour au planning**, à la première étape, quitte l'assistant sans rien enregistrer.
+
+## Modifier un créneau
+
+Dans le planning, cliquez sur un créneau pour ouvrir **Réattribuer le créneau**. Choisissez le **Négociateur de permanence**, puis **Enregistrer**. C'est aussi par là que vous attribuez un créneau resté à pourvoir.
+
+<Note>
+  Changer le négociateur d'un créneau ne déplace pas les demandes déjà arrivées : _« Les prises de contact déjà reçues sur ce créneau ne sont pas réattribuées pour l'instant. »_ Pour celles-ci, utilisez **Réattribuer** dans [Contacts](/contacts).
+</Note>
+
+<Warning>
+  **Un planning qui arrive à échéance désactive l'affiliation par contacts.**
+
+  Le mode par contacts exige un planning **opérationnel** : une période en cours et au moins un créneau attribué à venir. Sans cela, l'agence repasse en affiliation par lot jusqu'à ce que le planning soit prolongé. Voir [Mode d'affiliation](/mode-affiliation).
+</Warning>
+
+## Les contacts non attribués
+
+La page **Non attribués** de la sidebar liste les _« prises de contact et candidatures en attente d'un négociateur »_, avec le nombre d'éléments en attente. Lorsque tout est attribué, elle l'indique : _« Aucun élément en attente : tout est attribué. »_
+
+Pour changer le négociateur d'un contact déjà attribué, utilisez **Réattribuer** dans [Contacts](/contacts).
+
+## Bonnes pratiques recommandées
+
+- Prolongez le planning **avant** sa date de fin : enchaînez les périodes sans jour vide.
+- Faites démarrer la nouvelle période le lendemain de la fin de l'ancienne. L'avertissement de l'étape Période vous signale tout écart.
+- Couvrez aussi les nuits et les week-ends : les demandes des portails arrivent à toute heure, et c'est l'heure d'arrivée qui décide du négociateur.
+- Utilisez **Répartir au hasard** pour une charge équitable, puis ajustez à la main les absences connues.
+- Demandez à chaque négociateur d'activer **Mes permanences seulement** pour repérer ses créneaux.
+
+## Erreurs fréquentes à éviter
+
+<Warning>
+  - Laisser passer la date de fin : le bandeau affiche **Aucun planning opérationnel** et les contacts ne sont plus répartis par permanence.
+  - Valider un planning avec des créneaux **à pourvoir** sans les attribuer ensuite : ces plages n'ont aucun négociateur de permanence.
+  - Saisir une fin de créneau à 24:00 : elle se saisit à 00:00 sur le jour suivant.
+  - Oublier un négociateur dans les participants : il ne recevra aucun créneau, donc aucun contact.
+</Warning>
+
+## Ce que fait Uplace automatiquement
+
+<Note>
+  - Affilie chaque prise de contact au négociateur dont le créneau couvre la date et l'heure d'arrivée.
+  - Reprend le découpage, les participants et la répartition du planning précédent quand vous le prolongez.
+  - Signale les jours sans permanence entre deux plannings.
+  - Équilibre la charge entre négociateurs lors d'une répartition au hasard.
+</Note>
+
+## Questions fréquentes
+
+<AccordionGroup>
+  <Accordion title="Le bandeau affiche « Aucun planning opérationnel »">
+    Le planning ne couvre plus la période en cours, ou aucun créneau à venir n'est attribué. Cliquez sur **Prolonger le planning**. En attendant, le mode par lot reste actif.
+  </Accordion>
+
+  <Accordion title="Je ne peux pas créer ni prolonger le planning">
+    Cette action est réservée au **Propriétaire** et aux **Administrateurs** de l'agence. Demandez à l'un d'eux de prolonger le planning.
+  </Accordion>
+
+  <Accordion title="Un contact est arrivé pendant la permanence d'un collègue, mais c'est moi qui le suis">
+    Un **Propriétaire** ou un **Administrateur** peut le réattribuer depuis [Contacts](/contacts), un par un ou par lot de contacts cochés.
+  </Accordion>
+
+  <Accordion title="Prolonger le planning modifie-t-il les contacts déjà attribués ?">
+    Non. Les contacts déjà affiliés conservent leur négociateur. Le nouveau planning ne s'applique qu'aux demandes qui arrivent pendant la nouvelle période.
+  </Accordion>
+
+  <Accordion title="Je ne vois pas l'entrée Permanences dans la sidebar">
+    Votre agence est en affiliation par lot. Le mode se règle dans Mon agence > Paramètres de l'agence > **Mode d'affiliation**.
+  </Accordion>
+</AccordionGroup>
